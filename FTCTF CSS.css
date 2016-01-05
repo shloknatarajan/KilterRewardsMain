@@ -1,0 +1,280 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+    
+    font-family: 'Oswald', sans-serif;
+    /*background-image: url("http://i.imgur.com/DjvcONt.jpg");*/
+    background-image: url("http://7-themes.com/data_images/out/67/6999936-cool-websites-background.jpg");
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation Bar: Start */
+.nav ul {
+    list-style-type: none;
+    background-color: #282828;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+}
+
+.nav li {
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4vw;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+
+    /* Diplay Inline */
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    
+}
+
+.nav a:hover {
+    color: rgb(0,200,180);
+    transition: .5s color;
+}
+
+.nav a:active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+@media screen and (max-width: 600px) {
+  .nav li {
+    width: 20%;
+    border-bottom: none;
+    height: 5%;
+    line-height: 50px;
+    font-size: 2.6vw;
+  }
+} 
+ /* Navigation Bar: End */
+
+
+
+/* White Body Wrapper Background */
+.bwrapper {
+    background-color: white;
+    padding: 45px;
+    float: none;
+    position: static;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .bwrapper {
+    padding: 5px;
+    height: 100%;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    
+  }
+} 
+
+
+/* Home Page */
+/*Interested in First little section: Start; */
+.firstinterestedwrapper {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: white;
+    height: 500px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+
+}
+@media (max-width: 1170px){
+    .firstinterestedwrapper {
+        padding-bottom: 80px;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.firstinterested h1 {
+    float: left;
+    font-size: 60px;
+    padding-top: 7%;
+    padding-left: 8%;
+    font-color: #474747;
+    font-weight: 400;
+
+}
+
+.firstinterested p {
+    float: left;
+    font-color: #909090;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 8%;
+    font-weight: 100;
+    margin: 0px;
+
+}
+#First_logo{
+    padding-top: 3%;
+    width: 50%;
+    float: right;
+    display: inline;
+    max-width:40%;
+    max-height:auto;
+    height: auto;
+    float: right;
+    padding-right: 10%;
+} /* Interested in FIRST end */
+
+/*Interested in First second section: Start; */
+.secondinterestedwrapper {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 500px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+
+}
+@media (max-width: 1170px){
+    .secondinterestedwrapper {
+        padding-bottom: 80px;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.secondinterested h1 {
+    float: left;
+    font-size: 60px;
+    padding-top: 7%;
+    padding-left: 8%;
+    font-color: #474747;
+    font-weight: 400;
+
+}
+
+.secondinterested p {
+    float: left;
+    font-color: #909090;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 8%;
+    font-weight: 100;
+    margin: 0px;
+
+}
+#First_logo2{
+    padding-top: 3%;
+    width: 50%;
+    float: left;
+    display: inline;
+    max-width:40%;
+    max-height:auto;
+    height: auto;
+    padding-left: 10%;
+} /* Interested in FIRST second section end */
+
+/*Interested in First little section: Start; */
+.thirdinterestedwrapper {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 500px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+
+}
+@media (max-width: 1170px){
+    .thirdinterestedwrapper {
+        padding-bottom: 80px;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.thirdinterested h1 {
+    float: left;
+    font-size: 60px;
+    padding-top: 7%;
+    padding-left: 8%;
+    font-color: #474747;
+    font-weight: 400;
+
+}
+
+.thirdinterested p {
+    float: left;
+    font-color: #909090;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 8%;
+    font-weight: 100;
+    margin: 0px;
+
+}
+#First_logo3{
+    padding-top: 3%;
+    width: 50%;
+    float: right;
+    display: inline;
+    max-width:40%;
+    max-height:auto;
+    height: auto;
+    float: right;
+    padding-right: 10%;
+} /* Interested in FIRST end */
+
+
+
+/* About Us Page */
+.whowhat h1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 60px;
+    font-color: #474747;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+
+
+.whowhat p {
+    font-color: #909090;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 1.5px;
+}
+
+/* Team Finder */
+.AllDisplayedData {
+    padding-left: 0%;
+}

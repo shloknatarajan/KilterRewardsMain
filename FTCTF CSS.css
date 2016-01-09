@@ -329,7 +329,7 @@ body {
   }
   #group1 .parallax__layer--back {
     /*background: rgb(123,210,102);*/
-        background: url("http://i.imgur.com/6AcS8zS.png") no-repeat center center fixed; 
+        background: url("../images/homeparallax.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

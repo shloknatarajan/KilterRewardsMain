@@ -12,7 +12,7 @@ body {
 html {overflow-y: scroll;}
 
 a {
-    color: black;
+    color: red;
     text-decoration: underline;
 }
 /* Navigation Bar: Start */
@@ -107,6 +107,15 @@ a {
 
 
 /* Home Page */
+@media screen and (min-width: 600px) {
+    p {
+    padding-left: 1em;
+}
+h4 {
+    padding-left: 0.5em;
+}
+}
+
 /*Interested in First little section: Start; */
 .firstinterestedwrapper {
     float:left;
@@ -290,6 +299,7 @@ a {
     font-size: 20px;
     font-weight: 100;
     margin-top: 1.5px;
+    padding-left: 0em;
 }
 
 /* Team Finder */

@@ -74,43 +74,6 @@ a {
  /* Navigation Bar: End */
 
 
-
-/* White Body Wrapper Background */
-.bwrapper {
-    background-color: white;
-    padding: 45px;
-    float: none;
-    position: static;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-top: 3.75%;
-    margin-bottom: 2%;
-}
-
-.tfbwrapper {
-    background-color: white;
-    padding: 45px;
-    float: none;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    height: 3000px;
-}
-
-
-@media screen and (max-width: 600px) {
-  .bwrapper {
-    padding: 5px;
-    height: 100%;
-    margin-left:2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    
-  }
-} 
-
-
 /* Home Page */
 @media screen and (min-width: 600px) {
     p {
@@ -287,32 +250,6 @@ h4 {
 
 
 
-/* About Us Page */
-.whowhat h1 {
-    margin-top: 0px;
-    padding-top: 0px;
-    font-size: 60px;
-    font-color: #474747;
-    font-weight: 400;
-    margin-bottom: 0px;
-}
-
-
-
-.whowhat p {
-    font-color: #909090;
-    font-size: 20px;
-    font-weight: 100;
-    margin-top: 1.5px;
-    padding-left: 0em;
-}
-
-/* Team Finder */
-.AllDisplayedData {
-    padding-left: 0%;
-    font-weight: 400;
-    overflow: scroll;
-}
 
 
 /* Parallel Home Screen */
@@ -331,7 +268,7 @@ h4 {
 
   .parallax__group {
     position: relative;
-    height: 500px; /* fallback for older browsers */
+    height: 499px; /* fallback for older browsers */
     height: 99vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -399,7 +336,4 @@ h4 {
         font-size: 12vw;
     }
 
-#GoogleForm {
-    width: 800px;
-    margin: 0 auto;
-}
+

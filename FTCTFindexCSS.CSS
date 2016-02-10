@@ -9,7 +9,7 @@ body {
     padding: 0px;
 }
 
-html {overflow-y: hidden;}
+html {overflow-y: scroll;}
 
 a {
     color: red;

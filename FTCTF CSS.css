@@ -327,8 +327,13 @@ h4 {
     perspective: 300px;
     -webkit-perspective-origin-x: 100%;
     perspective-origin-x: 100%;
-  }
 
+
+  }
+img {
+  -ms-interpolation-mode: bicubic;
+
+}
   .parallax__group {
     position: relative;
     height: 500px; /* fallback for older browsers */
@@ -371,6 +376,7 @@ h4 {
   -o-background-size: cover;
   background-size: cover;
   max-height: 1170px;
+
   }
 
  #group2 {

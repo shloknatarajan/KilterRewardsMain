@@ -114,13 +114,13 @@ Container Editing (Normally Default stuff inside boostrap)
 @media (min-width: 992px) {
   .customcontainer {
     width: 970px;
-    width: 85%;
+    width: 90%;
   }
 }
 @media (min-width: 1200px) {
   .customcontainer {
     width: 1170px;
-    width: 80%;
+    width: 90%;
   }
 }
 

@@ -1,61 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<meta name = "keywords" content = "ibots, ftcconnect, teamfinder,firstftc">
 
-<link rel= Stylesheet href="FTCTF CSS.css" type="text/css" media="screen">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
+    <title>Wild Horse Fitness</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Css -->
+    <link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading jQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Style -->
+    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+    
+    <!-- Icons Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+    <!--Setting Favicon (icon on browser tab)-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 </head>
+
 <body>
+    <!-- Preloader
+	============================================= -->
+    <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+    <!-- Header
+	============================================= -->
+    <section class="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="customcontainer">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Index.html"><img src="img/WHFnavbarlogo.png" class="img-responsive" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-8 col-xs-12 nav-wrap">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Index.html">Home</a></li>
+                            <li><a href="#AboutUs">About Us</a></li>
+                            <li><a href="#Amenities">Amenities</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            <li><a href="#News">News</a></li>
+                        </ul>
+                    </div>
+                     <div class="social-media hidden-sm hidden-xs">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-yelp"></i></a></li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div id="owl-hero" class="owl-carousel owl-theme">
+            <div class="item" style="background-image: url(img/tintedhomebigshot.jpg)">
+                <div class="caption">
+                    <h1><span>St. Louis's Premier Training Facility</span></h1>
+                    <a class="btn btn-transparent" href="#AboutUs">About Us</a>
+                       
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/blaketraintinted.jpg)">
+                <div class="caption">
+                    <h1>Personal <span>Training</span></h1>
+                    <a class="btn btn-transparent" href="#Trainers">Meet the Trainers</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/WHFgrouptinted.jpg)">
+                <div class="caption">
+                    <h1>Group <span>Lesssons</span></h1>
+                    <a class="btn btn-transparent" href="AboutUs.html">Click To Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Navigation Bar -->
-<div class = "nav">
-<div id ="hwrapper">
-<ul class="navlinks">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="TeamFinder.html">Team Finder</a></li>
-  <li><a href="AboutUs.html">About Us</a></li>
-  <li><a href="ComingSoon.html">Coming Soon</a></li>
-</ul>
-</div>
-</div>
+    <!-- Welcome
+	============================================= -->
+    <section id="hours">
+        <div class="container">
+            <h2><span>Hours of Operation</span></h2>
+            <hr class="sep">
+            <p>Monday - Thursday: 4:30 AM - 10:00 PM</p>
+            <p>Friday: 4:30AM - 8:00PM</p>
+            <p>Saturday - Sunday: 6:00 AM - 6:00 PM</p>
+        </div>
+    </section>
 
-<div class="parallax">
+    <!-- description
+	============================================= -->
+    <section id="description">
+        <div class="container">
+            <h2>Elite Training Facility in St. Louis</h2>
+            <hr class="sep">
+            <p>At Wild Horse Fitness our mission is to provide you with all of your health and wellness needs in one place, and lead everyone who comes through our doors to a new level of fitness. We will guide our clients and members with our passion, determination, and knowledge. We strive to assist each individual to meet every goal, one workout at a time. Whether you want to relax after a workout with a massage, try a group fitness class, meet a personal trainer for fitness and nutrition, or have out physical therapist make sure your body is at its best to begin a fitness regiment, you’ll find it at Wild Horse Fitness! Total body wellness begins with you, and it begins today! Contact us or stop by and tour our state-of-the-art facility to see why our members call us the best gym in St. Louis!</p>
+        </div>
+    </section>
 
-<!-- Top Parallax Image -->
-<div id="group1" class="parallax__group">
-   <div class="parallax__layer parallax__layer--back">
-      <div class="Welcome">
-      <h1>Welcome</h1> 
-      </div>
-   </div>
- </div>
+   
+    <!-- Located in West County
+	============================================= -->
+    <section id="located">
+        <div class="container">
+            <h2>Located in West County</h2>
+            <hr class="sep">
+            <p>At Wild Horse Fitness, we help our clients build and achieve the bodies they have always dreamed of having. We focus on developing each individual’s physical state while enhancing his or her mental state, enabling them to live happy, healthy, fulfilled lives. Wild Horse Fitness is located on Kehrs Mill Rd. just south of the Kehrs Mill Rd. and Clayton Rd. intersection.</p>
+        </div>
+         <!-- Google Map
+        ============================================= -->
+        <div id = googleMap>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.915765581535!2d-90.5680676846525!3d38.60480897961694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8d5ab78c3f1cf%3A0x7d0d66e322a7fd4b!2sWild+Horse+Fitness!5e0!3m2!1sen!2sus!4v1496195311879" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Gym Shots
+    ============================================= -->
+    <section id="pics">
+        <div class="container-fluid">
+            <h2>WILD HORSE FITNESS HAS IT ALL</h2>
+            <hr class="sep">
+            <p>Wild Horse Fitness is excited to share our completely remodeled 20,000 square-foot facility full of state-of-the-art equipment, a variety of group fitness classes, nationally certified and fully accredited personal trainers, a full service salon, and a smoothie bar that offers healthy meals cooked by FIT4ME FOODS! Wild Horse Fitness offers the latest variety of free weights, plate-loaded equipment, selectorized equipment, and cardio machines. We have a large selection of group fitness classes every week to fit anyone’s desire, not to mention the most experienced personal trainers who can consult you every step of the way on your fitness journey.  The Spa at Wild Horse also offers a full selection of salon services for total relaxation.</p>
+            <div class="row">
+            <div class="picscontainer">
+                <img src ="img/freeweights.png" alt="Free Weights">
+                <img src ="img/legext.png" alt="New Machines">
+                <img src ="img/machinered.jpg" alt="New Machines 2">
+                <img src ="img/yoga.png" alt="Group Lessons">
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer w/ info at the bottom
+    ============================================= -->
+    <footer>
+        <div class="container">
+            <p>920 Kehrs Mill Rd. Ballwin, MO 63011 (636) 686-7494</p>
+            <img src = "img/fulllogo.png" alt="Wild Horse Fitness">
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                <a href="#"><i class="fa fa-yelp fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- JS PLUGINS -->
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="plugins/countTo/jquery.countTo.js"></script>
+    <script src="plugins/inview/jquery.inview.min.js"></script>
+    <script src="plugins/Lightbox/dist/js/lightbox.min.js"></script>
+    <script src="plugins/WOW/dist/wow.min.js"></script>
+    <!--Drop Downs-->
+    <link rel="stylesheet" href="css/prettydropdowns.css">
+    <script src="js/jquery.prettydropdowns.js"></script>
 
 
-<!-- Data below Parallax Image -->
-<div id="group2" class="parallax__group">
-   <div class="parallax__layer parallax__layer--base">
-
-      <div class = firstinterestedwrapper>
-          <div class = firstinterested>
-             
-              <h1>Site Under Construction!</h1>
-                  <p>This site is currently under construction and should be updated in the next few weeks with many new features. Check the Coming Soon tab for more details. Thanks</p>
-          </div>
-      </div>
-
-      <div class = secondinterestedwrapper>
-          <div class = secondinterested>
-             <h1>About Us</h1>
-                  <p>Learn more about this website, future updates, and its creators in the About Us section!</p>
-          </div>
-      </div>
-    </div>
-</div>
-</div>
 </body>
+
 </html>

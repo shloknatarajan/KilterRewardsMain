@@ -1,0 +1,658 @@
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+body {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: #0d0d0d;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("../img/actionshots/stlccmeet2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
+}
+
+.bwrapper {
+  background-color: white;
+  padding: 45px;
+  float: none;
+  position: static;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+
+
+.sep {
+  max-width: 80px;
+  border: 2px solid #0d0d0d;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.light-sep {
+  max-width: 80px;
+  border: 2px solid #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+h1 {
+  font-size: 72px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+}
+
+h2 {
+  font-size: 42px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 26px;
+  color: #000;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+p {  
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* ==========================================================================
+Container Editing (Normally Default stuff inside boostrap)
+========================================================================== */
+
+.customcontainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .customcontainer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .customcontainer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .customcontainer {
+    width: 1170px;
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+Buttons Styles
+========================================================================== */
+.btn-transparent {
+  background: transparent;
+  border: 3px solid rgba(252, 125, 125, 1);
+  padding: 15px 30px;
+  font-size: 14px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+  background: #fff;
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.btn-light {
+  background: #fff;
+  border: 3px solid #fff;
+  padding: 15px 30px;
+  font-size: 14px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #0d0d0d;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-block {
+  background: #24242a;
+  padding: 15px 0;
+  font-size: 16px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 3px solid #24242a;
+}
+
+.btn-block:hover,
+.btn-block:focus,
+.btn-block:active {
+  background: #fff;
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+Layout 
+========================================================================== */
+.dark-bg {
+  background: #24242a;
+}
+
+.light-bg {
+  background: #fff;
+}
+
+    /* ==========================================================================
+Preloader Style
+========================================================================== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: #24242a;
+}
+.preloader i {
+  color: #fff;
+  position: absolute;
+  font-size: 36px;
+  line-height: 36px;
+  top: 50%;
+  left: 50%;
+  height: 36px;
+  width: 36px;
+  margin-top: -15px;
+  margin-left: -15px;
+  display: inline-block;
+}
+
+    /* ==========================================================================
+Navigation Style
+========================================================================== */
+.navbar-default {
+  background: rgba(13, 13, 13, 0.8);
+  margin-bottom: 0;
+  border: none;
+}
+.navbar-default .navbar-header {
+  width: 28%;
+  padding-right: 15px;
+}
+.navbar-default .nav-wrap {
+  width: 50%;
+}
+.navbar-default .nav > li > a {
+  font-size: 16px;
+  font-size:1.3;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 35px 15px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus,
+.navbar-default .nav > li > a:active {
+  color: rgba(252, 125, 125, 1);
+}
+.navbar-default .social-media {
+  float: right;
+  padding: 0 15px;
+}
+.navbar-default .social-media i {
+  font-size: 22px;
+  color: rgba(252, 125, 125, 1);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: rgba(252, 125, 125, 1);
+}
+
+.top-nav-collapse {
+  background: rgba(13, 13, 13, 0.8);
+}
+.top-nav-collapse .navbar-brand {
+  height: auto;
+}
+.top-nav-collapse .navbar-brand img {
+  width: 52px;
+  height: 52px;
+}
+.top-nav-collapse .nav > li > a {
+  padding: 30px 15px;
+}
+
+    /* ==========================================================================
+Sliders Style
+========================================================================== */
+
+
+
+#owl-hero {
+  overflow: hidden;
+}
+#owl-hero .item {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#owl-hero .item .caption {
+  position: absolute;
+  top: 50%;
+  margin-top: -104px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 15;
+}
+#owl-hero .item .caption h1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-top: 3%;
+  text-transform: uppercase;
+  color: #fff; 
+  letter-spacing: 2.5px;
+}
+#owl-hero .item .caption h1 span {
+  font-weight: 500;
+}
+#owl-hero .item .caption h6 {
+  color: #fff;
+  margin: 0;
+}
+#owl-hero .owl-pagination {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  bottom: 5%;
+}
+#owl-hero .owl-pagination .owl-page.active span {
+  background: #fff;
+}
+#owl-hero .owl-pagination .owl-page span {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+    /* ==========================================================================
+hours Style
+========================================================================== */
+#hours {
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
+
+}
+#hours h2 {
+  text-transform: uppercase;
+}
+#hours h2 span {
+  font-weight: 700;
+}
+#hours img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#hours p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+    /* ==========================================================================
+description Style
+========================================================================== */
+#description {
+  background: rgba(252, 125, 125, 1);
+  padding: 60px 0;
+  text-align: center;
+}
+#description h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+
+}
+#description p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+#description .description-box {
+  margin-top: 40px;
+}
+#description .description-box .col-md-4 {
+  margin-bottom: 20px;
+}
+#description .description-box .col-md-4 .media-left,
+#description .description-box .col-md-4 .media-right,
+#description .description-box .col-md-4 .media-body {
+  padding-right: 30px;
+  vertical-align: baseline;
+}
+#description .description-box .col-md-4 .media-left p,
+#description .description-box .col-md-4 .media-right p,
+#description .description-box .col-md-4 .media-body p {
+  text-align: left;
+}
+#description .description-box .col-md-4 .media-left h3,
+#description .description-box .col-md-4 .media-right h3,
+#description .description-box .col-md-4 .media-body h3 {
+  text-transform: uppercase;
+  color: #000000;
+  text-align: left;
+}
+#description .description-box .col-md-4 .media-left span,
+#description .description-box .col-md-4 .media-right span,
+#description .description-box .col-md-4 .media-body span {
+  font-size: 36px;
+  color: #000000;
+}
+
+
+
+    /* ==========================================================================
+Our located Style
+========================================================================== */
+#located {
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
+}
+#located h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+#located .located {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#located .located h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#located .located p {
+  font-size: 18px;
+  font-weight: 700;
+}
+#located .located a {
+  color: #0d0d0d;
+  font-size: 22px;
+  padding-right: 10px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#located .located a:hover,
+#located .located a:focus,
+#located .located a:active {
+  color: #fff;
+}
+
+#googleMap {
+  padding-top: 2.5%;
+ 
+}
+
+    /* ==========================================================================
+Pics Style
+========================================================================== */
+
+#pics {
+  padding: 60px 0;
+  text-align: center;
+  background: rgba(252, 125, 125, 1);
+  font-color: #000000;
+
+}
+#pics h2 {
+  text-transform: uppercase;
+}
+#pics h2 span {
+  font-weight: 700;
+}
+#pics img {
+  float: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 60%;
+}
+
+#pics p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.picscontainer {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: ;
+}
+/* ==========================================================================
+Footer Map Style
+========================================================================== */
+footer {
+  background: #000000;
+  padding: 60px 0;
+  text-align: center;
+}
+footer h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer .social {
+  margin: 40px 0;
+}
+footer .social a {
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer .social a:hover,
+footer .social a:focus,
+footer .social a:active {
+  color: #a3a3a3;
+}
+footer h6 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer p {
+  color:#fff;
+}
+
+    /* ==========================================================================
+Media Queries Style
+========================================================================== */
+@media (max-width: 992px) {
+  /*-- Navigation --*/
+  .navbar-default {
+    background: rgba(13, 13, 13, 0.9);
+  }
+  .navbar-default .navbar-header {
+    width: 100%;
+    padding-right: 0;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    height: auto;
+  }
+  .navbar-default .navbar-header .navbar-brand img {
+    width: 52px;
+    height: 52px;
+  }
+  .navbar-default .nav-wrap {
+    width: 100%;
+  }
+  .navbar-default .navbar-toggle {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: none;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: rgba(252, 125, 125, 1);
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:active {
+    background: none;
+  }
+  .navbar-default .navbar-left,
+  .navbar-default .navbar-right {
+    float: none !important;
+  }
+  .navbar-default .navbar-toggle {
+    display: block;
+  }
+  .navbar-default .navbar-collapse {
+    box-shadow: inset 0 1px 0 rgba(13, 13, 13, 0.9);
+  }
+  .navbar-default .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-default .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-default .navbar-nav > li {
+    float: none;
+  }
+  .navbar-default .collapse.in {
+    display: block !important;
+  }
+
+  /*-- Sliders --*/
+  #owl-hero h1 {
+    font-size: 42px;
+  }
+  #owl-hero h6 {
+    font-size: 16px;
+  }
+  #owl-hero .btn {
+    margin-top: 15px;
+  }
+  #owl-hero .owl-buttons {
+    display: none;
+  }
+
+  .owl-theme .owl-controls {
+    margin: 0px;
+  }
+
+  .owl-theme .owl-controls .owl-buttons {
+    display: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*-- description --*/
+  #description h3 {
+    font-size: 22px;
+  }
+
+  /*-- section styles --*/
+  section h2 {
+    font-size: 40px;
+  }
+
+  #testimonials h5 {
+    font-size: 18px;
+  }
+}

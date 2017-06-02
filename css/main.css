@@ -105,13 +105,13 @@ Container Editing (Normally Default stuff inside boostrap)
   margin-left: auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
   .customcontainer {
     width: 970px;
     width: 95%;
   }
 }
-@media (min-width: 935px) {
+@media (min-width: 937px) {
   .customcontainer {
     width: 750px;
     width: 97%;
@@ -290,6 +290,11 @@ Navigation Style
       font-size: 1.3vw;
   }
 }
+@media (max-width: 892px) {
+  .navbar-default .nav > li > a {
+      font-size: 16px;
+  }
+}
 
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus,
@@ -301,7 +306,8 @@ Navigation Style
   padding: 0 10px;
 }
 .navbar-default .social-media i {
-  font-size: 22px;
+  font-size: 20px;
+  font-size: 1.3vw;
   color: rgba(252, 125, 125, 1);
 }
 

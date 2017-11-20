@@ -10,7 +10,6 @@ html {
 
 body {
     
-    /*font-family: 'Cabin', sans-serif;*/
     font-family: 'Varela Round', sans-serif;
     text-decoration-color: black;
     background-color: rgb(240, 240, 240);
@@ -69,11 +68,12 @@ Navigation Bar
 *******************************************************/
 
 nav {
-    margin-top: 1vh;
+    margin-top: 0px;
+    padding-top: 1vh;
     margin-right: 0.5vw;
     position: fixed;
     width: 100%;
-    /*background-color: rgba(250, 0, 0, 0.2);*/
+    background-color: rgb(240, 240, 240);
     padding-top: 0px;
 }
 
@@ -90,6 +90,9 @@ nav {
 
 nav ul li {
     float: right !important;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    
 }
 
 nav ul li a {
@@ -179,6 +182,7 @@ nav.fill ul li a:hover:after {
 .icon-bar {
     background-color: black;
 }
+
 @media only screen and (max-width: 768px) {
     .navbar-nav {
         display: none !important;
@@ -310,12 +314,13 @@ Parallax Intro Page
 
 /* ---- particles.js container ---- */
 
-#particles-js{
-    clear: both;
+#particles-js {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.932);
+    background-color: rgba(0, 0, 0, 0.966);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
+

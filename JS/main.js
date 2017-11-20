@@ -3,7 +3,6 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         preloader.style.display = "none";        
     }, (1000));
-
 });
 
 var count = 0;

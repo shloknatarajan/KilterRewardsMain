@@ -68,11 +68,12 @@ Navigation Bar
 *******************************************************/
 
 nav {
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-right: 0.5vw;
     position: fixed;
     width: 100%;
     /*background-color: rgba(250, 0, 0, 0.2);*/
+    padding-top: 0px;
 }
 
 .navbar-nav {
@@ -192,11 +193,12 @@ nav.fill ul li a:hover:after {
     height: 100vh;
     width: 100vw;
     z-index: 999;
-    background-color: rgb(240, 240, 240) !important;
+    background-color: rgba(240, 240, 240, 0.7) !important;
     position: fixed;
     top: 0;
     left: 0;
     display: block;
+    visibility: hidden;
     transition: visibility 0.2s, opacity 0.2s ease-out;    
 }
 
@@ -206,7 +208,7 @@ nav.fill ul li a:hover:after {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.7);
     text-align: center;
 }
 
@@ -218,7 +220,6 @@ nav.fill ul li a:hover:after {
 }
 
 #overlay ul li a {
-   
     color: black;
     font-size: 3em;
     text-decoration: none;
@@ -235,3 +236,70 @@ nav.fill ul li a:hover:after {
 #navexpander:after {
     color: red;
 }
+
+/*******************************************************
+Welcome Home Page
+*******************************************************/
+#welcome {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards ease-out;
+    animation-delay: 1s;
+}
+
+#welcomelogo {
+    height: auto;
+    width: 65vw;
+    text-align: center;
+
+    position: relative;
+    
+
+    margin-top: 25vh;
+    display: inline-block;
+    /* Put in webkit here*/
+}
+
+
+@media only screen and (max-width: 1140PX) {
+    #welcomelogo {
+        width: 85vw;            
+    }
+}
+
+#welcometext {
+    position: element("#welcomelogo");
+    transform: translateY(4vh);
+}
+
+#welcometext p {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    #welcometext p {
+        font-size: 1.2em;
+    }
+}
+
+
+/****Key Frames*****/
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 15%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }

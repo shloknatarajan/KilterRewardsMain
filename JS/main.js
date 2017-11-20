@@ -12,15 +12,13 @@ function expandoverlay() {
     count++;
     if (count % 2 == 0) {
         over.style.visibility = "hidden";        
-        //over.style.display = "none";
-        //over.style.width = "0vw";
         over.style.opacity = 0;
     } else {
-        //over.style.display = "block";
-        over.style.visibility = "visible";        
-        //over.style.width = "100vw"; 
+        over.style.visibility = "visible";         
         over.style.opacity = 1;
     }
 }
 
-
+window.addEventListener('resize', function() {
+    over.style.visibility = "hidden";
+});

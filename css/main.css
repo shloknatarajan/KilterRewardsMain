@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    
     /*font-family: 'Cabin', sans-serif;*/
     font-family: 'Varela Round', sans-serif;
     text-decoration-color: black;
@@ -190,7 +191,8 @@ nav.fill ul li a:hover:after {
     }
 }
 #overlay {
-    height: 100vh;
+    overflow: hidden;
+    height: 95vh;
     width: 100vw;
     z-index: 999;
     background-color: rgba(240, 240, 240, 0.7) !important;
@@ -229,36 +231,29 @@ nav.fill ul li a:hover:after {
 #overlay ul li a:hover {
     color: #fea530;
 }
-.transin {
-    background-color: purple;
-}
 
-#navexpander:after {
-    color: red;
-}
 
 /*******************************************************
 Welcome Home Page
 *******************************************************/
 #welcome {
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
+    width: 95vw;
     margin: auto;
     text-align: center;
     position: relative;
     opacity: 0;
-    animation: fadeInUp 1.5s forwards ease-out;
+    animation: fadeInUp 1s forwards ease-out;
     animation-delay: 1s;
 }
 
+
 #welcomelogo {
+    overflow: hidden;        
     height: auto;
     width: 65vw;
     text-align: center;
-
     position: relative;
-    
-
     margin-top: 25vh;
     display: inline-block;
     /* Put in webkit here*/
@@ -302,4 +297,9 @@ Welcome Home Page
   
   .fadeInUp {
     animation-name: fadeInUp;
+    
   }
+
+/*******************************************************
+Parallax Intro Page
+*******************************************************/

@@ -237,7 +237,7 @@ nav.fill ul li a:hover:after {
 Welcome Home Page
 *******************************************************/
 #welcome {
-    height: 80vh;
+    height: 100vh;
     width: 95vw;
     margin: auto;
     text-align: center;
@@ -303,3 +303,19 @@ Welcome Home Page
 /*******************************************************
 Parallax Intro Page
 *******************************************************/
+
+.section {
+    height: 50vh;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+    clear: both;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.932);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }

@@ -301,22 +301,16 @@ Welcome Home Page
     }
   }
   
-  .fadeInUp {
-    animation-name: fadeInUp;
-    
-  }
+.fadeInUp {
+   animation-name: fadeInUp;    
+}
 
 /*******************************************************
 Parallax Intro Page
 *******************************************************/
 
-.section {
-    height: 50vh;
-}
-
-/* ---- particles.js container ---- */
-
 #particles-js {
+    z-index: -1;
     width: 100%;
     height: 100vh;
     margin: 0px;
@@ -327,5 +321,17 @@ Parallax Intro Page
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
-  }
+}
 
+.mission {
+    z-index: 0;
+    margin-toP: 20%;
+    height: auto;
+    width: 100%;
+    background: transparent;
+
+}
+
+.mission h1 {
+    font-size: 3em;
+}

@@ -12,7 +12,7 @@ body {
     
     font-family: 'Varela Round', sans-serif;
     text-decoration-color: black;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(246, 247, 249);
 }
 /*******************************************************
 Preloader
@@ -21,7 +21,7 @@ Preloader
     height: 100vh;
     width: 100vw;
     z-index: 999999;
-    background-color: rgb(240, 240, 240) !important;
+    background-color: rgb(246, 247, 249) !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +73,7 @@ nav {
     margin-right: 0.5vw;
     position: fixed;
     width: 100%;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(246, 247, 249);;
     padding-top: 0px;
 }
 
@@ -159,7 +159,7 @@ nav.fill ul li a:hover:after {
 }
 
 /* Keyframes */
-@-webkit-keyframes fill {
+@keyframes fill {
     0% {
       width: 0%;
       height: 1px;
@@ -305,6 +305,102 @@ Welcome Home Page
    animation-name: fadeInUp;    
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+/**** Mouse Scroll ****/
+
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: rgb(27, 230, 163);
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+  .demo a:hover {
+    opacity: .5;
+    
+  }
+
+#section10 a {
+    padding-top: 60px;
+  }
+
+  #section10 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-sizing: border-box;
+    animation: fadeIn 2s forwards ease-out;
+    animation-delay: 5s;
+  }
+  #section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: black;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
 /*******************************************************
 Parallax Intro Page
 *******************************************************/
@@ -315,11 +411,7 @@ Parallax Intro Page
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    background-color: rgba(0, 0, 0, 0.966);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url("../images/greenprism.png");
     overflow: hidden;
 }
 
@@ -330,6 +422,14 @@ Parallax Intro Page
     width: 100%;
     background: transparent;
 
+}
+
+.missionhead {
+    background: white;
+}
+
+.missiontext {
+    background: white;
 }
 
 .mission h1 {

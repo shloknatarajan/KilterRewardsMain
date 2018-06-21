@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700|Varela+Round');
 html {
     font-family: 'Varela Round', sans-serif;    
 }
@@ -9,7 +8,6 @@ html {
 }
 
 body {
-    /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Varela Round', sans-serif;
     text-decoration-color: black;
 }
@@ -198,7 +196,7 @@ nav.fill ul li a:hover:after {
 }
 
 /*****************************************
-Welcome / Jumbotron
+Welcome
 *****************************************/
 #welcome {
     height: 100vh;
@@ -210,9 +208,15 @@ Welcome / Jumbotron
 
 }
 
+@media screen and (max-width: 768px) {
+    .videocontainer,
+    .video {
+        display: none;
+    }
+}
 #welcometext {
-    margin-top: 17%;
-    height: 16vh;
+    margin-top: 17.5%;
+    height: 16%;
     color: white;
 }
 
@@ -252,4 +256,33 @@ video {
     background-color: rgba(0, 6, 17, 0.904);
     opacity: 0.8;
     z-index: -1;
+}
+
+/*******************************************************
+About Section
+*******************************************************/
+#about {
+    height: 80vh;
+    background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+}
+
+#about h1 {
+    margin-top: 10%;
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.pfblock-line {
+    background: rgba(135, 135, 135, 0.5);
+    width: 100px;
+    height: 1px;
+    margin: 30px auto;
+}
+
+#about p {
+    margin-top: 2%;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(104, 104, 104);
 }

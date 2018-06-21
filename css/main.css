@@ -215,7 +215,7 @@ Welcome
     }
 
     #welcome {
-        background-image: 
+        background-image: url("images/blurredworkshop.png");
     }
 }
 #welcometext {
@@ -286,7 +286,7 @@ About Section
 
 #about p {
     margin-top: 2%;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 700;
     color: rgb(104, 104, 104);
 }
@@ -303,14 +303,6 @@ Hardware Section
     padding: 0px;
 }
 
-#hardwaretext {
-    /*background-color: whitesmoke;
-    opacity: 0.7;
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-top: 10%;*/
-}
 
 #hardware h1 {
     color: white;
@@ -318,6 +310,11 @@ Hardware Section
     margin-top: 10%;
     font-weight: 500;
 }   
+
+#hardwarecap {
+    color: white;
+    font-size: 2rem;
+}
 
 /*********** Clean Boostrap Template Stuff ************/
 .grid {

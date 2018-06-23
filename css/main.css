@@ -266,9 +266,9 @@ video {
 About Section
 *******************************************************/
 #about {
-    height: 70vh;
     background-color: #F5F5F5;
     font-family: 'Raleway', sans-serif;
+    padding: 5vw 5vh;
 }
 
 #about h1 {

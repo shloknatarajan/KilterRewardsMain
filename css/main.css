@@ -200,6 +200,10 @@ Welcome
 *****************************************/
 #welcome {
     height: 100vh;
+<<<<<<< HEAD
+=======
+    /*background-color: rgb(0, 113, 219);*/
+>>>>>>> parent of 828fed3... Made the welcome page responsive
     background: transparent;
     position: relative;
     overflow: hidden;

@@ -2,23 +2,10 @@ $(document).ready(function() {
     // Transition effect for navbar 
     $(window).scroll(function() {
       // checks if window is scrolled more than 500px, adds/removes solid class
-      if($(this).scrollTop() > 500) { 
-          $('.navbar').addClass('solid');
+      if($(this).scrollTop() > 50) { 
+          $('.navbar').addClass('scrolled');
       } else {
-          $('.navbar').removeClass('solid');
+          $('.navbar').removeClass('scrolled');
       }
     });
 });
-
-let count = 0;
-var over = document.getElementById("overlay");    
-function expandoverlay() {
-    count++;
-    if (count % 2 == 0) {
-        over.style.visibility = "hidden";        
-        over.style.opacity = 0;
-    } else {
-        over.style.visibility = "visible";         
-        over.style.opacity = 1;
-    }
-}

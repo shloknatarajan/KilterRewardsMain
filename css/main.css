@@ -609,6 +609,7 @@ Footer Section
     color: white;
     padding: 15vh 0px;
     width: 100%;
+    font-family: 'geomanistregular', Fallback, sans-serif;
 }
 
 #footer h1 {

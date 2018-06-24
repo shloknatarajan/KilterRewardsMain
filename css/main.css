@@ -200,7 +200,6 @@ Welcome
 *****************************************/
 #welcome {
     height: 100vh;
-    /*background-color: rgb(0, 113, 219);*/
     background: transparent;
     position: relative;
     overflow: hidden;
@@ -266,17 +265,9 @@ video {
 About Section
 *******************************************************/
 #about {
-    height: 70vh;
     background-color: #F5F5F5;
     font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     padding: 5vw 5vh;
->>>>>>> parent of 828fed3... Made the welcome page responsive
-=======
-    padding: 5vw 5vh;
->>>>>>> parent of 828fed3... Made the welcome page responsive
 }
 
 #about h1 {

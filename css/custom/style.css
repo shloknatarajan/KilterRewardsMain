@@ -502,7 +502,7 @@ body p {
 }
 
 nav.navbar-collapse {
-	z-index: 3
+	z-index: 3;
 }
 
 /*for dropdown*/

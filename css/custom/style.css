@@ -12313,3 +12313,13 @@ width: 30px;
 		padding-top: 0vh !important;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	#secondteamrow {
+		margin-top: 3vh;
+	}
+	
+	#secondteamrowmember {
+		margin-left: 12.5%;
+	}
+}

@@ -1,195 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <title>Colton Henning</title>        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Colton Henning's Personal Website"/>
-        <meta name="author" content="Colton Henning" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skejul</title>
+	<link rel="icon" type="image/png" href="img/fevicon.png" />
 
-        <!-- Favicon -->
-        <!--<link rel="shortcut icon" href="favicon.ico">-->
+	<!-- custom -->
+	<link rel="stylesheet" href="css/custom/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="css/responsive/responsive.css">
 
-        <!-- Bootstrap CSS -->
-        <link href="bootstrap-assets/css/bootstrap.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
 
-        <!-- Varela Round Font -->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-        
-        <!-- Custom CSS -->
-        <link href="css/main.css" rel="stylesheet">        
+<body>
 
-    </head>
+<div class="preloaderArea">
+	<div class="spinner"></div>
+</div>
 
-    <body>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-fixed-top fill scrolled">
-            <!-- Hamburger Icon for mobile -->
-            <!--<input type="button" name="answer" value="Show Div" onclick="expandoverlay()"/>-->            
-            <button id="navexpander" class="navbar-toggle collapsed" type="button" onclick="expandoverlay()" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar" id="bar1"></span>
-                <span class="icon-bar" id="bar2"></span>
-                <span class="icon-bar" id="bar3"></span>
-            </button>
-            
-            <!-- Regular Navigation Bar -->
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li><a href="#photography">Photography</a></li>
-                    <li><a href="#hardware">Hardware</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#welcome">Welcome</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <!--End Navigation Bar-->
 
-        <!-- Welcome -->
-        <div class="container-fluid" id="welcome">
-            <div class="video-container">
-                <div class="tint"></div>
-                <video id="main-video" loop="true" autoplay="true" muted="true" preload="true"> 
-                    <source src="/images/divergingdiamond.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="container text-center bg-white" id="welcometext">
-                <h1 class="display-4">Colton Henning</h1>
-                <p class="lead">Build. Play. Photograph.</p>
-            </div>
-        </div>
 
-        <!-- Starting the info pages -->
-        <div class="container-fluid text-center" id="about">
-            <div class="container text-center">
-                <h1>Who Am I</h1>
-                <div class="pfblock-line"></div>
-                <p>St. Louis University '22</p>
-                <p>Aviation Science</p>
-                <p>Engineer</p>
-                <p>Photographer</p>
-            </div>
-        </div>
-        
+	<!-- ====== 2.02 StartUpTwo Hero Area ====== -->
+	<div class="heroArea StartUpTwo">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-4">
+						<a href="#" class="logo">
+							<img src="img/hero/logo-white.png" alt="logo">
+						</a>
+					</div>
+					<div class="col-md-11 col-sm-10 col-xs-8 menuCol">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar2">
+								<span class="fa fa-navicon"></span>
+							</button>
+						</div>
+						<nav id="navbar2" class="navbar-collapse collapse">
+								<ul class="nav navbar-nav navbar-right">
+									<li class="current-menu-item"><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Team</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+		<div class="homeArea">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="homeContent">
+							<h1>Stop sending emails.</h1>
+							<h5>Schedule meetings with Skejul</h5>
+							<div class="homeBtn">
+								<a class="hvr-bounce-to-right purchase" href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end homeArea -->
+	</div>
+	<!-- ====== /2.02 StartUpTwo Hero Area ====== -->
+	<!-- ====== 3.02 StartUpTwo About Area ====== -->
 
-        <div class="container-fluid text-center" id="hardware">
-            
-            <div class="container text-center">
-                <h1>Hardware</h1>
-                <div class="pfblock-line"></div>
-                <p id="hardwarecap">I build stuff</p>
-            </div>
+	<div class="aboutArea StartUpTwo sectionPadding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="sectionTitle">
+						<h1>About Us</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aboutWrep relative">
+			<div class="about_bg">
+				<div class="aboutLeftBg">
+					<img src="img/about-img-2.jpg" alt="">
+				</div>
+				<div class="aboutRightBg"></div>
+			</div>
+			<div class="aboutOuter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6 aboutCol col-sm-10 col-sm-offset-1">
+							<div class="aboutContent">
+								<div class="aboutCell">
+									<div class="singleAbout">
+										<h2>Schedule Meetings</h2>
+										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero</p>
+									</div>
+									<div class="singleAbout">
+										<h2>Save Time</h2>
+										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero</p>
+									</div>
+									<div class="singleAbout">
+										<h2>Get work done</h2>
+										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <div class="container cleanpics">     
-                    <div class="row">
+	<!-- ====== /3.02 StartUpTwo About Area ====== -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-        
-                            <div class="grid wow zoomIn">
-                                <figure class="effect-bubba">
-                                    <img src="images/blurredworkshop.png">
-                                    <figcaption>
-                                        <h2>Sail<span>Boat</span></h2>
-                                        <p>I like the lake. I can sail very far on my cool boat</p>
-                                    </figcaption>
-                                </figure>
+<div class="sectionBar2"></div>
+
+		<div class="serviceArea StartUpTwo sectionPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="sectionTitle">
+							<h1>Our System</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="singleService">
+							<div class="serviceHead">
+								<div class="serviceIcon">
+									<i class="icon-lightbulb "></i>
+								</div>
+								<h2>Invite</h2>
+							</div>
+							<p>Choose a meeting topic and guests</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="singleService">
+							<div class="serviceHead">
+								<div class="serviceIcon">
+									<i class="icon-genius "></i>
+								</div>
+								<h2>Predict</h2>
+							</div>
+							<p>Using machine learning and calenders, Skejul will predict a compatible meeting time</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="singleService">
+							<div class="serviceHead">
+								<div class="serviceIcon">
+									<i class="icon-desktop "></i>
+								</div>
+								<h2>Meet</h2>
+							</div>
+							<p>Get work done</p>
+						</div>
+					</div>
+			</div>
+		</div>
+
+  <!-- ======= 6.02 StartUpTwo Team Area ====== -->
+
+   <div class="teamArea StartUpTwo sectionPadding">
+   	<div class="container">
+   		<div class="row">
+               <div class="col-md-12">
+                   <div class="sectionTitle">
+                       <h1>Meet Our Team</h1>
+                   </div>
+               </div>
+   		</div>
+   		<div class="row">
+   			<div class="col-md-4 col-sm-4">
+   				<div class="singleMember">
+   					<img src="img/team/startup-2/img-1.jpg" alt="">
+   					<div class="hoverContent">
+   						<ul class="socialIcon">
+   							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+   							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+   							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+   							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+   						</ul>
+   						<div class="hvrTxt">
+   							<div class="hvrCell">
+								<div class="h4">john doe</div>
+								<span class="h6">Founder & CEO</span>
+   							</div>
+   						</div>
+   					</div>
+   				</div>
+   			</div>
+   			<div class="col-md-4 col-sm-4">
+   				<div class="singleMember">
+   					<img src="img/team/startup-2/img-2.jpg" alt="">
+   					<div class="hoverContent">
+   						<ul class="socialIcon">
+   							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+   							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+   							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+   							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+   						</ul>
+   						<div class="hvrTxt">
+   							<div class="hvrCell">
+									<div class="h4">john doe</div>
+									<span class="h6">Founder & CEO</span>
+   							</div>
+   						</div>
+   					</div>
+   				</div>
+   			</div>
+   			<div class="col-md-4 col-sm-4">
+   				<div class="singleMember">
+   					<img src="img/team/startup-2/img-3.jpg" alt="">
+   					<div class="hoverContent">
+   						<ul class="socialIcon">
+   							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+   							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+   							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+   							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+   						</ul>
+   						<div class="hvrTxt">
+   							<div class="hvrCell">
+									<div class="h4">john doe</div>
+									<span class="h6">Founder & CEO</span>
+   							</div>
+   						</div>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+   	</div>
+   </div>
+
+   <!-- ======= /6.02 StartUpTwo Team Area ====== -->
+
+       <!-- ======= 13.05 Fact Five Area ====== -->
+
+       <div class="factArea Five">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-3 col-sm-6">
+                       <div class="singleFact">
+                           <div class="factIcon"><i class="icofont icofont-briefcase-alt-1"></i></div>
+                           <div class="factContent">
+                               <div class="counter h3">2500</div>
+                               <p>Emails Saved</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-sm-6">
+                       <div class="singleFact">
+                           <div class="factIcon"><i class="icofont icofont-emo-simple-smile"></i></div>
+                           <div class="factContent">
+                               <div class="counter h3">3900</div>
+                               <p>Happy Clients</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-sm-6">
+                       <div class="singleFact">
+                           <div class="factIcon"><i class="icofont icofont-coffee-cup"></i></div>
+                           <div class="factContent">
+                               <div class="counter h3">8400</div>
+                               <p>Cups of Coffee</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-sm-6">
+                       <div class="singleFact">
+                           <div class="factIcon"><i class="icofont icofont-trophy-alt"></i></div>
+                           <div class="factContent">
+                               <div class="counter h3">600</div>
+                               <p>Proffetionals Awerds</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <!-- ======= /13.05 Fact Five Area ====== -->
+
+	   <!-- ======= 6.03 CorporateTwo Pricing Area ====== -->
+
+		<div class="priceArea CorporateTwo sectionPadding">
+			<div class="container">
+				<div class="row">
+					<div class="sectionTitle">
+						<h1>pricing plan</h1>
+					</div>
+				</div>
+				<div class="price">
+					<div class="row">
+						<div class="col-md-4 priceCol col-sm-4">
+							<div class="singlePrice">
+								<div class="priceTitle">Personal</div>
+								<div class="currency"><span class="icon">$</span>199<span class="month">/mon</span></div>
+								<ul class="priceBody">
+									<li>Fully Responsive</li>
+									<li>Clean Design</li>
+									<li>Tons of Features</li>
+								</ul>
+								<a href="#" class="priceBtn hvr-bounce-to-right">CHOOSE PLAN</a>
+							</div>
+						</div>
+						<div class="col-md-4 priceCol col-sm-4">
+							<div class="singlePrice active">
+								<div class="priceTitle">business</div>
+								<div class="currency"><span class="icon">$</span>299<span class="month">/mon</span></div>
+								<ul class="priceBody">
+									<li>Fully Responsive</li>
+									<li>Clean Design</li>
+									<li>Tons of Features</li>
+								</ul>
+								<a href="#" class="priceBtn hvr-bounce-to-right">CHOOSE PLAN</a>
+							</div>
+						</div>
+						<div class="col-md-4 priceCol col-sm-4">
+							<div class="singlePrice">
+								<div class="priceTitle">Personal</div>
+								<div class="currency"><span class="icon">$</span>399<span class="month">/mon</span></div>
+								<ul class="priceBody">
+									<li>Fully Responsive</li>
+									<li>Clean Design</li>
+									<li>Tons of Features</li>
+								</ul>
+								<a href="#" class="priceBtn hvr-bounce-to-right">CHOOSE PLAN</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	    <!-- ======= /6.03 CorporateTwo Pricing Area ====== -->
+
+	<div class="sectionBar2"></div>
+      
+   <!-- ======= 7.06 CorporateFour testimonial Area ====== -->
+    
+    <div class="testimonialArea CorporateFour sectionPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 tstCol">
+                    <div class="tstSlider owl-carousel">
+                        <div class="singleTstSlide">
+                            <div class="tstTop">
+								<div class="tstIcon">
+									<i class="fa fa-quote-left"></i>
+								</div>
+								<div class="tstTxt">
+									<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem placerat. <br>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id.</p>
+								</div>
                             </div>
-        
-                        </div>
-        
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-        
-                            <div class="grid wow zoomIn">
-                                <figure class="effect-bubba">
-                                    <img src="images/blurredworkshop.png">
-                                    <figcaption>
-                                        <h2>3D <span>Printing</span></h2>
-                                        <p>Built my own 3D Printer and offer printing services for some $$$$$</p>
-                                    </figcaption>
-                                </figure>
+                            <span class="clientName">john doe</span>
+                            <span class="position">CEO, CodeClub</span>
+                            <div class="tstImg">
+                            	<img src="img/testimonial/tst6-Clients-1.jpg" alt="">
                             </div>
-        
                         </div>
-        
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-        
-                            <div class="grid wow zoomIn" >
-                                <figure class="effect-bubba">
-                                    <img src="images/blurredworkshop.png">
-                                    <figcaption>
-                                        <h2><span>Car</span> Stuff</h2>
-                                        <p>Rain X, clean windows, my own stereo, flex gang. Fixed my truck up to get all the ladies</p>
-                                    </figcaption>
-                                </figure>
+                        <div class="singleTstSlide">
+							<div class="tstTop">
+								<div class="tstIcon">
+									<i class="fa fa-quote-left"></i>
+								</div>
+								<div class="tstTxt">
+									<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem placerat. <br>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id.</p>
+								</div>
+							</div>
+                            <span class="clientName">john doe</span>
+                            <span class="position">CEO, CrazyFox</span>
+                            <div class="tstImg">
+                            	<img src="img/testimonial/tst6-Clients-2.jpg" alt="">
                             </div>
-        
                         </div>
-        
-                    </div>
-            </div>
-        </div>
-        <div class="container-fluid text-center" id="photography">
-            
-            <div class="container text-center">
-                <h1>Photography</h1>
-                <div class="pfblock-line"></div>
-                <p id="photographycap">I take pictures of stuff</p>
-            </div>
-
-            <div class="container">     
-                <div class="row">
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-    
-                        <div class="grid wow zoomIn">
-                            <figure class="effect-bubba">
-                                <img src="images/blurredworkshop.png">
-                                <figcaption>
-                                    <h2>Sail<span>Boat</span></h2>
-                                    <p>I like the lake. I can sail very far on my cool boat</p>
-                                </figcaption>
-                            </figure>
+                        <div class="singleTstSlide">
+							<div class="tstTop">
+								<div class="tstIcon">
+									<i class="fa fa-quote-left"></i>
+								</div>
+								<div class="tstTxt">
+									<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem placerat. <br>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id.</p>
+								</div>
+							</div>
+                            <span class="clientName">john doe</span>
+                            <span class="position">Geaphic Designer</span>
+                            <div class="tstImg">
+                            	<img src="img/testimonial/tst6-Clients-3.jpg" alt="">
+                            </div>
                         </div>
-    
                     </div>
-    
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-    
-                        <div class="grid wow zoomIn">
-                            <figure class="effect-bubba">
-                                <img src="images/blurredworkshop.png" alt="workshop">
-                                <figcaption>
-                                    <h2>3D <span>Printing</span></h2>
-                                    <p>Built my own 3D Printer and offer printing services for some $$$$$</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-    
-                    </div>
-    
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-    
-                        <div class="grid wow zoomIn" >
-                            <figure class="effect-bubba">
-                                <img src="images/blurredworkshop.png">
-                                <figcaption>
-                                    <h2><span>Car</span> Stuff</h2>
-                                    <p>Rain X, clean windows, my own stereo, flex gang. Fixed my truck up to get all the ladies</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-    
-                    </div>
-        
                 </div>
-            </div> <!-- .contaier -->
-        </div> <!--#photography-->
-        <div class="container-fluid text-center" id="footer">
-            <h1>Fin for now</h1>
-            <p>Contact me at yadayada</p>
+            </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="/js/main.js"></script>
-    </body>
+    </div>
+    
+    <!-- ======= /7.06 CorporateFour testimonial Area ====== -->
+    <div class="brandArea One sectionPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brandSlider owl-carousel">
+                        <a href="#" class="singleBrand">
+                            <img src="img/brands/brand-1.jpg" alt="">
+                        </a>
+                        <a href="#" class="singleBrand">
+                            <img src="img/brands/brand-2.jpg" alt="">
+                        </a>
+                        <a href="#" class="singleBrand">
+                            <img src="img/brands/brand-3.jpg" alt="">
+                        </a>
+                        <a href="#" class="singleBrand">
+                            <img src="img/brands/brand-4.jpg" alt="">
+                        </a>
+                        <a href="#" class="singleBrand">
+                            <img src="img/brands/brand-5.jpg" alt="">
+                        </a>
+                        <a href="#" class="singleBrand">
+                            <img src="img/brands/brand-3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- ======= /12.01 Brand Blog Area ====== -->
+
+    <!-- ======= 10.02 CTA Two Area ====== -->
+   
+    <div class="ctaArea Two">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ctaCol">
+                    <div class="cta">
+                        <div class="h2">Start saving time.</div>
+                        <span class="h4">Want to give it a try?</span>
+                        <a href="#" class="ctaBtn">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ======= /10.02 CTA Two Area ====== -->
+		<!-- ======= 15.07 Footer Seven Area ====== -->
+
+		<footer class="footer Seven">
+			<div class="footerTop sectionPadding">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-5">
+							<div class="footerInfo widget">
+								<a href="#" class="footerLogo"><img src="img/footer/footer-logo-1.png" alt=""></a>
+								<div class="footerTxt">
+									<p>Ut wisi enim ad minim veniam, exerci <br>tation ullamcorper suscipit aliquip <br>ex ea commodo.</p>
+								</div>
+								<ul class="footerSocial">
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-google-plus"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-pinterest"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<div class="footerInfo widget">
+								<div class="h4">Useful Links</div>
+								<ul class="footerLinks">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Private Policy</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">Career</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+						    <div class="contactInfo widget">
+						        <div class="call">
+						            <div class="icon"><i class="icofont icofont-phone"></i></div>
+						            <div class="contactRight">
+						                <p>Phone</p>
+						                <span>(+000) 111 22 333</span>
+						            </div>
+						        </div>
+						        <div class="address">
+						            <div class="icon"><i class="icofont icofont-social-google-map"></i></div>
+						            <div class="contactRight">
+						                <p>Address</p>
+						                <span>123, Sisimpur, Dhaka</span>
+						            </div>
+						        </div>
+						        <div class="email">
+						            <div class="icon"><i class="icofont icofont-envelope"></i></div>
+						            <div class="contactRight">
+						                <p>email</p>
+						                <span>example@example.com</span>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="col-md-3 col-sm-12">
+							<div class="footerInfo widget">
+								<div class="h4">Latest Blog</div>
+								<div class="ft_blog">
+									<h4><a href="#">awesome design ideas</a></h4>
+									<p>Claritas est etiam processus micus.</p>
+								</div>
+								<div class="ft_blog">
+									<h4><a href="#">slider around us</a></h4>
+									<p>Claritas est etiam processus micus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerBottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="cpTxt">
+								<p>Copyright Skejul, Inc All Rights Reserved</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="topScrl"><i class="icofont icofont-thin-up"></i></a>
+			</div>
+		</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.2.2.4.min.js"></script>	<!-- jQuery -->
+    <script src="js/slick.min.js"></script>	 <!-- slick -->
+    <script src="js/bootstrap.min.js"></script>	<!-- Bootstrap -->
+    <script src="js/owl.carousel.min.js"></script>	 <!-- owlCarousel -->
+    <script src="js/circle-progress.js"></script>	<!-- curcular progress -->
+    <script src="js/jquery.barfiller.js"></script>	 <!-- progress -->
+    <script src="js/masonary.js"></script>	 <!-- masonry -->
+    <script src="js/isotope.pkgd.min.js"></script>	<!-- isotope -->
+    <script src="js/jquery.magnific-popup.min.js"></script>	 <!-- magnific -->
+    <script src="js/jquery.counterup.js"></script>	 <!-- counterUP -->
+    <script src="js/jquery.waypoints.min.js"></script>	 <!-- waypoint -->
+    <script src="js/jquery-barIndicator.js"></script>	 <!-- BarIndicator -->
+    <script src="js/jquery.easing.min.js"></script>	 <!-- easing -->
+    <script src="js/typed.min.js"></script>	 <!-- typed -->
+    <script src="js/active.js"></script>	<!-- active -->
+</body>
 </html>

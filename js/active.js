@@ -1531,3 +1531,19 @@ $(".counter").counterUp({
     delay: 10,
     time: 1000
 })
+
+$(function() {
+    $(".typed").typed({
+        strings: [
+            "job meeting",
+            "date night",
+            "party",
+            "haircut",
+            "dinner"
+        ],
+        typeSpeed: 70,
+        backSpeed: 50,
+        backDelay: 800,
+        loop: true
+    })
+})

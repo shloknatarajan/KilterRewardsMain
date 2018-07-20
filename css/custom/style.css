@@ -12281,7 +12281,11 @@ width: 30px;
 
 /* 'montserratlight', sans-serif*/
 
+/****************************
+	 Custom Styling
+******************************/
 
+/*** Home Area ***/
 .fa-navicon {
 	font-size: 25px;
 }
@@ -12308,6 +12312,46 @@ width: 30px;
 	padding-top: 30vh !important;
 }
 
+.heroButton {
+	display: inline-block;
+	
+}
+
+@media screen and (min-width: 768px) {
+	.heroButton {
+		margin-right: 1.5vw;
+		margin-left: 1.5vw;
+	}
+}
+
+#textHeroArea {
+	margin-bottom: 5vh;
+}
+.homeArea {
+	position: relative;
+}
+
+#buttonHeroArea {
+	position: absolute;
+	top: 20vh;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+@media screen and (min-width: 768px) {
+	#buttonHeroArea {
+		top: 50vh;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#buttonHeroArea {
+		top: 45vh;
+	}
+}
+
+
 @media screen and (max-width: 768px) {
 	.homeArea {
 		padding-top: 0vh !important;
@@ -12321,5 +12365,24 @@ width: 30px;
 	
 	#secondteamrowmember {
 		margin-left: 12.5%;
+	}
+}
+
+.menuCol {
+	border-right: 1px solid #959595;
+}
+
+@media screen and (max-width: 992px) {
+	.joinForm {
+		display: none;
+	}
+	.joinUs {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.joinUs {
+		margin-left: 15px;
 	}
 }

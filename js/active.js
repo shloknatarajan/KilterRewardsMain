@@ -1535,11 +1535,12 @@ $(".counter").counterUp({
 $(function() {
     $(".typed").typed({
         strings: [
-            "job meeting",
+            "meeting",
             "date night",
             "party",
+            "gig",
             "haircut",
-            "dinner"
+            "appointment"
         ],
         typeSpeed: 70,
         backSpeed: 50,

@@ -12364,7 +12364,7 @@ width: 30px;
 	}
 	
 	#secondteamrowmember {
-		margin-left: 12.5%;
+		margin-left: 12.5%; /* For when there are only 3 people on the buttom */
 	}
 }
 
@@ -12385,4 +12385,40 @@ width: 30px;
 	.joinUs {
 		margin-left: 15px;
 	}
+}
+
+/* Keeps picture from getting distorted (hopefully) */
+#aboutpic {
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.video,
+.video-container {
+	display: none;
+}
+
+
+@media screen and (min-width: 992px) {
+    
+    .video-container {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        display: block !important;
+    }
+    
+    video {
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+        display: block !important;
+    }
+
+    #welcome{
+        background: transparent;
+    }
 }

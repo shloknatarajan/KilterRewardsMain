@@ -1537,14 +1537,32 @@ $(function() {
         strings: [
             "meeting",
             "date night",
-            "party",
             "gig",
-            "haircut",
-            "appointment"
+            "vacation",
+            "appointment",
         ],
-        typeSpeed: 70,
-        backSpeed: 50,
-        backDelay: 800,
+        typeSpeed: 100,
+        backSpeed: 110,
+        backDelay: 1000,
+        removalDelay: 9000,
         loop: true
     })
 })
+
+// Stops video from loading on mobile
+$(
+    function() {
+      var bgv = $('#bgvid');
+  
+      if (bgv.is(':visible')) {
+        $('source', bgv).each(
+          function() {
+            var el = $(this);
+            el.attr('src', el.data('src'));
+          }
+        );
+  
+        bgv[0].load();
+      }
+    }
+  )

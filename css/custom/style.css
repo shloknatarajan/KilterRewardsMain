@@ -12393,10 +12393,15 @@ width: 30px;
 	overflow: hidden;
 }
 
+/* Removes video from mobile devices */
 .video-container {
 	display: none;
 }
-
+@media screen and (max-width: 992px) {
+	#main-video {
+		display: none;
+	}
+}
 
 @media screen and (min-width: 992px) {
     

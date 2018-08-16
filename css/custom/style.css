@@ -12416,7 +12416,6 @@ width: 30px;
     }
     
     video {
-        width: 100%;
         position: absolute;
         z-index: -2;
         display: block !important;

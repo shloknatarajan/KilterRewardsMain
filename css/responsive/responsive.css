@@ -1,0 +1,4744 @@
+/*		medium Layout: 992px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    nav.navbar-collapse.collapse ul > li  ul.sub-menu > li > .sub-menu,
+    nav.navbar-collapse.collapse ul > li > ul.sub-menu{
+        width: 250px;
+    }
+	.StartUpOne .singleHomeSlide h1 {
+		color: #fff;
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	.StartUpTwo .joinForm li a {
+		font-size: 12px;
+		line-height: 35px;
+		padding: 0 9px;
+	}
+	.heroArea.StartUpTwo .homeContent h1 {
+	  font-size: 48px;
+	  line-height: 58px;
+	  margin-bottom: 20px;
+	}
+	.StartUpTwo .homeBtn a {
+	  line-height: 50px;
+	  margin-top: 50px;
+	}
+	.heroArea.FitnessOne .socialIcon{
+		border: none;
+	}
+    .midNone{
+        display: none
+    }
+	.CorporateThree .homeImg{
+		margin-right: -470px;
+	}
+		.CorporateOne .homeTextImg h1 {
+		font-size: 50px;
+	}
+	.CorporateSix .searchIcon{
+		right: 30px;
+	}
+	.aboutArea.CorporateOne .singleSkill span{
+		font-size: 14px;
+	}
+	.aboutArea.CorporateTwo .skillWrep div.barfillerWrep{
+		width: 155px;
+	}
+    .portfolioArea.CorporateThree .portfolioItem .singleItem .hvrContent > p,
+    .portfolioArea.CorporateThree .portfolioItem .singleItem .hvrContent > span,
+    .portfolioArea.CorporateTwo .portfolioItem .singleItem .hvrContent > p,
+    .portfolioArea.CorporateTwo .portfolioItem .singleItem .hvrContent > span{
+        padding: 0 30px;
+        line-height: 20px
+    }
+    .serviceArea.CorporateThree .services{
+        padding: 100px 0
+    }
+    .serviceArea.CorporateFive .singleService{
+        height: 365px
+    }
+	.teamArea.FitnessOne .singleMember .hoverContent br{
+		display: none;
+	}
+	.teamArea.FitnessOne .singleMember:hover .hoverContent{
+		left: 0;
+		top: 0
+	}
+	.ctaArea.Two .cta{
+		margin: 0
+	}
+	.ctaArea.Four .cta,
+	.ctaArea.Three .cta{
+		text-align: center
+	}
+	.ctaArea.Four .cta .h3,
+	.ctaArea.Three .cta .h3{
+		display: inline-block;
+		float: none;
+		margin-bottom: 20px
+	}
+	.ctaArea.Four a.ctaBtn,
+	.ctaArea.Three a.ctaBtn{
+		float: none;
+
+	}
+	.CorporateFive.heroArea .col-md-6.col-md-offset-6.clearfix{
+		padding-left: 0;
+	}
+
+/*
+	***********************************
+		BlogPage Responsive CSS
+	***********************************
+*/
+
+/*    1*/
+
+    .blogArea.StartUpOne .singlePost .col-sm-6:last-child {
+        padding: 0;
+    }
+    .blogArea.StartUpOne .postMeta span.postDate {
+        margin-right: 10px;
+    }
+    .blogArea.StartUpOne .postMeta span.postDate:after {
+        right: -9px;
+    }
+    .blogArea.StartUpOne .postMeta span {
+        font-size: 11px;
+    }
+    .blogArea.StartUpOne .title.h4 {
+        font-size: 16px;
+        margin: 8px 0 15px;
+    }
+    .blogArea.StartUpOne .postContent {
+        font-size: 14px;
+    }
+    .blogArea.StartUpOne .postBtn {
+        margin-top: 20px;
+    }
+
+
+/*    3*/
+
+    .blogArea.FitnessOne .postImg {
+        width: 470px;
+    }
+    .blogArea.FitnessOne .singlePost.left .postContent {
+        padding-left: 50px;
+    }
+    .blogArea.FitnessOne .singlePost.right .postContent {
+        padding-right: 50px;
+    }
+    .blogArea.CorporateTwo .postBtn{
+        margin-top: 10px
+    }
+    .blogArea.CorporateTwo .postMeta{
+        padding: 30px 20px
+    }
+
+/*4*/
+
+    .blogArea.CorporateFive .date {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .blogArea.CorporateFive .month {
+        font-size: 12px;
+    }
+    .blogArea.CorporateFive .postTime {
+        height: 70px;
+        width: 70px;
+    }
+    .blogArea.CorporateFive .postTxt {
+        padding-left: 100px;
+    }
+    .blogArea.CorporateFive .postTitle.h4 {
+        margin-bottom: 20px;
+    }
+    .blogArea.CorporateFive .postBtn {
+        margin-top: 15px;
+    }
+
+
+/*    portfolioPage*/
+
+    .portfolioArea.CorporateSix .hoverContent{
+        outline-offset: -10px;
+        left: 0;
+        top: 0
+    }
+	.teamArea.CorporateSix .socialIcon > ul li a {
+	  font-size: 20px;
+	  width: 35px;
+	}
+
+	.testimonialArea.StartUpOne .singleTstSlide br,
+	.testimonialArea.StartUpTwo .tstTxt br,
+	.testimonialArea.CorporateTwo .singleTstSlide .tstTxt br,
+	.testimonialArea.CorporateThree .singleTstSlide .tstTxt br,
+	.testimonialArea.CorporateFour .tstSlider .tstTop br,
+	.testimonialArea.CorporateFive .tstTxt br,
+	.testimonialArea.CorporateSix .tstTxt br,
+	.testimonialArea.CorporateSeven .singleTstSlide .tstTxt br{
+		display: none;
+	}
+
+
+
+/*
+	***********************************
+		price Responsive CSS
+	***********************************
+*/
+
+	.factArea.One .factIcon i{
+		font-size: 25px;
+	}
+	.factArea.One .counter.h3{
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.factArea.One .singleFact .h5{
+		font-size: 14px;
+		margin-left: 15px;
+	}
+	.factArea.Three .singleFact .factIcon{
+		margin-right: 12px
+	}
+	.factArea.Eight .col-md-3{
+		padding: 0
+	}
+	.factArea.Eight .container .row{
+		margin: 0
+	}
+
+	.aboutArea.FitnessOne .aboutTxt{
+		margin-right: 100px
+	}
+
+	.single-team.One .teamLeft{
+		width: 350px;
+	}
+	.single-team.One .teamContent{
+		width: calc(100% - 350px);
+		padding-left: 40px
+	}
+	.single-team.One .teamTxt{
+		margin-bottom: 60px
+	}
+	.single-team.One .teamSliderTen{
+		margin-bottom: 100px
+	}
+	.single-team.One .teamNav.prev.slick-arrow,
+	.single-team.One .teamNav.next.slick-arrow{
+		bottom: -40px
+	}
+	.single-team.One .teamSliderElaven .singleTeamSLide {
+	  width: 184px;
+	}
+
+	.single-team.Four .teamSliderTwelve .teamNav.slick-arrow {
+	  bottom: 85px;
+	  top: auto;
+	}
+	.single-team.Four .singleTeamDotImg {
+	  height: 140px;
+	  margin-right: 20px;
+	  width: 140px;
+	}
+	.single-team.Four .teamSliderThirteen{
+		margin-top: 80px
+	}
+	.single-portfolio.Five .singleDtc a {
+		margin-left: 8px;
+	}
+	.single-portfolio.Five .singleDtc a:before {
+		left: -11px;
+		content: ':';
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.single-portfolio.Six .portfolioSlide17 .owl-nav div{
+		margin-right: -470px;
+	}
+	.single-portfolio.Six .portfolioSlide17 .owl-nav div.owl-prev{
+		margin-right: -425px;
+	}
+
+	.single-portfolio.Seven .singlePortfolio .row:last-child .col-md-12:last-child{
+		padding: 0 30px
+	}
+	.single-contact.Two #googleMap{
+		height: 380px
+	}
+	.CorporateOne .singleHomeSlide h2{
+		margin-top: 15px;
+		margin-bottom: 30px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+
+/*		tablet Layout: 768px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .teamArea.CorporateThree .singleTeamSlide{
+        padding-top: 80px;
+    }
+	nav.navbar-collapse.collapse ul > li > ul.sub-menu {
+		position: static
+	}
+	.priceArea.CorporateThree .priceCol .singlePrice {
+		margin: 0;
+	}
+	.aboutArea.StartUpTwo .aboutLeftBg{
+		opacity: 0
+	}
+	.StartUpOne .headerInfo > li {
+		margin-right: 30px
+	}
+	.StartUpOne button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.StartUpOne .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.StartUpOne nav#navbar {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		right: 15px;
+	}
+	.StartUpOne .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.StartUpOne .navbar-nav > li > a {
+		line-height: 40px;
+		color: #2d2d2d;
+	}
+	.StartUpOne .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.StartUpOne .singleHomeSlide h1 {
+		font-size: 45px;
+		line-height: 45px;
+		margin-bottom: 15px;
+	}
+	.StartUpOne .singleHomeSlide h2 {
+		font-size: 18px;
+	}
+	.StartUpOne .searchBox input[type="search"],
+	.StartUpOne .searchBox .searchSpan{
+		height: 72px;
+	}
+	/*2*/
+	.StartUpTwo .joinForm {
+		left: 50%;
+		margin: 0 0 0 -85px;
+		position: absolute;
+		top: -35px;
+	}
+	.StartUpTwo .homeBtn a {
+	  line-height: 45px;
+	  margin-top: 45px;
+	}
+	.StartUpTwo button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff
+	}
+	.StartUpTwo nav#navbar2 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 90%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		z-index: 2;
+		right: 15px;
+	}
+	.StartUpTwo .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.StartUpTwo .navbar-nav > li > a {
+		line-height: 40px;
+		color: #222
+	}
+	.StartUpTwo .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.StartUpTwo .searchBox input[type="search"],
+	.StartUpTwo .searchBox input[type="submit"] {
+		height: 45px
+	}
+	.StartUpTwo .searchBox.active form {
+		top: 52px;
+	}
+	.menuCol {
+		border: none
+	}
+	.heroArea.StartUpTwo .homeContent p {
+		line-height: 50px;
+		font-size: 12px
+	}
+	.heroArea.StartUpTwo .homeContent h1 {
+		font-size: 45px;
+		line-height: 50px;
+		margin-bottom: 20px;
+	}
+	.heroArea.StartUpTwo .homeContent h5 {
+		font-size: 17px;
+	}
+	.aboutArea.StartUpTwo .aboutLeftBg{
+		height: 415px
+	}
+	/*3*/
+	.FitnessOne button.navbar-toggle {
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff
+	}
+	.FitnessOne .searchIcon {
+	  font-size: 18px;
+	  line-height: 25px;
+	  right: 30px;
+	}
+	.FitnessOne nav#navbar3 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 90%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		right: 15px;
+	}
+	.FitnessOne .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.FitnessOne .navbar-nav > li > a {
+		line-height: 40px;
+		color: #222;
+	}
+	.FitnessOne .navbar-nav > li > a:hover,
+	.FitnessOne .navbar-nav > li.current-menu-item > a{
+		color: #000029
+	}
+	.FitnessOne .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.FitnessOne .searchBox input[type="search"],
+	.FitnessOne .searchBox input[type="submit"] {
+		height: 45px
+	}
+	.FitnessOne .searchBox.active form {
+		top: 52px;
+	}
+	.tabNone {
+		display: none!important
+	}
+	.heroArea.FitnessOne > header{
+		padding-top: 25px
+	}
+	.FitnessOne .homeContent h5 {
+		font-size: 17px;
+	}
+	.FitnessOne .homeContent h1 {
+		font-size: 55px;
+		margin-bottom: 40px;
+	}
+	.FitnessOne .homeBtn a {
+		font-size: 14px;
+		line-height: 55px;
+		width: 180px;
+	}
+	.FitnessOne .homeContent {
+		text-align: center;
+	}
+
+/*4*/
+
+	.CorporateOne button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.CorporateOne .searchIcon {
+		font-size: 16px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.homeTextImg > h1{
+		font-size: 40px;
+	}
+	.CorporateOne .singleHomeSlide h2{
+		margin-top: 20px;
+		margin-bottom: 25px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.CorporateOne nav#navbar4 {
+	  background: #fff none repeat scroll 0 0;
+	  margin: 0;
+	  padding-bottom: 15px;
+	  padding-right: 15px;
+	  padding-top: 15px;
+	  position: absolute;
+	  right: 15px;
+	  text-align: center;
+	  top: 53px;
+	  width: 70%;
+
+	}
+	.CorporateOne .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateOne .navbar-nav > li > a {
+		line-height: 40px;
+		color: #2d2d2d;
+	}
+	.CorporateOne .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.CorporateOne .singleHomeSlide{
+		text-align: center;
+	}
+
+/*5*/
+	.aboutArea.CorporateTwo .about_bg{
+		display: none
+	}
+	.aboutArea.CorporateTwo .aboutContent:before, .aboutArea.CorporateTwo .aboutContent:after{
+		display: none
+	}
+	.aboutArea.CorporateTwo .skillWrep div.barfillerWrep{
+		width: 270px
+	}
+	.aboutArea.CorporateTwo .aboutContent{
+		color: #333232;
+		max-width: 100%;
+		padding: 0;
+		text-align: center;
+		margin-bottom: 40px
+	}
+	.CorporateTwo button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff;
+	}
+	.CorporateTwo .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateTwo nav#navbar5 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		right: 15px;
+		margin-right: 0
+	}
+	.CorporateTwo .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateTwo .navbar-nav > li > a {
+		line-height: 40px;
+	}
+	.CorporateTwo .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.CorporateTwo .navbar-nav > li > a{
+		color: #222
+	}
+	.CorporateTwo .navbar-nav > li > a:before{
+		display: none
+	}
+	.CorporateTwo .homeContent{
+		text-align: center
+	}
+
+/*6*/
+	.aboutArea.CorporateThree .about_bg{
+		display: none;
+	}
+	.aboutArea.CorporateThree .aboutOuter{
+		position: static
+	}
+	.aboutArea.CorporateThree .aboutContent{
+		padding: 0!important
+	}
+	.CorporateThree button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff;
+	}
+	.CorporateThree .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateThree nav#navbar6 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+        border-right: none;
+		margin: 0;
+		right: 15px;
+	}
+	.CorporateThree .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateThree .navbar-nav > li > a {
+		line-height: 40px;
+        color: #2d2d2d;
+	}
+	.CorporateThree .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+
+    .CorporateThree .homeContent{
+        text-align: center
+    }
+
+/*7*/
+
+	.CorporateFour .headerInfo > li {
+		margin-right: 30px
+	}
+	.CorporateFour button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff
+	}
+	.CorporateFour .searchIcon {
+		font-size: 18px;
+	}
+	.CorporateFour nav#navbar7 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		right: 0
+
+	}
+	.CorporateFour .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateFour .navbar-nav > li > a {
+		line-height: 40px;
+        color: #666
+	}
+	.CorporateFour .navbar-nav > li.current-menu-item > a,
+    .CorporateFour .navbar-nav > li > a:hover {
+        color: #005dba
+	}
+	.CorporateFour .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+
+    .infoCol{
+        text-align: center
+    }
+/*8*/
+
+	.CorporateFive button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.CorporateFive .searchIcon {
+	  font-size: 18px;
+	  line-height: 30px;
+	  right: 60px;
+	}
+	.CorporateFive nav#navbar8 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 72px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		right: 15px;
+		margin: 0
+	}
+	.CorporateFive .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateFive .navbar-nav > li > a {
+		line-height: 40px;
+		color: #2d2d2d
+	}
+	.CorporateFive .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+
+	.CorporateFive .internalContainer {
+	  padding: 20px 30px;
+	}
+	.CorporateFive .homeSlider h1 {
+	  font-size: 40px;
+	  margin-bottom: 20px;
+	  padding: 0 50px;
+	}
+	.CorporateFive .searchBox .searchSpan,.CorporateFive .searchBox input[type="search"] {
+	  height: 72px;
+	  line-height: 72px;
+	}
+	.CorporateFive .searchBox form i{
+		line-height: 72px;
+	}
+
+/*9*/
+
+	.CorporateSix button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff
+	}
+	.CorporateSix .headerInfo{
+		display: none
+	}
+	.CorporateSix .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateSix nav#navbar9 {
+		background: #fff none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+        margin-right: 0;
+		right: 17px;
+    }
+	.CorporateSix .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateSix .navbar-nav > li{
+		display: block;
+	}
+	.CorporateSix .navbar-nav > li > a {
+		line-height: 40px;
+        color: #222;
+        -webkit-transition: .4s;
+        transition: .4s;
+	}
+	.CorporateSix .navbar-nav > li > a:before {
+		display: none
+	}
+    .CorporateSix .singleHomeSlide h1{
+        font-size: 40px;
+		line-height: 50px;
+    }
+	.CorporateSix .singleHomeSlide p {
+	  margin: 0 auto;
+	  width: 500px;
+	}
+	.searchBox input[type="submit"]{
+		font-size: 14px!important
+	}
+	.searchBox input[type="search"]{
+		font-size: 20px!important;
+		padding: 0 0 0 15px;
+	}
+	.searchBox form{
+		padding: 0 0 0 60px!important;
+	}
+/*
+	***********************************
+		aboutPage Responsive CSS
+	***********************************
+*/
+	.aboutArea.CorporateTwo .aboutWrep:before{
+		display: none;
+	}
+	.sectionPadding{
+		padding: 60px 0;
+	}
+	.sectionPaddingTop{
+		padding-top: 60px;
+	}
+	.sectionPaddingBtm{
+		padding-bottom: 60px;
+	}
+	.sectionTitle{
+		margin-bottom: 70px;
+	}
+	.sectionTitle > h1{
+		font-size: 30px
+	}
+	.aboutArea.StartUpOne .aboutContent .singleAbout{
+		margin-bottom: 35px;
+	}
+	.aboutArea.FitnessOne .aboutContent{
+		height: auto
+	}
+	.aboutArea.FitnessOne .aboutRightBg{
+		display: none
+	}
+	.aboutArea.FitnessOne .aboutOuter{
+		position: static
+	}
+	.aboutArea.CorporateTwo .aboutOuter{
+		padding: 0
+	}
+	.aboutArea.CorporateOne .singleSkill span{
+		font-size: 15px
+	}
+	.aboutArea.CorporateOne strong{
+		font-size: 20px
+	}
+
+	/*
+	***********************************
+		BlogPage Responsive CSS
+	***********************************
+*/
+
+/*    1*/
+
+    .blogArea.StartUpOne .singlePost{
+        margin-top: 40px
+    }
+    .blogArea.StartUpOne .singlePost:first-child{
+        margin-top: 0
+    }
+
+/*    2*/
+    .blogArea.StartUpTwo .row.post{
+        margin: 0 -5px;
+    }
+    .blogArea.StartUpTwo .row.post .col-sm-4{
+        padding: 0 5px
+    }
+    .blogArea.StartUpTwo .title.h4 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .blogArea.StartUpTwo .postMeta span.postDate {
+        font-size: 11px;
+    }
+    .blogArea.StartUpTwo .postBtn {
+        margin-top: 12px;
+    }
+    .blogArea.StartUpTwo .postMeta {
+        padding: 20px 0;
+    }
+
+/*    3*/
+
+    .blogArea.FitnessOne .postImg{
+        width: 100%;
+    }
+    .blogArea.FitnessOne .singlePost .postContent{
+        text-align: left!important;
+        padding: 0!important;
+        width: 100%;
+        height: auto!important;
+        margin-top: 40px
+    }
+    .blogArea.FitnessOne .singlePost.right .postMeta{
+        left: auto;
+        right: 30px
+    }
+
+/*    4*/
+    .blogArea.CorporateOne .row.post {
+        margin: 0 -5px
+    }
+    .blogArea.CorporateOne .row.post .col-sm-4{
+        padding: 0 5px
+    }
+    .blogArea.CorporateOne .title.h4{
+        font-size: 16px
+    }
+
+/*	5*/
+
+	.blogArea.CorporateTwo .title.h4 {
+		font-size: 13px;
+	}
+
+	.blogArea.CorporateTwo .singlePost:hover .postTime {
+		opacity: 0;
+		visibility: hidden
+	}
+
+	.blogArea.CorporateTwo .postMeta a.postCat span {
+		font-size: 11px;
+		display: block
+	}
+
+	.blogArea.CorporateTwo .postBtn {
+		margin-top: 10px;
+	}
+
+	.blogArea.CorporateTwo .postMeta {
+		padding: 25px
+	}
+
+/*	6 & 7*/
+
+	.blogArea.CorporateFour .postCol,
+	.blogArea.CorporateThree .postCol{
+		padding-top: 40px;
+		margin-top: 40px;
+		border-top: 1px dashed #ddd
+	}
+	.blogArea.CorporateFour .postCol:nth-child(1),
+	.blogArea.CorporateFour .postCol:nth-child(2),
+	.blogArea.CorporateThree .postCol:nth-child(1),
+	.blogArea.CorporateThree .postCol:nth-child(2){
+		margin-top: 0;
+		padding-top: 0;
+		border: none;
+	}
+
+/*	8*/
+
+
+	.blogArea.CorporateFive .post .col-md-6{
+		padding: 0 15px!important
+	}
+
+	.blogArea.CorporateFive .date {
+		font-size: 28px;
+		margin-bottom: 6px;
+	}
+	.blogArea.CorporateFive .month {
+		font-size: 13px;
+	}
+	.blogArea.CorporateFive .postTime {
+		height: 70px;
+		width: 70px;
+	}
+	.blogArea.CorporateFive .postTxt {
+		font-size: 12px;
+		padding-left: 90px;
+	}
+	.blogArea.CorporateFive .postContent.clearfix {
+		margin-top: 40px;
+	}
+	.blogArea.CorporateFive .postTitle.h4 {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.blogArea.CorporateFive .postBtn {
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+/*	9*/
+
+	.blogArea.CorporateSix .post {
+		margin: 0 -10px 50px;
+	}
+	.blogArea.CorporateSix .post .col-md-6{
+		padding:  0 10px!important
+	}
+
+
+/*
+	***********************************
+		portfolio page Responsive CSS
+	***********************************
+*/
+
+
+	.portfolioArea.StartUpOne .portCol:nth-child(3){
+		margin-top: 30px
+	}
+
+	.portfolioArea.StartUpTwo .hoverContent .h4 {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.portfolioArea.StartUpTwo .hoverContent .h6 {
+		font-size: 11px;
+	}
+	.portfolioArea.StartUpTwo .hoverContent {
+		height: 60px;
+	}
+
+	.portfolioArea.FitnessOne .fitGalleryMenu ul li {
+		font-size: 13px;
+	}
+	.portfolioArea.FitnessOne .fitGalleryMenu ul {
+		margin-bottom: 40px;
+	}
+	.portfolioArea.CorporateTwo .portfolioMenu ul li,
+	.portfolioArea.CorporateThree .portfolioMenu ul li {
+		font-size: 11px;
+		margin-right: 2px;
+		padding: 0 15px;
+	}
+	.portfolioArea.CorporateThree .portfolioMenu ul,
+	.portfolioArea.CorporateTwo .portfolioMenu ul {
+		margin-bottom: 40px;
+	}
+	.portfolioArea.CorporateTwo .portfolioItem .singleItem .hvrContent > p,
+	.portfolioArea.CorporateThree .portfolioItem .singleItem .hvrContent > p {
+		display: block;
+		font-size: 11px;
+		padding: 0 36px;
+		line-height: 18px;
+		bottom: -60px
+	}
+	.portfolioArea.CorporateThree .portfolioItem .singleItem a:before, .portfolioArea.CorporateThree .portfolioItem .singleItem a .hvrContent:after,
+	.portfolioArea.CorporateOne .portfolioItem .singleItem a:before, .portfolioArea.CorporateOne .portfolioItem .singleItem a .hvrContent:after,
+	.portfolioArea.CorporateTwo .portfolioItem .singleItem a:before, .portfolioArea.CorporateTwo .portfolioItem .singleItem a .hvrContent:after{
+		height: 2px
+	}
+	.portfolioArea.CorporateOne .portfolioItem .singleItem a:after, .portfolioArea.CorporateOne .portfolioItem .singleItem a .hvrContent:before,
+	.portfolioArea.CorporateThree .portfolioItem .singleItem a:after, .portfolioArea.CorporateThree .portfolioItem .singleItem a .hvrContent:before,
+	.portfolioArea.CorporateTwo .portfolioItem .singleItem a:after, .portfolioArea.CorporateTwo .portfolioItem .singleItem a .hvrContent:before{
+		width: 2px
+	}
+	.portfolioArea.CorporateThree .portfolioMenu ul li{
+		line-height: 30px
+	}
+	.portfolioArea.CorporateThree .portfolioMenu ul li:before{
+		height: 30px;
+	}
+	.portfolioArea.CorporateSix .portfolioItem,
+	.portfolioArea.CorporateFive .portfolioItem{
+		text-align: center
+	}
+	.portfolioArea.CorporateSix .portfolioItem .singleItem,
+	.portfolioArea.CorporateFive .portfolioItem .singleItem{
+		width: 30%;
+		display: inline-block;
+		float: none;
+	}
+	.portfolioArea.FitnessOne .singleItem .hvrContent p {
+	  font-size: 10px;
+	}
+
+
+
+/*
+	***********************************
+		Service page Responsive CSS
+	***********************************
+*/
+
+	.serviceArea.StartUpOne .singleService {
+		color: #717171!important;
+		background: #fff;
+		padding: 40px 35px
+	}
+	.serviceArea.StartUpOne .singleService h2,.serviceArea.StartUpOne .col-md-4:nth-child(2n+1) .serviceIcon i {
+		color: #4d4d4d!important;
+	}
+	.serviceArea.StartUpOne .col-md-4:nth-child(2n+1){
+		background: #fff
+	}
+
+/*	2*/
+
+	.serviceArea.StartUpTwo .col-md-4:nth-child(3) .singleService {
+	  padding: 100px 35px 0;
+	}
+
+/*	3*/
+
+	.serviceArea.FitnessOne .serviceIcon img {
+	  width: 75%;
+	}
+	.serviceArea.FitnessOne .serviceIcon {
+	  height: 80px;
+	  width: 80px;
+		margin-bottom: 30px
+	}
+
+	.serviceArea.CorporateOne .col-md-4:nth-child(3) .singleService,
+	.serviceArea.CorporateOne .col-md-4 .singleService {
+	  padding: 60px 35px 0;
+	}
+
+/*4*/
+
+	.serviceArea.CorporateTwo .col-md-4:nth-child(3):before {
+		display: block;
+	}
+
+	.serviceArea.CorporateTwo .col-md-4:nth-child(3) {
+		border-top: 1px solid #f1f1f1;
+	}
+	.serviceArea.CorporateTwo .col-md-4:nth-child(3n + 1):before {
+		display: block
+	}
+	.serviceArea.CorporateTwo .col-md-4:nth-child(2n + 1):before {
+		display: none
+	}
+
+/*	5*/
+
+	.serviceArea.CorporateThree .service-list{
+		padding: 0
+	}
+	.serviceArea.CorporateThree .img-bg{
+		display: none;
+	}
+	.serviceArea.CorporateThree .services{
+		box-shadow: none;
+		padding: 0
+	}
+	.serviceArea.CorporateThree .col-md-4 .singleService,
+	.serviceArea.CorporateThree .col-md-4:nth-child(3) .singleService{
+		margin-top: 60px
+	}
+	.serviceArea.CorporateThree{
+		padding-bottom: 60px
+	}
+	.serviceArea.CorporateThree .service-list:after{
+		display: none;
+	}
+
+/*	6*/
+
+	.serviceArea.CorporateFour .container:before {
+	  background: #fff none repeat scroll 0 0;
+	  bottom: 0;
+	  content: "";
+	  height: 480px;
+	  left: 50%;
+	  margin-left: -200px;
+	  opacity: 0.7;
+	  position: absolute;
+	  width: 400px;
+	}
+
+/*	7*/
+
+	.serviceArea.CorporateFive .col-md-4:nth-child(3):before {
+		display: block;
+	}
+
+	.serviceArea.CorporateFive .col-md-4:nth-child(3) {
+		border-top: 1px solid #f1f1f1;
+	}
+	.serviceArea.CorporateFive .col-md-4:nth-child(3n + 1):before {
+		display: block
+	}
+	.serviceArea.CorporateFive .col-md-4:nth-child(2n + 1):before {
+		display: none
+	}
+	.serviceArea.CorporateFive .singleService{
+		height: 345px
+	}
+
+/*    9*/
+
+    .serviceArea.CorporateSix .singleService{
+        color: #000
+    }
+
+/*
+	***********************************
+		TeamPage Responsive CSS
+	***********************************
+*/
+
+    .teamArea.StartUpOne .singleMember{
+        height: 350px
+    }
+
+    .teamArea.StartUpOne .hvrTxt br {
+        display: none;
+    }
+    .teamArea.StartUpOne .hvrTxt {
+        font-size: 13px;
+        padding: 0 11px;
+    }
+    .teamArea.StartUpOne ul.socialIcon {
+        margin-bottom: 15px;
+    }
+    .teamArea.StartUpOne .socialIcon li {
+        padding: 0 5px;
+    }
+    .teamArea.StartUpOne .hoverContent {
+        padding: 25px 0;
+    }
+    .teamArea.StartUpOne .hoverContent .h4 {
+        margin-bottom: 5px;
+    }
+    .teamArea.StartUpOne span.h6 {
+        margin-bottom: 10px;
+    }
+    .teamArea.StartUpTwo .singleMember:before{
+        height: 165px
+    }
+    .teamArea.StartUpTwo .singleMember{
+        height: 355px
+    }
+    .teamArea.StartUpTwo .hoverContent,
+    .teamArea.StartUpTwo .hvrTxt {
+        bottom: 40px;
+        height: 100px;
+    }
+
+    .teamArea.FitnessOne .col-md-4.teamCol.col-sm-4 {
+        padding: 0;
+    }
+    .teamArea.FitnessOne .socialIcon {
+        padding: 0 20px;
+    }
+    .teamArea.FitnessOne .socialIcon ul li a {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .teamArea.FitnessOne .hoverCell .hvrTxt{
+        display: none;
+    }
+    .teamArea.FitnessOne .singleMember:hover .hoverContent{
+        padding: 10px
+    }
+    .teamArea.FitnessOne .hoverContent .h4 {
+        font-size: 17px;
+    }
+    .teamArea.FitnessOne .hoverContent .h5 {
+        margin-bottom: 0;
+    }
+
+
+    .teamArea.CorporateOne .singleTeamSlide{
+        margin-bottom: 50px
+    }
+
+	.teamArea.CorporateTwo .teamSlider{
+		padding: 0 40px
+	}
+
+	.teamArea.CorporateTwo .owl-prev{
+		left: -10px
+	}
+	.teamArea.CorporateTwo .owl-next{
+		right: -10px
+	}
+	.teamArea.CorporateTwo .teamTxt br{
+		display: none;
+	}
+	.teamArea.CorporateThree .clientDesc {
+		padding: 40px;
+	}
+	.teamArea.CorporateThree .clientImg {
+	  height: 500px;
+	  right: 0;
+	  z-index: -1
+	}
+	.teamArea.CorporateThree .clientImg img{
+		height: 100%
+	}
+	.teamArea.CorporateThree .clientTxt{
+		background: RGBA(255, 255, 255, 0.5);
+		padding: 20px;
+		border-radius: 10px;
+		margin-right: 40px;
+		box-shadow: 0 0 5px RGBA(0, 0, 0, 0.2)
+	}
+	.teamArea.CorporateThree .owl-prev, .teamArea.CorporateThree .owl-next{
+		top: auto;
+		bottom: 40px;
+		left: 50%;
+		right: auto;
+		margin-left: -20px
+	}
+	.teamArea.CorporateThree .owl-next{
+		margin-left: 20px
+	}
+	.teamArea.CorporateFour .teamSlider{
+		padding: 0 40px
+	}
+	.teamArea.CorporateSix .teamSlider{
+		padding: 0 50px
+	}
+	.teamArea.CorporateSix .owl-prev{
+		left: 0;
+	}
+	.teamArea.CorporateSix .owl-next{
+		right: 0;
+	}
+	.teamArea.CorporateSix .socialIcon > ul li a {
+	  font-size: 20px;
+	  width: 35px;
+	}
+/*
+	***********************************
+		footerArea Responsive CSS
+	***********************************
+*/
+
+	.footer.Seven .col-sm-12,
+	.footer.Two .col-md-4:last-child,
+	.footer.One .col-md-4:last-child {
+	  margin-top: 40px;
+	}
+	footer.Three .footerSocial li a{
+		padding: 8px
+	}
+	footer.Three .col-md-4:last-child {
+	  padding: 82px 0 0;
+	  text-align: right;
+	}
+
+/*
+	***********************************
+		price Responsive CSS
+	***********************************
+*/
+
+	.priceArea.CorporateThree .priceCol,
+	.priceArea.CorporateOne .priceCol,
+	.priceArea.FitnessOne .priceCol {
+		padding: 0 5px;
+	}
+
+	.priceArea.CorporateThree .priceRow,
+	.priceArea.CorporateOne .priceRow,
+	.priceArea.FitnessOne .priceRow {
+		margin: 0 -5px
+	}
+	.priceArea.FitnessOne .singlePrice{
+		padding: 20px
+	}
+	.priceArea.CorporateFour .price{
+		padding: 0 40px
+	}
+
+/*
+	***********************************
+		price Responsive CSS
+	***********************************
+*/
+
+	.testimonialArea.StartUpOne .singleTstSlide br,
+	.testimonialArea.StartUpTwo .tstTxt br{
+		display: none;
+	}
+	.testimonialArea.StartUpTwo .tstTxt{
+		padding: 70px 30px
+	}
+	.testimonialArea.CorporateTwo .owl-prev{
+		left: -20px
+	}
+	.testimonialArea.CorporateTwo .owl-next{
+		left: auto;
+		right: -20px
+	}
+	.testimonialArea.CorporateSix .tstTxt br,
+	.testimonialArea.CorporateFive .tstTxt br{
+		display: none;
+	}
+	.testimonialArea.CorporateSeven .singleTstSlide .tstTxt br,.testimonialArea.CorporateFour .tstSlider .tstTop br{
+		display: none;
+	}
+
+
+/*
+	***********************************
+		factArea Responsive CSS
+	***********************************
+*/
+
+	.factArea.One .container .row .col-md-3:nth-child(2n+1) .singleFact,
+	.factArea.Two .container .row .col-md-3:nth-child(2n+1) .singleFact {
+		text-align: center!important;
+	}
+	.factArea.One .container .row .col-md-3:nth-child(2n) .singleFact,
+	.factArea.Two .container .row .col-md-3:nth-child(2n) .singleFact {
+		text-align: center!important;
+	}
+	.factArea.One .container .row .col-md-3,
+	.factArea.Two .container .row .col-md-3 {
+		border-top: 1px solid;
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	.factArea.One .container .row .col-md-3:nth-child(1),
+	.factArea.One .container .row .col-md-3:nth-child(2),
+	.factArea.Two .container .row .col-md-3:nth-child(1),
+	.factArea.Two .container .row .col-md-3:nth-child(2) {
+		border-top: medium none;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.factArea.Three .col-md-3:first-child, .factArea.Three .col-md-3:last-child {
+		text-align: center;
+	}
+	.factArea.Three .col-md-3.col-sm-6 {
+		margin-top: 40px;
+	}
+	.factArea.Four .col-md-2 {
+		margin-top: 20px;
+	}
+	.factArea.Four .col-md-2:first-child, .factArea.Four .col-md-2:nth-child(2), .factArea.Four .col-md-2:nth-child(3) , .factArea.Four .col-md-2:nth-child(4) {
+		margin-top: 0;
+	}
+
+	.factArea.Five .col-md-3:first-child, .factArea.Five .col-md-3:last-child {
+		text-align: center;
+	}
+	.factArea.Five .col-md-3,.factArea.Five .col-md-3:last-child{
+		border-top: 1px solid #171717
+	}
+	.factArea.Five .col-md-3:nth-child(2){
+		border-right: none
+	}
+
+
+	.factArea.Six .col-md-3:first-child, .factArea.Six .col-md-3:last-child {
+		text-align: center;
+	}
+	.factArea.Six .col-md-3,.factArea.Six .col-md-3:last-child{
+		border-top: 1px solid RGBA(255, 255, 255, 0.05)
+	}
+	.factArea.Six .col-md-3:nth-child(2){
+		border-right: none
+	}
+	.factArea.Six .col-md-3:nth-child(2):before{
+		background: #151515 none repeat scroll 0 0;
+		content: "";
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 500%;
+		z-index: -1;
+	}
+	.factArea.Six .col-md-3{
+		z-index: 1
+	}
+	.factArea.Seven .col-md-3:nth-child(2){
+		border-right: none
+	}
+
+	.factArea.Eight .col-md-3:first-child, .factArea.Eight .col-md-3:last-child {
+		text-align: center;
+	}
+	.factArea.Eight .col-md-3 {
+		margin: 15px 0;
+	}
+	.factArea.Eight .container .row {
+		margin: -15px;
+	}
+	.factArea.Nine .factContent{
+		padding-left: 0;
+		text-align: center
+	}
+	.factArea.Nine .counter.h2{
+		font-size: 27px;
+		margin-bottom: 5px
+	}
+	.factArea.Nine .counter,.factArea.Nine .counter p{
+		font-size: 9px
+	}
+	.factArea.Nine .counter p{
+		margin-bottom: 0
+	}
+	.factArea.Nine .col-md-3{
+		padding: 35px 15px
+	}
+
+
+/*
+	***********************************
+		factArea Responsive CSS
+	***********************************
+*/
+
+	.ctaArea.One .cta{
+		margin: 0
+	}
+	.ctaArea.One .ctaImg.absolute {
+	  margin-right: -360px;
+	}
+	.ctaArea.Two .cta{
+		margin: 0
+	}
+	.ctaArea.Two{
+		background-position: 25% center
+	}
+
+	.ctaArea.Five .cta .h3,
+	.ctaArea.Four .cta .h3,
+	.ctaArea.Three .cta .h3{
+		display: block;
+		margin-bottom: 15px;
+		text-align: center;
+		width: 100%
+	}
+	.ctaArea.Five a.ctaBtn,
+	.ctaArea.Four a.ctaBtn,
+	.ctaArea.Three a.ctaBtn{
+		float: none;
+		display: inline-block
+	}
+	.ctaArea.Five .cta,
+	.ctaArea.Four .cta,
+	.ctaArea.Three .cta{
+		text-align: center
+	}
+
+
+/*
+	***********************************
+		factArea Responsive CSS
+	***********************************
+*/
+
+	.brandArea.Four .owl-nav > div,.brandArea.Five .owl-nav > div,.brandArea.Two .owl-nav > div,.brandArea.One .owl-nav > div{
+		left: -25px;
+	}
+	.brandArea.Four .owl-nav > div.owl-next,.brandArea.Five .owl-nav > div.owl-next,.brandArea.Two .owl-nav > div.owl-next,.brandArea.One .owl-nav > div.owl-next {
+		left: auto;
+		right: -25px;
+	}
+
+	.brandArea.Five .col-md-12,
+	.brandArea.Four .col-md-12,
+	.brandArea.Two .col-md-12,
+	.brandArea.One .col-md-12{
+		padding: 0 30px
+	}
+
+
+
+/*
+	************************************
+	            singleHead
+	************************************
+*/
+
+
+
+	.singleHead .headerInfo > li {
+		margin-right: 30px
+	}
+	.singleHead button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px
+	}
+	.singleHead .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.singleHead nav#navbar {
+		background: #f9bf3b none repeat scroll 0 0;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		padding-right: 15px;
+		top: 53px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		right: 15px;
+	}
+	.singleHead .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.singleHead .navbar-nav > li > a {
+		line-height: 40px;
+	}
+	.singleHead .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.singleHead .singleHomeSlide h2 {
+		font-size: 18px;
+	}
+	.singleHead .searchBox input[type="search"],
+	.singleHead .searchBox .searchSpan{
+		height: 72px;
+	}
+
+
+    .singlePage .homeArea h1 {
+        font-size: 38px;
+    }
+    .singlePage .homeArea {
+        padding: 50px 0;
+    }
+
+
+
+.single-about.One .aboutArea.CorporateFour .aboutImgWrep {
+    text-align: center;
+}
+.single-about.One .aboutArea.CorporateFour .aboutImgWrep .aboutImg {
+    display: inline-block;
+    position: static;
+    text-align: center;
+}
+.single-about.One .aboutArea.CorporateFour .aboutContent {
+    height: auto;
+    margin-bottom: 25px;
+    padding: 0 40px;
+    text-align: center;
+}
+    .single-about.One .aboutArea.CorporateFour .aboutContent br{
+        display: none;
+    }
+
+    .single-about.Four .aboutArea.CorporateThree .aboutOuter{
+        margin-top: 50px
+    }
+
+	.singlePage .postWidget .widget.widget_search{
+		margin-top: 50px;
+		width: 100%
+	}
+	.singlePage .postWidget .widget{
+		width: 50%;
+		float: left
+	}
+	.singlePage .postWidget {
+		overflow: hidden
+	}
+
+
+	.singlePage .blogPagination {
+	  margin: 60px 0 30px;
+	  text-align: center;
+	}
+	.singlePage.Eight .blogArea.CorporateFive .postTxt{
+		font-size: 14px
+	}
+
+
+	.single-team.One .teamLeft {
+		width: 270px;
+	}
+	.single-team.One .teamContent {
+		padding-left: 40px;
+		width: calc(100% - 270px);
+	}
+	.single-team.One .teamTxt {
+		margin-bottom: 50px;
+	}
+	.single-team.One .singleBar {
+		margin-bottom: 30px;
+	}
+	.single-team.One .teamImg {
+		margin-bottom: 15px;
+	}
+	.single-team.One .position {
+		margin-bottom: 10px;
+	}
+	.single-team.One .memberName{
+		margin-bottom: 20px
+	}
+	.single-team.One .teamSliderTen{
+		margin-bottom: 100px
+	}
+	.single-team.One .teamNav.prev.slick-arrow,
+	.single-team.One .teamNav.next.slick-arrow{
+		bottom: -40px
+	}
+	.single-team.One .teamSliderElaven .singleTeamSLide{
+		width: 140px
+	}
+
+	.single-team .teamArea.StartUpTwo .col-md-4 {
+		margin-top: 60px;
+	}
+	.single-team .teamArea.StartUpTwo .col-md-4:first-child,
+	.single-team .teamArea.StartUpTwo .col-md-4:nth-child(2),
+	.single-team .teamArea.StartUpTwo .col-md-4:nth-child(3) {
+		margin-top: 0;
+	}
+
+	.single-team.Four .single_speaker_img {
+	  height: 400px;
+	  width: 285px;
+	}
+	.single-team.Four .teamContent h4 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.single-team.Four .teamContent h5 {
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+	.single-team.Four .teamContent > p br {
+		display: none;
+	}
+	.single-team.Four .teamContent > p {
+		margin-bottom: 20px;
+	}
+	.single-team.Four .teamContent {
+		height: 400px;
+	}
+	.single-team.Four .teamSliderTwelve .teamNav.slick-arrow {
+		bottom: 60px;
+		top: auto;
+	}
+	.single-team.Four .singleTeamDotImg {
+		height: 107px;
+		margin-right: 15px;
+		width: 107px;
+	}
+	.single-team.Four .teamSliderThirteen {
+		margin-top: 50px;
+	}
+
+	.single-portfolio.Five .singleDotSlide{
+		width: 132px;
+		height: 132px
+	}
+
+	.PortfolioSlide14 .portfolioDtc .col-sm-6.col-md-3 {
+		border-bottom: 1px solid #fff;
+		border-left: 1px solid #fff;
+	}
+	.PortfolioSlide14 .portfolioDtc .col-sm-6.col-md-3:nth-child(2n-1) {
+		border-left-color: transparent;
+	}
+	.single-portfolio.Six .portfolioTxt{
+		font-size: 14px
+	}
+	.single-portfolio.Six .portfolioTxt p{
+		margin-bottom: 20px
+	}
+	.single-portfolio.Six .portfolioImg{
+		margin-bottom: 40px;
+		height: 250px
+	}
+	.single-portfolio.Six .portfolioDtcWrep{
+		height: auto!important;
+		margin: 30px 0;
+		display: block;
+		text-align: center;
+	}
+	.single-portfolio.Six .portfolioDtc{
+		display: inline-block;
+		text-align: left;
+		margin: 0
+	}
+	.single-portfolio.Six .singlePortfoliTitle.h4, .single-portfolio.Six .portfolioSlideTitle.h4{
+		margin: 0 0 60px
+	}
+	.single-portfolio.Six .portfolioSlide17 .owl-nav div{
+		margin-right: -360px;
+		top: -40px
+	}
+	.single-portfolio.Six .portfolioSlide17 .owl-nav div.owl-prev{
+		margin-right: -325px
+	}
+	.single-portfolio.Seven .singlePortfolioImg {
+	  height: 230px;
+	  margin-bottom: 40px;
+	}
+	.single-portfolio.Seven .portfolioContent{
+		margin-left: 0
+	}
+	.single-portfolio.Seven .portfolioTitle.h4{
+		margin-bottom: 20px
+	}
+	.single-portfolio.Seven .portfolioTxt{
+		font-size: 14px
+	}
+	.single-portfolio.Seven .portfolioTxt p{
+		margin-bottom: 20px
+	}
+	.single-portfolio.Seven .portfolioDtc{
+		margin-top: 20px
+	}
+	.single-portfolio.Seven .portfolioSlideTitle.h4{
+		margin: 40px 0 60px
+	}
+	.single-portfolio.Seven .singlePortfolio .row:last-child .col-md-12:last-child{
+		padding: 0 30px
+	}
+	.errorPage .errorContent > h1 {
+		font-size: 130px;
+		line-height: 105px;
+		margin-bottom: 35px;
+		margin-top: -15px;
+	}
+	.errorPage .errorContent > p {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+	.errorPage .errorBtn {
+		font-size: 12px;
+		line-height: 40px;
+		padding: 0 25px;
+	}
+	.single-contact.One #googleMap{
+		height: 300px
+	}
+	.single-contact.Two #googleMap{
+		height: 300px
+	}
+
+}
+
+
+/*		mobile Layout: 320px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (max-width: 767px) {
+	.heroArea.CorporateFive .owl-nav div{
+		display: none;
+	}
+	.priceArea.CorporateThree .priceCol .singlePrice {
+		margin: 0;
+	}
+	.container {
+		width: 300px;
+	}
+	.CorporateOne .homeImg.absolute{
+		display: none;
+	}
+    .mobNone{
+        display: none
+    }
+	.StartUpOne .headerBottom {
+		padding: 13px 0;
+	}
+	.StartUpOne .headerInfo {
+		display: none;
+	}
+	.StartUpOne .joinForm {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.StartUpOne .joinForm li.logIn a {
+		color: #fff;
+	}
+	.StartUpOne button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.StartUpOne .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.StartUpOne nav#navbar {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2
+	}
+	.StartUpOne .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateSix .navbar-nav > li{
+		display: block
+	}
+	.StartUpOne .navbar-nav > li > a {
+		line-height: 40px;
+		color: #2d2d2d;
+	}
+	.StartUpOne .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.StartUpOne .searchBox input[type="search"] {
+		width: 70%;
+		height: 100%;
+		font-size: 13px;
+		padding: 0 10px;
+
+	}
+	.StartUpOne .searchBox input[type="submit"] {
+		width: 100%;
+		height: 100%;
+		font-size: 10px;
+	}
+	.StartUpOne .searchBox form {
+		right: 15px;
+		padding: 0;
+		height: 58px;
+		top: -100px
+	}
+
+
+	.searchBox form i {
+	  font-size: 22px;
+	  height: 100%;
+	  left: 0;
+	  line-height: 60px;
+		width: 15%;
+		position: static;
+		float: left;
+		margin: 0;
+	}
+	.searchSpan{
+		width: 15%;
+		height: 100%;
+		color: transparent;
+		overflow: hidden
+		position: relative;
+		z-index: 1
+	}
+	.searchSpan:after{
+		position: absolute;
+		content: '\eded';
+		font-family: 'icofont';
+		font-size: 18px;
+		color: #fff;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		line-height: 58px;
+		text-align: center;
+		z-index: -1
+	}
+
+	.StartUpOne .searchBox.active form {
+		top: -13px;
+	}
+	/*.StartUpOne .homeSlider .owl-dots {
+		left: 50%;
+		margin-left: -32.5px;
+	}*/
+	.StartUpOne .singleHomeSlide h1 {
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.StartUpOne .singleHomeSlide h2 {
+		font-size: 16px;
+		text-align: center;
+		line-height: 20px
+	}
+	.StartUpOne .homeSlider .owl-dot {
+		width: 10px;
+		margin-right: 5px
+	}
+	.StartUpOne .homeSlider .owl-dot.active {
+		width: 35px
+	}
+	/*2*/
+	.heroArea.StartUpTwo > header {
+		padding: 40px 0 0;
+	}
+	.StartUpTwo .joinForm {
+		display: block;
+		float: none;
+		position: absolute;
+		text-align: center;
+		top: -60px;
+		width: 100%;
+		z-index: 1;
+		left: 0;
+	}
+	.StartUpTwo .homeBtn a {
+	  line-height: 40px;
+	  margin-top: 30px;
+	  padding: 0 25px;
+	}
+	.StartUpTwo .joinForm li.logIn a {
+		color: #fff;
+	}
+	.StartUpTwo .joinForm li a {
+		border-radius: 2px;
+		font-size: 10px;
+		line-height: 30px;
+	}
+	.StartUpTwo button.navbar-toggle {
+		color: #fff;
+		font-size: 18px;
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+	}
+	.StartUpTwo .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.StartUpTwo nav#navbar2 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2
+	}
+	.StartUpTwo .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.StartUpTwo .navbar-nav > li > a {
+		line-height: 40px;
+		color: #222
+	}
+	.StartUpTwo .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.StartUpTwo .logo {
+		height: 25px;
+		line-height: 25px;
+	}
+	.menuCol {
+		border: none;
+	}
+	.heroArea.StartUpTwo .homeContent p {
+		font-size: 12px;
+		line-height: 40px;
+	}
+	.heroArea.StartUpTwo .homeContent h1 {
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 15px;
+	}
+	.heroArea.StartUpTwo .homeContent h5 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+/*	3*/
+	.tabNone{
+		display: none
+	}
+	.FitnessOne button.navbar-toggle {
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.FitnessOne .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.FitnessOne nav#navbar3 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2
+	}
+	.FitnessOne .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.FitnessOne .navbar-nav > li > a {
+		line-height: 40px;
+		color: #222
+	}
+	.FitnessOne .navbar-nav > li > a:hover ,
+	.FitnessOne .navbar-nav > li.current-menu-item > a {
+		line-height: 40px;
+		color: #000029
+	}
+	.FitnessOne .searchBox input[type="search"],
+	.FitnessOne .searchBox input[type="submit"] {
+		height: 45px
+	}
+	.heroArea.FitnessOne .socialIcon{
+		display: none
+	}
+	.heroArea.FitnessOne > header{
+		padding-top: 25px;
+	}
+	.heroArea.FitnessOne logo{
+		line-height: 25px;
+		height: 25px;
+	}
+	.FitnessOne .homeContent{
+		text-align: center
+	}
+	.FitnessOne .homeContent h5 {
+		font-size: 14px;
+	}
+	.FitnessOne .homeContent h1 {
+		font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 25px;
+	}
+	.FitnessOne .homeBtn a {
+	  font-size: 11px;
+	  line-height: 41px;
+	  width: 130px;
+	}
+	.FitnessOne .angleBtn a {
+	  font-size: 12px;
+	  height: 40px;
+	  width: 40px;
+	}
+	@-webkit-keyframes angleBtn {
+		0% {
+			line-height: 36px;
+		}
+		40% {
+			line-height: 44px;
+			color: green
+		}
+		100% {
+			line-height: 36px
+		}
+	}
+
+	@keyframes angleBtn {
+		0% {
+			line-height: 36px;
+		}
+		40% {
+			line-height: 44px;
+			color: green
+		}
+		100% {
+			line-height: 36px
+		}
+	}
+	.FitnessOne .angleBtn{
+		margin-left: -20px;
+	}
+
+/*4*/
+	.CorporateOne button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.homeTextImg > h1{
+		font-size: 32px;
+		margin: 0
+	}
+
+	.CorporateOne .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateOne nav#navbar4 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2;
+		margin-right: 0
+	}
+	.CorporateOne .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateOne .navbar-nav > li > a {
+		line-height: 40px;
+        color: #2d2d2d;
+	}
+	.CorporateOne .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.CorporateOne .searchBox input[type="search"] {
+		width: 70%;
+		height: 60px;
+		font-size: 18px;
+	}
+	.CorporateOne .searchBox input[type="submit"] {
+		width: 15%;
+		height: 60px
+	}
+	.CorporateOne .searchBox form {
+		right: 15px;
+		width: 280px;
+		padding: 0px;
+		border: none;
+	}
+	.CorporateOne .singleHomeSlide {
+		padding: 0;
+		text-align: center;
+	}
+
+	.CorporateOne .singleHomeSlide h2 {
+		font-size: 15px;
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+	.CorporateOne .homeBtn a {
+		font-size: 11px;
+		line-height: 40px;
+		padding: 0 25px;
+	}
+	.CorporateOne .owl-nav div{
+		display: none
+	}
+	.CorporateOne .homeImg.absolute:before {
+	  background: #fff;
+	  content: "";
+	  height: 100%;
+	  opacity: 0.4;
+	  position: absolute;
+	  width: 100%;
+	  z-index: 6;
+	}
+
+/*6*/
+	.CorporateTwo button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff;
+	}
+	.CorporateTwo .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateTwo nav#navbar5 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2;
+		margin-right: 0
+	}
+	.CorporateTwo .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateTwo .navbar-nav > li > a {
+		line-height: 40px;
+		color: #222
+	}
+	.CorporateTwo .navbar-nav > li > a:before {
+		display: none
+	}
+	.CorporateTwo .searchBox input[type="search"] {
+		width: 70%;
+		height: 60px;
+		font-size: 18px;
+	}
+	.CorporateTwo .searchBox input[type="submit"] {
+		width: 15%;
+		height: 60px
+	}
+	.CorporateTwo .searchBox form {
+		right: 15px;
+		width: 280px;
+		padding: 0px;
+	}
+	.CorporateTwo .searchBox.active form {
+		top: -10px;
+	}
+
+	.CorporateTwo .headerInfo li {
+		line-height: 30px;
+		margin: 0;
+		text-align: center;
+	}
+	.CorporateTwo .headerInfo {
+		padding: 10px 0;
+		text-align: center;
+	}
+	.heroArea.CorporateTwo .socialIcon {
+		display: none;
+	}
+	.CorporateTwo .homeContent > h1 {
+		font-size: 35px;
+		text-align: center;
+	}
+    .CorporateTwo .homeContent {
+        text-align: center;
+    }
+
+
+/*6*/
+
+	.CorporateThree button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff;
+	}
+	.CorporateThree .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateThree nav#navbar6 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2;
+        border: none;
+        margin-right: 0
+	}
+	.CorporateThree .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateThree .navbar-nav > li > a {
+		line-height: 40px;
+        color: #2d2d2d;
+	}
+	.CorporateThree .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.CorporateThree .searchBox input[type="search"] {
+		width: 70%;
+		height: 60px;
+		font-size: 18px;
+		padding: 0 10px;
+	}
+	.CorporateThree .searchBox input[type="submit"] {
+		width: 15%;
+		height: 60px
+	}
+	.CorporateThree .searchBox form {
+		right: 15px;
+		width: 280px;
+		padding: 0px;
+	}
+	.CorporateThree .searchBox.active form {
+		top: -10px;
+	}
+    .CorporateThree .homeContent{
+        text-align: center;
+        font-size: 14px
+    }
+    .CorporateThree .homeContent > h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .CorporateThree .homeBtn a {
+      line-height: 45px;
+      padding: 0 25px;
+      font-size: 12px;
+    }
+    .CorporateThree .homeBtnIcon{
+        display: none
+    }
+    .CorporateThree .homeBtn {
+      outline-offset: 4px;
+    }
+
+/*7*/
+
+
+	.heroArea.CorporateFour .socialIcon{
+		display: none;
+	}
+	.CorporateFour .headerInfo {
+		display: none;
+	}
+	.CorporateFour .joinForm {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.CorporateFour .joinForm li.logIn a {
+		color: #fff;
+	}
+	.CorporateFour button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff
+	}
+    .infoCol{
+        text-align: left
+    }
+    .CorporateFour .headerTop{
+        padding-bottom: 20px
+    }
+	.CorporateFour .searchIcon {
+		font-size: 18px;
+		line-height: 25px;
+		  right: 45px;
+		  top: 24px;
+		z-index: 2
+	}
+	.CorporateFour nav#navbar7 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2;
+        margin-right: 0
+	}
+	.CorporateFour .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateFour .navbar-nav > li > a {
+		line-height: 40px;
+        color: #666
+	}
+	.CorporateFour .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.CorporateFour .searchBox input[type="search"] {
+		width: 70%;
+		height: 60px;
+		padding: 0 10px;
+		font-size: 18px
+	}
+	.CorporateFour .searchBox input[type="submit"] {
+		width: 15%;
+		height: 60px
+	}
+	.CorporateFour .searchBox form {
+		right: 15px;
+		width: 280px;
+		padding: 0px;
+	}
+	.CorporateFour .searchBox.active form {
+		top: 10px;
+	}
+    .CorporateFour .singleHomeSlide > h1 {
+      font-size: 18px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+    .CorporateFour .singleHomeSlide {
+      font-size: 13px;
+    }
+    .CorporateFour .owl-nav > div{
+        display: none
+    }
+    .CorporateFour .singleHomeSlide .purchess {
+      font-size: 12px;
+      line-height: 45px;
+      padding: 0 20px;
+    }
+	.CorporateFour .owl-nav{
+		display: none
+	}
+
+/*8*/
+	.heroArea.CorporateFive .socialIcon{
+		display: none
+	}
+	.CorporateFive .languageOpt{
+		width: 40%
+	}
+	.CorporateFive .headerInfo{
+		width: 60%;
+	}
+	.CorporateFive .headerInfo li{
+		font-size: 12px;
+	}
+	.CorporateFive .languageOpt li{
+		font-size: 12px;
+	}
+	.CorporateFive .internalContainer{
+		padding: 10px 15px;
+	}
+	.CorporateFive .owl-nav div{
+		top: 85%;
+		left: 50%;
+		margin-left: -52.5px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.CorporateFive .owl-nav div.owl-next{
+		left: auto;
+		margin-left: 0;
+		right: 50%;
+		margin-right: -52.5px;
+	}
+	.CorporateFive .owl-nav div:hover{
+		width: 50px;
+	}
+	.CorporateFive .homeSlider h1 {
+		font-size: 19px;
+		line-height: 23px;
+		margin-bottom: 15px;
+	}
+	.CorporateFive .homeSlider {
+		font-size: 13px;
+	}
+	.CorporateFive .homeSlider p {
+		line-height: 20px;
+	}
+	.CorporateFive .slideContent {
+		padding: 0 35px;
+	}
+	.CorporateFive .homeBtn {
+		margin-top: 21px;
+	}
+	.CorporateFive .homeBtn a {
+		line-height: 40px;
+		padding: 0 20px 0 20px;
+	}
+	.CorporateFive button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+	}
+	.CorporateFive .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateFive nav#navbar8 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2;
+		margin-right: 0
+	}
+	.CorporateFive .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateFive .navbar-nav > li > a{
+		padding: 0 12px;
+		color: #2d2d2d
+	}
+	.CorporateFive .navbar-nav > li > a {
+		line-height: 40px;
+	}
+	.CorporateFive .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.CorporateFive .searchBox input[type="search"] {
+		width: 70%;
+		height: 52px;
+		padding: 0 10px;
+		font-size: 16px
+	}
+	.CorporateFive .searchBox input[type="submit"] {
+		width: 15%;
+		height: 52px
+	}
+	.CorporateFive .searchBox form {
+		right: 0px;
+		width: 280px;
+		padding: 0px;
+	}
+	.CorporateFive .searchBox.active form {
+		top: 0px;
+	}
+	.CorporateFive .searchBox form i {
+		line-height: 52px;
+	}
+	.CorporateFive .searchBox .searchSpan{
+		height: 52px;
+		line-height: 52px;
+	}
+
+
+/*9*/
+    .CorporateSix button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+        color: #fff
+	}
+	.CorporateSix .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.CorporateSix nav#navbar9 {
+		background: #fff none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 2
+	}
+	.CorporateSix .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.CorporateSix .navbar-nav > li > a {
+		line-height: 40px;
+        color: #666;
+	}
+	.CorporateSix .navbar-nav > li > a:hover,
+    .CorporateSix .navbar-nav > li.current-menu-item > a {
+        color: #42ba63;
+	}
+	.CorporateSix .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+        height: 1px;
+        bottom: 0;
+        top: auto;
+        width: 0px
+	}
+	.CorporateSix .navbar-nav > li > a:hover:before,
+	.CorporateSix .navbar-nav > li.current-menu-item > a:before {
+        width: 20px;
+        height: 1px
+	}
+	.CorporateSix .searchBox input[type="search"] {
+		width: 70%;
+		height: 60px;
+		font-size: 16px;
+		padding: 0 10px;
+	}
+	.CorporateSix .searchBox input[type="submit"] {
+		width: 15%;
+		height: 60px
+	}
+	.CorporateSix .searchBox form {
+		right: 15px;
+		width: 280px;
+		padding: 0px;
+	}
+	.CorporateSix .searchBox form {
+		top: -52px;
+	}
+    .CorporateSix .singleHomeSlide h1 {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 15px;
+      width: auto;
+    }
+    .CorporateSix .singleHomeSlide > span {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .CorporateSix .singleHomeSlide p{
+        line-height: 20px
+    }
+    .CorporateSix .singleHomeSlide .homeBtn a {
+      line-height: 40px;
+      padding: 0 25px;
+    }
+
+
+/*
+	***********************************
+		aboutPage Responsive CSS
+	***********************************
+*/
+
+	.sectionPadding{
+		padding: 40px 0;
+	}
+	.sectionPaddingTop{
+		padding-top: 40px;
+	}
+	.sectionPaddingBtm{
+		padding-bottom: 40px;
+	}
+	.sectionTitle{
+		margin-bottom: 70px
+	}
+	.aboutArea.StartUpOne .about_bg{
+		display: none;
+	}
+	.aboutArea.StartUpOne .aboutOuter{
+		position: static
+	}
+	.aboutArea.StartUpOne .aboutContent .singleAbout{
+		text-align: center
+	}
+	.sectionTitle > h1 {
+	  font-size: 24px;
+	  line-height: 30px;
+	}
+	.aboutArea.StartUpTwo .aboutOuter{
+		position: static;
+	}
+	.aboutArea.StartUpTwo .about_bg{
+		display: none;
+	}
+	.aboutArea.StartUpTwo .aboutCol{
+		padding-left: 15px;
+		text-align: center
+	}
+	.aboutArea.FitnessOne .sectionTitle{
+		margin-bottom: 50px;
+	}
+	.aboutArea.FitnessOne .aboutTxt{
+		margin-right: 0
+	}
+	.aboutArea.FitnessOne .aboutOuter{
+		position: static
+	}
+	.aboutArea.FitnessOne .about_bg{
+		display: none;
+	}
+	.aboutArea.FitnessOne .aboutContent{
+		height: auto;
+		display: block;
+	}
+	.aboutArea.CorporateOne .aboutTitle {
+		margin-bottom: 30px;
+	}
+	.aboutArea.CorporateOne .aboutTitle > span {
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	.aboutArea.CorporateOne .aboutTitle h2 {
+		font-size: 16px;
+	}
+	.aboutArea.CorporateOne .singleHead {
+		margin-bottom: 40px;
+	}
+	.aboutArea.CorporateOne .singleAbout p {
+		line-height: 25px;
+		margin: 0;
+	}
+	.aboutArea.CorporateOne strong {
+		font-size: 18px;
+		margin-left: -30px;
+		width: 60px;
+	}
+	.aboutArea.CorporateOne .skill {
+		margin-bottom: 15px;
+	}
+	.aboutArea.CorporateOne .singleSkill span {
+		font-size: 12px;
+	}
+	.aboutArea.CorporateOne .aboutSkill .col-md-3 {
+		padding: 30px 0;
+	}
+	.aboutArea.CorporateTwo .aboutLeftBg{
+		width: 100%;
+	}
+	.aboutArea.CorporateTwo .aboutContent{
+		padding-right: 0;
+		text-align: justify
+	}
+	.aboutArea.CorporateTwo .aboutContent:before,
+	.aboutArea.CorporateTwo .aboutContent:after{
+		display: none;
+	}
+	.aboutArea.CorporateTwo .aboutContent{
+		padding: 0;
+	}
+	.aboutArea.CorporateTwo .aboutOuter{
+		top: 50px;
+	}
+    .aboutArea.CorporateTwo{
+        overflow: hidden
+    }
+    .aboutArea.CorporateTwo .aboutOuter {
+        padding: 50px 0 0;
+    }
+	.aboutArea.CorporateTwo  .vision,
+	.aboutArea.CorporateTwo  .aboutSkill {
+		background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+		border-radius: 5px;
+		margin-top: 40px;
+		padding: 40px;
+	}
+	.aboutArea.CorporateTwo .aboutWrep h2{
+		margin-bottom: 35px
+	}
+	.aboutArea.CorporateTwo .skillWrep div.barHeadding{
+		width: 100%;
+	}
+	.aboutArea.CorporateTwo .skillWrep h3{
+		float: none;
+		width: 160px;
+		margin-top: 15px;
+	}
+	.aboutArea.CorporateThree .aboutOuter {
+	  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	}
+	.aboutArea.CorporateThree .aboutOuter a{
+		margin-top: 20px;
+	}
+	.aboutArea.CorporateThree .aboutLeftBg{
+		width: 100%;
+	}
+	.aboutArea.CorporateFour .aboutImgWrep{
+		display: none;
+	}
+
+	.aboutArea.CorporateFive .singleAbout, .aboutArea.CorporateSix .singleAbout {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.aboutArea.CorporateFive .col-md-4:last-child .singleAbout, .aboutArea.CorporateSix .col-md-4:last-child .singleAbout {
+		margin-bottom: 0
+	}
+	.aboutArea.CorporateFive .aboutBar {
+		display: inline-block;
+	}
+	.aboutArea.CorporateSix .aboutHead {
+		display: inline-table;
+		height: 80px;
+		width: 80px;
+	}
+	.aboutArea.CorporateSix .aboutNo {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+	.aboutArea.CorporateSix .aboutHead .aboutTitle {
+		font-size: 14px;
+	}
+	.aboutArea.CorporateTwo .aboutWrep:before{
+		display: none
+	}
+	.aboutArea.CorporateSix .col-md-3:last-child .singleAbout{
+		margin-bottom: 0
+	}
+
+
+/*
+	***********************************
+		BlogPage Responsive CSS
+	***********************************
+*/
+
+	.blogArea.StartUpOne .postImg{
+		margin-bottom: 20px
+	}
+	.blogArea.StartUpOne .title.h4{
+		margin-bottom: 20px
+	}
+
+	.blogArea.StartUpOne .col-sm-6 .singlePostContent{
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+		border-bottom: 1px dashed #ddd;
+	}
+	.blogArea.StartUpOne .col-md-6:last-child .col-sm-6 .singlePostContent{
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none
+	}
+	.blogArea.StartUpOne .postContent{
+		font-size: 13px
+	}
+
+/*	2*/
+
+	.blogArea.StartUpTwo .col-md-4 .singlePost{
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px dashed #B1B1B1;
+		background: transparent;
+	}
+	.blogArea.StartUpTwo .col-md-4:last-child .singlePost{
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border: none;
+	}
+
+/*	3*/
+	.blogArea.FitnessOne .postImg{
+		width: 100%;
+		margin-bottom: 30px
+	}
+	.blogArea.FitnessOne .singlePost .postContent{
+		padding: 0!important;
+		text-align: left!important;
+		font-size: 13px
+	}
+	.blogArea.FitnessOne .singlePost .h4{
+		font-size: 16px;
+		margin-bottom: 20px
+	}
+	.blogArea.FitnessOne .singlePost br{
+		display: none;
+	}
+	.blogArea.FitnessOne .date{
+		font-size: 24px;
+		margin-bottom: 5px
+	}
+	.blogArea.FitnessOne .month{
+		font-size: 12px
+	}
+	.blogArea.FitnessOne .postMeta {
+	  height: 60px;
+	  left: 15px !important;
+	  top: 15px;
+	  width: 60px;
+	}
+
+/*	4*/
+
+
+	.blogArea.CorporateOne .title.h4 {
+		font-size: 16px;
+	}
+	.blogArea.CorporateOne .postBtn {
+		margin-top: 5px;
+	}
+	.blogArea.CorporateOne .postMeta {
+		margin-bottom: 40px;
+		padding: 15px 0;
+	}
+	.blogArea.CorporateOne .col-md-4:last-child .postMeta {
+		margin: 0;
+	}
+	.blogArea.CorporateTwo .date,
+	.blogArea.CorporateOne .date{
+		font-size: 24px;
+		margin-bottom: 5px
+	}
+	.blogArea.CorporateTwo .month,
+	.blogArea.CorporateOne .month{
+		font-size: 12px
+	}
+	.blogArea.CorporateTwo .postTime,
+	.blogArea.CorporateOne .postTime {
+	  height: 60px;
+	  right: 0 !important;
+	  top: 0;
+	  width: 60px;
+	}
+
+/*	5*/
+
+
+	.blogArea.CorporateTwo .postMeta {
+		padding: 25px;
+	}
+	.blogArea.CorporateTwo .title.h4 {
+		display: block;
+		font-size: 16px;
+	}
+	.blogArea.CorporateTwo .postMeta span {
+		font-size: 11px;
+	}
+	.blogArea.CorporateTwo .postBtn {
+		font-size: 11px;
+		margin-top: 5px;
+	}
+	.blogArea.CorporateTwo .col-md-4{
+		margin-bottom: 40px
+	}
+	.blogArea.CorporateTwo .col-md-4:last-child{
+		margin-bottom: 0
+	}
+
+/*    6*/
+
+    .blogArea.CorporateThree .singlePost {
+        margin-bottom: 40px;
+    }
+    .blogArea.CorporateThree .col-md-4:last-child .singlePost {
+        margin-bottom: 0;
+    }
+    .blogArea.CorporateThree .postContent .date {
+        margin-bottom: 10px;
+    }
+    .blogArea.CorporateThree .h4.postTitle {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .blogArea.CorporateThree .postContent {
+        font-size: 13px;
+    }
+    .blogArea.CorporateThree .singlePost a.postImg {
+        margin-bottom: 30px;
+    }
+    .blogArea.CorporateThree .postMeta {
+        margin-top: 20px;
+    }
+
+/*    7*/
+
+    .blogArea.CorporateFour .singlePost{
+        margin-bottom: 40px;
+    }
+    .blogArea.CorporateFour .col-md-4:last-child .singlePost{
+        margin-bottom: 0;
+    }
+    .blogArea.CorporateFour .singlePost a.postImg{
+        margin-bottom: 20px;
+    }
+    .blogArea.CorporateFour .postContent .date{
+        margin-bottom: 10px
+    }
+    .blogArea.CorporateFour .h4.postTitle{
+        font-size: 16px;
+        margin-bottom: 15px
+    }
+
+/*    8*/
+
+    .blogArea.CorporateFive .post .col-md-6{
+        padding: 0 15px!important
+    }
+
+	.blogArea.CorporateFive .date{
+		font-size: 24px;
+		margin-bottom: 5px
+	}
+	.blogArea.CorporateFive .month{
+		font-size: 12px
+	}
+	.blogArea.CorporateFive .postTime {
+	  height: 60px;
+	  width: 60px;
+        position: absolute;
+        top: 0;
+        left: 15px
+
+	}
+    .blogArea.CorporateFive .postTxt{
+        padding: 0
+    }
+    .blogArea.CorporateFive .postContent.clearfix{
+        margin-top: 30px
+    }
+    .blogArea.CorporateFive .postTitle.h4{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .blogArea.CorporateFive .postTxt{
+        font-size: 13px
+    }
+    .blogArea.CorporateFive .postBtn{
+        margin-top: 10px
+    }
+    .blogArea.CorporateFive .singlePost{
+        margin-bottom: 40px;
+    }
+    .blogArea.CorporateFive .col-md-6:last-child .singlePost{
+        margin-bottom: 0
+    }
+
+/*    9*/
+    .blogArea.CorporateSix .post .col-md-6{
+        padding: 0 15px!important;
+        margin-bottom: 40px;
+    }
+    .blogArea.CorporateSix .post .col-md-6:last-child{
+        margin-bottom: 0
+    }
+    .blogArea.CorporateSix .postContent{
+        padding: 20px 0
+    }
+    .blogArea.CorporateSix .postContent > p{
+        display: none;
+    }
+    .blogArea.CorporateSix .postTitle.h4{
+        font-size: 16px
+    }
+    .blogArea.CorporateSix .post{
+        margin-bottom: 40px
+    }
+
+
+
+
+/*
+	***********************************
+		PortfolioPage Responsive CSS
+	***********************************
+*/
+
+
+	.portfolioArea.StartUpOne .portCol:nth-child(2),
+	.portfolioArea.StartUpOne .portCol:nth-child(3){
+		margin-top: 30px
+	}
+	.portfolioArea.StartUpOne .portfolioBtn{
+		margin-top: 30px;
+	}
+	.portfolioArea.StartUpOne .portfolioBtn > a{
+		line-height: 40px;
+		padding: 0 25px;
+		font-size: 13px
+	}
+	.portfolioArea.FitnessOne .singleItem,
+	.portfolioArea.StartUpTwo .singleItem{
+		width: 50%!important
+	}
+	.portfolioArea.FitnessOne .singleItem .hvrContent,
+	.portfolioArea.StartUpTwo .singleItem .hoverContent{
+		display: none;
+	}
+
+	.portfolioArea.FitnessOne .fitGalleryMenu ul li {
+		font-size: 12px;
+		line-height: 23px;
+	}
+	.portfolioArea.FitnessOne .fitGalleryMenu ul {
+		margin-bottom: 25px;
+	}
+	.portfolioArea.CorporateTwo .portfolioItem .singleItem,
+	.portfolioArea.CorporateOne .portfolioItem .singleItem {
+		width: 50%;
+	}
+    .portfolioArea.CorporateThree .portfolioItem .singleItem{
+        width: 50%!important
+    }
+	.portfolioArea.CorporateThree .portfolioItem .singleItem a:before, .portfolioArea.CorporateThree .portfolioItem .singleItem a .hvrContent:after,
+	.portfolioArea.CorporateOne .portfolioItem .singleItem a:before, .portfolioArea.CorporateOne .portfolioItem .singleItem a .hvrContent:after,
+	.portfolioArea.CorporateTwo .portfolioItem .singleItem a:before, .portfolioArea.CorporateTwo .portfolioItem .singleItem a .hvrContent:after{
+		height: 2px
+	}
+	.portfolioArea.CorporateOne .portfolioItem .singleItem a:after, .portfolioArea.CorporateOne .portfolioItem .singleItem a .hvrContent:before,
+	.portfolioArea.CorporateThree .portfolioItem .singleItem a:after, .portfolioArea.CorporateThree .portfolioItem .singleItem a .hvrContent:before,
+	.portfolioArea.CorporateTwo .portfolioItem .singleItem a:after, .portfolioArea.CorporateTwo .portfolioItem .singleItem a .hvrContent:before{
+		width: 2px
+	}
+    .portfolioArea.CorporateTwo .portfolioMenu ul li {
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .portfolioArea.CorporateTwo .portfolioMenu ul {
+        margin-bottom: 30px;
+    }
+    .portfolioArea.CorporateTwo .portfolioItem .singleItem .hvrContent > p,
+    .portfolioArea.CorporateTwo .portfolioItem .singleItem .hvrContent > span,
+    .portfolioArea.CorporateThree .portfolioItem .singleItem .hvrContent > p,
+    .portfolioArea.CorporateThree .portfolioItem .singleItem .hvrContent > span {
+        display: none;
+    }
+    .portfolioArea.CorporateThree .portfolioMenu ul{
+        margin-bottom: 30px
+    }
+    .portfolioArea.CorporateThree .portfolioMenu ul li{
+        line-height: 25px;
+        margin-bottom: 10px
+    }
+    .portfolioArea.CorporateThree .portfolioMenu ul li:before{
+        height: 25px;
+    }
+    .portfolioArea.CorporateSix .portfolioItem .singleItem,
+    .portfolioArea.CorporateFive .portfolioItem .singleItem{
+        width: 50%;
+    }
+    .portfolioArea.CorporateSix .hoverContent,
+    .portfolioArea.CorporateFive .hoverContent{
+        display: none;
+    }
+    .portfolioArea.CorporateFour .slick-dots{
+        margin-top: 40px;
+    }
+
+
+
+
+/*
+	***********************************
+		PortfolioPage Responsive CSS
+	***********************************
+*/
+
+
+
+/*    1*/
+
+    .serviceArea.StartUpOne .singleService{
+        padding: 60px 35px
+    }
+
+/*    2*/
+
+    .serviceArea.StartUpTwo .singleService{
+        margin-bottom: 40px;
+    }
+    .serviceArea.StartUpTwo .col-md-4:last-child .singleService{
+        margin-bottom: 0;
+    }
+
+/*    3*/
+
+    .serviceArea.FitnessOne .singleService {
+        margin-bottom: 50px;
+    }
+    .serviceArea.FitnessOne .col-md-3:last-child .singleService {
+        margin-bottom: 0;
+    }
+    .serviceArea.FitnessOne .serviceIcon {
+        height: 70px;
+        margin-bottom: 25px;
+        width: 70px;
+    }
+    .serviceArea.FitnessOne .serviceIcon img {
+        width: 65%;
+    }
+
+    .serviceArea.CorporateOne .singleService{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .serviceArea.CorporateTwo .singleService{
+        padding: 0;
+        border-bottom: 1px solid #eee
+    }
+    .serviceArea.CorporateTwo .singleService p{
+        padding: 0 30px
+    }
+    .serviceArea.CorporateTwo .col-md-4:last-child .singleService{
+        border-bottom: none
+    }
+
+    .serviceArea.CorporateThree .service-list,
+    .serviceArea.CorporateThree .services{
+        padding: 0;
+        box-shadow: none;
+    }
+    .serviceArea.CorporateThree .img-bg{
+        display: none;
+    }
+
+    .serviceArea.CorporateThree .col-md-4 .singleService,
+    .serviceArea.CorporateThree .col-md-4:nth-child(2) .singleService,
+    .serviceArea.CorporateThree .col-md-4:nth-child(3) .singleService{
+        margin-top: 50px
+    }
+    .serviceArea.CorporateTwo.sectionPadding{
+        padding: 40px 0 0
+    }
+    .serviceArea.CorporateThree{
+        padding: 50px 0
+    }
+
+
+    .serviceArea.CorporateFour .serviceIcon {
+        display: inline-flex!important;
+        float: none!important;
+        margin-bottom: 25px!important;
+    }
+    .serviceArea.CorporateFour .singleService {
+        text-align: center!important;
+    }
+    .serviceArea.CorporateFour .serviceContent {
+        padding: 0!important;
+    }
+    .serviceArea.CorporateFour .col-md-4:last-child .singleService{
+        margin: 0
+    }
+    .serviceArea.CorporateFour .singleService{
+        height: auto;
+        margin-bottom: 40px
+    }
+
+    .serviceArea.CorporateFour .container:before,.serviceArea.CorporateSix .container:before{
+        display: none;
+    }
+    .serviceArea.CorporateFour .container,.serviceArea.CorporateSix .container{
+        background: none;
+    }
+
+
+
+
+
+	.serviceArea.CorporateFive .singleService.active .serviceHead,
+	.serviceArea.CorporateFive .singleService:hover .serviceHead,
+	.serviceArea.CorporateFive .singleService .serviceHead {
+		margin: 0;
+		top: 30px;
+	}
+
+	.serviceArea.CorporateFive .singleService p {
+		transform: scale(1);
+		padding: 0 15px;
+		bottom: 0
+	}
+
+	.serviceArea.CorporateFive .singleService {
+		height: 250px;
+		padding: 40px 0 0;
+	}
+
+	.serviceArea.CorporateFive .col-md-4:last-child .singleService {
+		padding: 0
+	}
+
+
+
+
+
+    .serviceArea.CorporateSix .singleService{
+        text-align: center!important;
+        height: 215px;
+        margin-bottom: 40px
+    }
+    .serviceArea.CorporateSix .col-md-4:last-child .singleService{
+        margin-bottom: 0
+    }
+    .serviceArea.CorporateSix .serviceIcon{
+        float: none!important;
+        display: -webkit-inline-flex!important;
+        display: -moz-inline-flex!important;
+        display: -ms-inline-flex!important;
+        display: -o-inline-flex!important;
+        display: inline-flex!important;
+
+    }
+    .serviceArea.CorporateSix .serviceContent{
+        padding: 0!important
+    }
+    .serviceArea.CorporateSix .singleService .serviceContent h2,
+    .serviceArea.CorporateSix .singleService:hover .serviceContent h2 {
+      margin: 10px 0;
+    }
+    .serviceArea.CorporateSix .serviceContent > p{
+        transform: scale(1)
+    }
+
+
+    .serviceArea.CorporateThree .service-list:after{
+        display: none;
+    }
+
+/*
+	***********************************
+		Team Responsive CSS
+	***********************************
+*/
+
+	.teamArea.StartUpOne .singleMember{
+		height: 365px;
+		margin-bottom: 40px
+	}
+
+	.teamArea.StartUpOne .col-md-4:last-child .singleMember{
+		margin: 0
+	}
+
+	.teamArea.StartUpTwo .singleMember{
+		height: 365px;
+		margin-bottom: 40px
+	}
+
+    .teamArea.StartUpTwo .singleMember:before{
+        height: 165px
+    }
+    .teamArea.StartUpTwo .singleMember{
+        height: 355px
+    }
+    .teamArea.StartUpTwo .hoverContent,
+    .teamArea.StartUpTwo .hvrTxt {
+        bottom: 40px;
+        height: 100px;
+    }
+
+	.teamArea.FitnessOne .singleMember{
+		margin-bottom: 1px
+	}
+    .teamArea.FitnessOne .socialIcon {
+        padding: 0 20px;
+    }
+    .teamArea.FitnessOne .socialIcon ul li a {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .teamArea.FitnessOne .hoverCell .hvrTxt{
+        display: none;
+    }
+    .teamArea.FitnessOne .singleMember:hover .hoverContent{
+        padding: 20px
+    }
+    .teamArea.FitnessOne .hoverContent .h4 {
+        font-size: 17px;
+    }
+    .teamArea.FitnessOne .hoverContent .h5,.teamArea.CorporateFour .singleTeamSlide {
+        margin-bottom: 0;
+    }
+	.teamArea.CorporateOne .singleTeamSlide{
+		margin-bottom: 40px;
+		text-align: center
+	}
+	.teamArea.CorporateOne .owl-dots{
+		bottom: 0
+	}
+	.teamArea.CorporateFour .owl-dots,
+	.teamArea.CorporateTwo .teamTxt br{
+		display: none;
+	}
+	.teamArea.CorporateFive .owl-nav div{
+		margin: 0;
+		left: 0
+	}
+	.teamArea.CorporateFive .owl-nav div.owl-next {
+	  left: auto;
+	  margin-left: 0;
+	  margin-right: 0;
+	  right: 0;
+	}
+	.teamArea.CorporateFive .owl-nav div:hover{
+		width: 70px
+	}
+	.teamArea.CorporateFive .socialIcon{
+		margin-bottom: 50px
+	}
+	.teamArea.CorporateFive .singleTeamSlide .socialIcon ul {
+	  opacity: 1;
+	  transform: translateX(0px);
+	  visibility: visible;
+	}
+	.teamArea.CorporateSix .socialIcon > ul li a{
+		font-size: 20px;
+		width: 30px;
+	}
+	.teamArea.CorporateThree .clientDesc{
+		padding: 385px 20px 20px;
+		background: #fff;
+		box-shadow: 0 0 5px RGBA(0, 0, 0, 0.16);
+		margin: 5px
+	}
+	.teamArea.CorporateThree .owl-nav{
+		display: none;
+	}
+	.teamArea.CorporateThree .clientTxt{
+		display: none;
+	}
+	.teamArea.CorporateThree .sectionTitle{
+		margin-bottom: 70px
+	}
+	.teamArea.CorporateThree .clientDesc:before{
+		display: none;
+	}
+	.teamArea.CorporateThree .clientImg{
+		height: 365px;
+		top: 20px;
+		width: 100%;
+		text-align: center;
+		right: auto;
+		left: 0
+	}
+	.teamArea.CorporateThree .clientImg img{
+		width: auto;
+		display: inline-block;
+		border-bottom: 2px solid #999
+	}
+	.teamArea.CorporateThree .clientName{
+		text-align: center;
+		margin-top: 10px;
+		font-size: 18px
+	}
+	.teamArea.CorporateThree .position{
+		margin-bottom: 25px;
+		text-align: center
+	}
+	.teamArea.CorporateThree .socialIcon > ul{
+		margin-top: 0;
+		text-align: center
+	}
+	.teamArea.CorporateSix .owl-nav,
+	.teamArea.CorporateTwo .owl-nav{
+		display: none;
+	}
+
+/*
+	***********************************
+		Footer Responsive CSS
+	***********************************
+*/
+
+	footer.Two .footerTop .footerInfo,
+	footer.One .footerTop .footerInfo {
+	  margin-bottom: 40px;
+	  text-align: center;
+	}
+	footer.Two .footerLogo,
+	footer.One .footerLogo{
+		margin: 0 0 20px
+	}
+	footer.Two .footerTop .footerInfo .h4,
+	footer.One .footerTop .footerInfo .h4{
+		display: inline-block;
+	}
+	footer.Two .footerTop .col-md-4:last-child .footerInfo,
+	footer.One .footerTop .col-md-4:last-child .footerInfo{
+		margin-bottom: 0
+	}
+	footer.Two .cpTxt p,
+	footer.One .cpTxt p{
+		line-height: 24px;
+		padding: 20px 0;
+	}
+	footer.Two .topScrl,
+	footer.One .topScrl{
+		display: none;
+	}
+	footer.Two .footerLinks,
+	footer.One .footerLinks{
+		text-align: left;
+		padding-left: 50px
+	}
+	footer.Two .footerTxt {
+	  text-align: left;
+	}
+	footer.Two .footerTxt br{
+	  display: none;
+	}
+	footer.Two .cpTxt,footer.Two .footerSocial{
+		text-align: center
+	}
+	footer.Two .cpTxt p{
+		padding-bottom: 0
+	}
+	footer.Three .col-md-4:first-child{
+		margin-top: 0;
+		margin-bottom: 40px
+	}
+	footer.Three a.footerLogo{
+		margin-bottom: 20px
+	}
+	footer.Three .footerInfo{
+		text-align: center
+	}
+	footer.Three .footerInfo .h4{
+		display: inline-block;
+	}
+	footer.Three .col-md-4:last-child{
+		padding-top: 20px
+	}
+	footer.Three .fooTxt{
+		text-align: center
+	}
+	.footer.Four .topScrl {
+	  bottom: 10px;
+	  right: 40px;
+	}
+	.footer.Six .topScrl {
+	  bottom: 10px;
+	  right: 30px;
+	}
+	footer.Six .footerLogo{
+		margin-bottom: 20px;
+		width: 60px
+	}
+	footer.Six .footerSocial{
+		margin: 0 0 10px
+	}
+	footer.Seven .footerLogo{
+		margin: 0 0 20px
+	}
+	footer.Seven .footerTop .footerInfo{
+		text-align: center;
+		margin-bottom: 40px
+	}
+	footer.Seven .footerTop .footerInfo .h4{
+		display: inline-block;
+	}
+	footer.Seven .footerLinks{
+		text-align: left;
+		padding-left: 50px
+	}
+	.footer.Seven .contactInfo.widget {
+	  margin-bottom: 40px;
+	  padding-left: 50px;
+	}
+	footer.Seven .col-md-3:last-child .footerInfo{
+		margin-bottom: 0
+	}
+	footer.Seven .cpTxt p {
+	  line-height: 30px;
+	  padding: 20px 0;
+		margin: 0
+	}
+	footer.Seven .topScrl{
+		display: none;
+	}
+
+
+
+
+
+/*
+	***********************************
+		price Responsive CSS
+	***********************************
+*/
+
+
+	.priceArea .col-sm-4.priceCol {
+		margin-bottom: 30px;
+	}
+	.priceArea .col-sm-4.priceCol:last-child {
+		margin-bottom: 0;
+	}
+	.priceArea.CorporateTwo .price {
+		padding: 0 15px;
+	}
+	.priceArea.CorporateTwo .singlePrice.active {
+		transform: translateY(0px);
+	}
+	.priceArea.CorporateThree .priceCol .singlePrice.active {
+		transform: translate(0px);
+	}
+	.priceArea.CorporateFour .price {
+		padding: 0;
+	}
+	.priceArea.CorporateFour .priceCol {
+		padding: 0 15px;
+	}
+
+/*
+	***********************************
+		price Responsive CSS
+	***********************************
+*/
+
+	.testimonialArea.StartUpOne .singleTstSlide br,
+	.testimonialArea.StartUpTwo .tstTxt br{
+		display: none;
+	}
+	.testimonialArea.StartUpOne .slideImg{
+		margin-bottom: 20px
+	}
+	.testimonialArea.StartUpOne .singleTstSlide .clientName{
+		margin-top: 20px
+	}
+	.testimonialArea.StartUpOne .singleTstSlide .position{
+		margin-bottom: 50px
+	}
+	.testimonialArea.StartUpTwo .singleTstSlide{
+		padding: 0
+	}
+	.testimonialArea.StartUpTwo .tstTxt{
+		padding: 40px 20px;
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.testimonialArea.StartUpTwo .tstTxt p{
+		line-height: 20px
+	}
+	.testimonialArea.StartUpTwo .tstDotSlider .singleTstDot{
+		margin: 5px
+	}
+	.testimonialArea.StartUpTwo .tstDotSlider{
+		width: 100%
+	}
+	.testimonialArea.StartUpTwo .tstDotSlider{
+		margin-top: 20px
+	}
+	.testimonialArea.CorporateOne .tstImg,.testimonialArea.CorporateOne .position{
+		margin-bottom: 20px
+	}
+	.testimonialArea.CorporateThree .singleTstSlide .tstTxt,
+	.testimonialArea.CorporateOne .singleTstSlide .tstTxt{
+		font-size: 13px;
+		line-height: 20px
+	}
+	.testimonialArea.CorporateThree .singleTstSlide .tstTxt br,
+	.testimonialArea.CorporateOne .singleTstSlide .tstTxt br,
+	.testimonialArea.CorporateTwo .singleTstSlide .tstTxt br{
+		display: none;
+	}
+	.testimonialArea.CorporateOne .singleTstSlide p:last-child{
+		margin-bottom: 40px
+	}
+	.testimonialArea.CorporateTwo .owl-prev{
+		left: 0;
+        top: auto;
+	}
+	.testimonialArea.CorporateTwo .owl-next{
+		left: auto;
+		right: 0;
+        top: auto;
+	}
+	.testimonialArea.CorporateFour .tstCol{
+		padding: 0 15px
+	}
+	.testimonialArea.CorporateFour .tstSlider .tstTop br{
+		display: none;
+	}
+	.testimonialArea.CorporateFour .tstSlider .tstTop{
+		padding: 30px 10px;
+		font-size: 13px;
+		line-height: 20px
+	}
+	.testimonialArea.CorporateFour .tstImg img{
+		border-width: 2px
+	}
+	.testimonialArea.CorporateFour .tstImg{
+		margin-bottom: 45px
+	}
+	.testimonialArea.CorporateFive .tstTxt{
+		margin-bottom: 40px;
+		border-bottom: 1px solid #f1f1f1;
+		padding-bottom: 35px
+	}
+	.testimonialArea.CorporateFive .col-md-4:last-child .tstTxt,
+	.testimonialArea.CorporateSix .col-md-4:last-child .tstTxt{
+		margin-bottom: 0;
+		border-bottom: none;
+		padding-bottom: 0
+	}
+	.testimonialArea.CorporateFive .tstTxt br,.testimonialArea.CorporateSix .tstTxt br{
+		display: none;
+	}
+
+	.testimonialArea.CorporateSix .tstTxt{
+		margin-bottom: 40px
+	}
+	.testimonialArea.CorporateSeven .singleTstSlide .tstTxt{
+		font-size: 13px;
+		line-height: 20px
+	}
+	.testimonialArea.CorporateSeven .singleTstSlide .tstTxt br{
+		display: none;
+	}
+
+/*
+	***********************************
+		factArea Responsive CSS
+	***********************************
+*/
+	.factArea.Two .col-md-3 .singleFact,
+	.factArea.One .col-md-3 .singleFact {
+		padding: 15px 0;
+		text-align: center !important;
+	}
+	.factArea.Two .container .row,
+	.factArea.One .container .row {
+		margin: -15px;
+	}
+	.factArea.Three .col-md-3:first-child, .factArea.Three .col-md-3:last-child {
+		text-align: center;
+	}
+	.factArea.Three .col-md-3.col-sm-6 {
+		margin-top: 40px;
+	}
+	.factArea.Three .col-md-3:first-child{
+		margin-top: 0
+	}
+	.factArea.Four .col-md-2 {
+		padding: 15px 0;
+	}
+	.factArea.Four .container .row {
+		margin: -15px;
+	}
+	.factArea.Five .singleFact {
+		text-align: center !important;
+	}
+	.factArea.Five .col-md-3 {
+		padding: 15px 0;
+		text-align: center !important;
+	}
+	.factArea.Five {
+		padding: 60px 0;
+	}
+	.factArea.Six .col-md-3 {
+	  text-align: center !important;
+	}
+	.factArea.Eight .col-md-3 {
+		margin: 15px 0;
+		text-align: center !important;
+	}
+	.factArea.Eight .row {
+		margin: -15px;
+	}
+	.factArea.Nine .col-md-3:before{
+		display: none;
+	}
+	.factArea.Nine .col-md-3{
+		padding: 5px 20px;
+	}
+
+
+/*
+	***********************************
+		factArea Responsive CSS
+	***********************************
+*/
+
+	.ctaArea.One .cta{
+		margin: 0;
+		text-align: center
+	}
+	.ctaArea.One .cta span.h4{
+		margin-bottom: 20px
+	}
+	.ctaArea.One .cta br{
+		display: none;
+	}
+	.ctaArea.One .cta p,.ctaArea.One .cta{
+		line-height: 24px
+	}
+	.ctaArea.Six a.ctaBtn,
+	.ctaArea.One a.ctaBtn,
+	.ctaArea.Two a.ctaBtn,
+	.ctaArea.Three a.ctaBtn{
+		margin-top: 20px;
+		line-height: 45px;
+		padding: 0 20px;
+		font-size: 13px
+	}
+	.ctaArea.Two .cta{
+		margin: 0;
+		text-align: left;
+	}
+	.ctaArea.Two{
+		position: relative;
+		z-index: 1
+	}
+	.ctaArea.Two:before{
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: RGBA(255, 255, 255, 0.5)
+	}
+
+	.ctaArea.Two .cta span.h4 {
+		color: #000;
+		margin-bottom: 20px;
+	}
+	.ctaArea.Two .cta {
+		color: #000;
+	}
+	.ctaArea.Two .cta br {
+		display: none;
+	}
+
+	.ctaArea.Five .cta,
+	.ctaArea.Four .cta,
+	.ctaArea.Three .cta{
+		text-align: center;
+	}
+	.ctaArea.Five .cta .h3,
+	.ctaArea.Four .cta .h3,
+	.ctaArea.Three .cta .h3{
+		line-height: 30px;
+		margin-bottom: 20px
+	}
+	.ctaArea.Five a.ctaBtn,
+	.ctaArea.Four a.ctaBtn,
+	.ctaArea.Three a.ctaBtn{
+		margin-top: 0;
+		float: none;
+		font-size: 13px
+	}
+
+	.ctaArea.Six a.ctaBtn{
+		margin-top: 20px;
+		float: none;
+		font-size: 13px
+	}
+	.ctaArea.One .ctaImg.absolute{
+		display: none;
+	}
+	.ctaArea.Six .cta .h2 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.ctaArea.Six .cta br {
+		display: none;
+	}
+
+/*
+	***********************************
+		Video Responsive CSS
+	***********************************
+*/
+
+	.videoArea.Two,.videoArea.Three {
+		padding: 100px 0;
+	}
+	.videoArea.Two .video br {
+		display: none;
+	}
+	.videoArea.Two .video p, .videoArea.Two .video {
+		margin-bottom: 25px;
+	}
+	.videoArea.Two .video {
+		margin: 0;
+	}
+	.videoArea.Three .video a{
+		height: 70px;
+		width: 70px;
+		line-height: 66px
+	}
+
+
+
+/*
+	***********************************
+		BrandArea Responsive CSS
+	***********************************
+*/
+
+
+	.brandArea.Five .singleBrand:before{
+		display: none;
+	}
+	.brandArea.Five .owl-nav > div{
+		left: -15px
+	}
+	.brandArea.Five .owl-nav > div.owl-next{
+		left: auto;
+		right: -15px
+	}
+	.brandArea.Two .col-md-12,.brandArea.One .col-md-12{
+		padding: 0 30px
+	}
+	.brandArea.Three .brand{
+		margin: 0
+	}
+	.brandArea.Three .singleBrand{
+		width: 50%;
+		margin: 0;
+		padding: 20px 0;
+		border: 1px solid #f2f2f2
+	}
+	.brandArea.Three .singleBrand:before,
+	.brandArea.Three .singleBrand:after{
+		display: none
+	}
+	.touchArea .singleTouch {
+		margin-bottom: 50px;
+	}
+	.touchArea .col-sm-4:last-child .singleTouch {
+		margin-bottom: 0;
+	}
+
+/*	social*/
+
+
+
+.socialArea .singleSocial a {
+    font-size: 20px;
+}
+.socialArea .singleSocial {
+    padding: 15px 0;
+}
+.socialArea.Tow .singleSocial a {
+    font-size: 18px;
+}
+.socialArea.Three .singleSocial a {
+    font-size: 18px;
+}
+
+
+
+
+/*
+***************************
+	singleHead
+***************************
+*/
+
+
+
+	.singleHead .headerBottom {
+		padding: 13px 0;
+	}
+	.singleHead .headerInfo {
+		display: none;
+	}
+	.singleHead .joinForm {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.singleHead button.navbar-toggle {
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		font-size: 20px
+	}
+	.singleHead .searchIcon {
+		font-size: 18px;
+		line-height: 33px;
+		right: 50px;
+	}
+	.singleHead nav#navbar {
+		background: #f9bf39 none repeat scroll 0 0;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 53px;
+		width: 280px;
+		z-index: 9999
+	}
+	.singleHead .nav.navbar-nav.navbar-right {
+		border: 1px solid;
+		display: block;
+		margin: 0;
+		outline: 1px solid;
+		outline-offset: -5px;
+		padding: 6px 0 10px;
+		width: 100%;
+	}
+	.singleHead .navbar-nav > li{
+		display: block
+	}
+	.singleHead .navbar-nav > li > a {
+		line-height: 40px;
+	}
+	.singleHead .navbar-nav > li > a:before {
+		left: 50%;
+		margin-left: -10px;
+	}
+	.singleHead .searchBox input[type="search"] {
+		width: 70%;
+		height: 100%;
+		font-size: 13px;
+		padding: 0 10px;
+
+	}
+	.singleHead .searchBox input[type="submit"] {
+		width: 100%;
+		height: 100%;
+		font-size: 10px;
+	}
+	.singleHead .searchBox form {
+		right: 15px;
+		padding: 0;
+		height: 58px;
+		top: -100px
+	}
+	.singleHead .searchBox.active form {
+		top: -13px;
+	}
+
+    .singlePage .homeArea h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .singlePage .homeArea .col-md-6:last-child {
+        text-align: center;
+    }
+    .singlePage .homeArea .pageIndicate {
+        line-height: 30px;
+    }
+    .singlePage .homeArea {
+        padding: 30px 0;
+    }
+
+    .single-about.One .aboutArea.CorporateFour .aboutContent{
+        height: auto
+    }
+
+.singlePage .blogArea.CorporateFive .postTime{
+	left: 0
+}
+	.singlePage.Four .blogArea.CorporateFive .postCat{
+		bottom: 5px;
+		right: 5px
+	}
+
+	.singlePage .blogPagination{
+		margin: 60px 0
+	}
+
+	.singlePage.Eight .blogArea.CorporateFive .metaRight {
+		height: auto;
+		padding: 0;
+	}
+	.singlePage.Eight .singlePost .author {
+		margin-bottom: 5px;
+		margin-top: 0;
+	}
+	.singlePage.Eight .singlePost .shareTxt {
+		margin-left: 15px;
+	}
+	.singlePage.Eight .blogArea.CorporateFive .postMeta {
+		margin-bottom: 20px;
+	}
+	.singlePage.Eight .blogArea.CorporateFive .postTitle.h4 {
+		font-size: 20px;
+	}
+	.singlePage blockquote {
+		font-size: 16px;
+		margin: 30px 0 40px;
+	}
+	.singlePage blockquote br {
+		display: none;
+	}
+	.singlePage .blogArea.CorporateFive .singlePost .postCat {
+		margin-top: 20px;
+	}
+	.singlePage .authorBox.clearfix {
+		margin-top: 40px;
+		text-align: center;
+	}
+	.singlePage .authorBox .authorImg {
+		display: inline-block;
+		float: none;
+	}
+	.singlePage .authorBox .authorDtc {
+		display: block;
+		float: none;
+		margin: 30px -10px 0;
+		padding: 0;
+		width: 100%;
+	}
+	.singlePage .authorBox .h4.authorName {
+		margin-bottom: 15px;
+	}
+	.singlePage .authorBox .authorDtc > p {
+		font-style: italic;
+	}
+	.singlePage .authorBox .authorDtc > p br {
+		display: none;
+	}
+
+
+.singlePage .comment_img {
+    display: inline-block;
+    float: none;
+    margin: 0;
+}
+.singlePage .single_comment {
+    text-align: center;
+}
+.singlePage .comment_txt {
+    float: none;
+    width: 100%;
+}
+.singlePage .comment_head .h5 {
+    margin: 20px 0;
+}
+.singlePage .comment_head .date {
+    display: block;
+    margin: 5px 0 0;
+}
+.singlePage .single_comment {
+    border-top: 2px solid #ddd;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.singlePage .comments_area div:nth-child(2) {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+.singlePage .single_comment.reply {
+    border-top: medium none;
+    padding: 0;
+}
+.singlePage .inputLeft,.singlePage  .inputRight {
+    width: 100%;
+}
+.singlePage .inputRight {
+    margin: 0;
+}
+.singlePage.Eight .postWidget .widget {
+    margin: 40px 0;
+}
+.singlePage.Eight .blogArea .singlePost {
+    margin-bottom: 40px;
+}
+
+	.singlePage .singleArtTitle{
+		margin-top: 40px
+	}
+	.singlePage .authorBox.clearfix{
+		margin-bottom: -40px
+	}
+	.singlePage .homeArea .pageIndicate > li{
+		font-size: 12px
+	}
+	.single-team.One .teamSkill{
+		display: none;
+	}
+	.single-team.One .teamContent{
+		width: 100%;
+		padding: 0
+	}
+	.single-team.One .teamTxt{
+		margin: 20px 0;
+		font-size: 14px
+	}
+	.single-team.One .teamLeft{
+		width: 100%
+	}
+	.single-team.One .teamSliderTen{
+		margin-bottom: 0
+	}
+	.single-team.One .teamNav.next.slick-arrow{
+		bottom: auto;
+		top: 240px;
+		background: RGBA(0, 0, 0, 0.5);
+		padding: 5px 10px;
+		border-radius: 2px;
+		right: 60px;
+		color: #fff;
+		font-size: 10px;
+		border: 1px solid #000
+	}
+	.single-team.One .teamNav.prev.slick-arrow{
+		bottom: auto;
+		top: 240px;
+		background: RGBA(0, 0, 0, 0.5);
+		padding: 5px 10px;
+		border-radius: 2px;
+		right: auto;
+		left: 60px;
+		color: #fff;
+		font-size: 10px;
+		border: 1px solid #000
+	}
+	.single-team.One .teamSliderTen{
+		text-align: center
+	}
+	.single-team.One .position{
+		margin-bottom: 8px
+	}
+	.single-team.One .memberName{
+		margin-bottom: 15px
+	}
+	.single-team.One .teamSliderElaven .singleTeamSLide{
+		width: 66px
+	}
+	.single-team .teamArea.StartUpTwo .col-md-4 {
+		margin-top: 0;
+	}
+
+
+	.single-team.Four .single_speaker_img {
+		border-bottom: 1px solid #ebebeb;
+		display: inline-block;
+		float: none;
+		height: 370px;
+		width: auto;
+	}
+	.slick-initialized .slick-slide {
+		text-align: center;
+	}
+	.single-team.Four .teamSliderTwelve .teamNav.slick-arrow {
+		background: #f9bf3b none repeat scroll 0 0;
+		color: #2d2d2d;
+		font-size: 10px;
+		right: 60px;
+		top: 330px;
+	}
+	.single-team.Four .teamSliderTwelve .teamNav.prev.slick-arrow {
+		background: #f9bf3b none repeat scroll 0 0;
+		color: #2d2d2d;
+		left: 60px;
+		right: auto;
+	}
+	.single-team.Four .teamContent h4 {
+		font-size: 20px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.single-team.Four .teamContent h5 {
+		margin-bottom: 20px;
+	}
+	.single-team.Four .teamContent > p {
+		font-size: 13px;
+		line-height: 25px;
+		margin-bottom: 20px;
+	}
+	.single-team.Four .teamContent > p br {
+		display: none;
+	}
+	.single-team.Four .teamContent {
+		height: auto;
+	}
+	.single-team.Four .teamSliderTwelve {
+		border-bottom: 0 none;
+	}
+	.single-team.Four .teamSliderThirteen {
+		margin-top: 30px;
+	}
+	.single-team.Four .singleTeamDotImg {
+		height: 42px;
+		margin-right: 5px;
+		width: 42px;
+	}
+	.single-team.Five .teamArea.CorporateFive .col-md-12:last-child {
+		margin-bottom: 0;
+		margin-top: 50px;
+	}
+
+	.PortfolioSlide14 .portfolioDtc .col-sm-6.col-md-3 {
+		border-bottom: 1px solid #fff;
+	}
+	.PortfolioSlide14 .portfolioDtc .col-sm-6.col-md-3{
+		border-left: 0;
+	}
+	.single-portfolio.Five .portfolioImg{
+		margin-bottom: 90px;
+		height: 190px
+	}
+	.single-portfolio.Five .PortfolioSlide14 .slick-arrow{
+		bottom: 30px;
+	}
+	.single-portfolio.Five .portfolioDotSlide15 .slick-arrow{
+		left: 0
+	}
+	.single-portfolio.Five .portfolioDotSlide15 .slick-arrow.arrow-next{
+		right: 0
+	}
+	.single-portfolio.Five .singleDotSlide {
+	  height: 65px;
+	  margin-right: 7px;
+	  width: 65px;
+	}
+	.single-portfolio.Six .singlePortfoliTitle.h4, .single-portfolio.Six .portfolioSlideTitle.h4{
+		margin-bottom: 50px
+	}
+	.single-portfolio.Six .portfolioImg{
+		height: 150px;
+		margin-bottom: 30px;
+	}
+	.single-portfolio.Six .portfolioTxt{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.single-portfolio.Six .portfolioTxt p{
+		line-height: 24px;
+		margin-bottom: 20px
+	}
+	.single-portfolio.Six .portfolioDtcWrep{
+		display: none;
+	}
+	.single-portfolio.Six .portfolioSlideTitle.h4{
+		margin: 30px 0 50px
+	}
+	.single-portfolio.Six .portfolioSlide17 .owl-nav div{
+		margin-right: -210px;
+		font-size: 14px;
+		height: 25px;
+		width: 20px;
+		line-height: 25px;
+		top: -40px
+	}
+	.single-portfolio.Six .portfolioSlide17 .owl-nav div.owl-prev{
+		margin-right: -180px
+	}
+	.singlePage footer.Seven .topScrl{
+		right: 15px
+	}
+	nav .navbar-nav > li > ul.sub-menu{
+		padding: 5px 20px
+	}
+
+
+	.single-portfolio.Seven .singlePortfolioImg {
+		height: 150px;
+		margin-bottom: 25px;
+	}
+	.single-portfolio.Seven .portfolioContent {
+		margin-left: 0;
+		text-align: justify;
+	}
+	.single-portfolio.Seven .portfolioTitle.h4 {
+		margin-bottom: 10px;
+	}
+	.single-portfolio.Seven .portfolioTxt {
+		font-size: 13px;
+		line-height: 24px;
+	}
+	.single-portfolio.Seven .portfolioTxt p {
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+	.single-portfolio.Seven .portfolioDtc {
+		margin-top: 30px;
+	}
+	.single-portfolio.Seven .portfolioDtc a {
+		margin-left: 15px;
+	}
+	.single-portfolio.Seven .portfolioSlideTitle.h4 {
+		margin: 40px 0 60px;
+	}
+
+	.errorPage .errorContent > h1 {
+		font-size: 90px;
+		line-height: 80px;
+		margin: 0 0 15px;
+	}
+	.errorPage .errorContent > p {
+		margin-bottom: 20px;
+	}
+	.errorPage .errorBtn {
+		font-size: 12px;
+		line-height: 40px;
+		padding: 0 25px;
+	}
+	.single-contact.One form.contactForm .txtArea{
+		margin-left: 0;
+		margin-right: 0
+	}
+	.single-contact form.contactForm button{
+		font-size: 12px;
+		line-height: 40px;
+		padding: 0 25px
+	}
+	.single-contact.One #googleMap{
+		height: 200px
+	}
+	.single-contact.Two #googleMap{
+		height: 150px
+	}
+	.single-contact.Two .contactForm{
+		margin: 0
+	}
+	.CorporateFive.heroArea .col-md-6.col-md-offset-6.clearfix{
+		padding-left: 15px;
+	}
+	.CorporateFive .homeBtn a{
+		margin:  0 15px 10px!important;
+	}
+	.CorporateOne .singleHomeSlide h2 {
+	  font-size: 15px;
+	  margin-bottom: 25px;
+	  margin-top: 10px;
+		line-height: 24px;
+	}
+
+	.CorporateOne .singleHomeSlide h2 br{
+		display: none;
+	}
+    
+    .StartUpOne .homeSlider .owl-dots{
+        width: 280px;
+        margin-left: -140px;
+    }
+
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 450px;
+	}
+	.CorporateFive .homeBtn a{
+		margin:  0 5px 0!important;
+	}
+	.FitnessOne .homeContent h1 {
+	  font-size: 42px;
+	  line-height: 40px;
+	  margin-bottom: 35px;
+	}
+	.FitnessOne .homeBtn a {
+	  width: 150px;
+	}
+    .CorporateFour .singleHomeSlide > h1 {
+      font-size: 28px;
+    }
+    .CorporateSix .singleHomeSlide h1{
+    }
+    .CorporateSix .singleHomeSlide h1 {
+        font-size: 30px;
+        margin: 0 auto 30px;
+        line-height: 35px
+    }
+   .CorporateFive .homeSlider h1 {
+	  font-size: 27px;
+	  line-height: 23px;
+	  margin-bottom: 20px;
+	}
+	.searchBox form{
+		width: 420px!important;
+	}
+	.aboutArea.CorporateTwo .skillWrep div.barfillerWrep{
+		width: 100%
+	}
+	.aboutArea.CorporateTwo .skillWrep h3{
+		margin-top: 10px
+	}
+	.aboutArea.CorporateTwo .barfiller .tip{
+		top: 50px
+	}
+	.aboutArea.CorporateTwo .skillWrep{
+		margin-bottom: 20px
+	}
+	.aboutArea.CorporateTwo .aboutContent{
+		padding: 0!important
+	}
+	.aboutArea.CorporateTwo .aboutContent{
+		max-width: none!important;
+	}
+	.aboutArea.CorporateTwo .aboutSkill{
+		margin-bottom: 40px;
+	}
+
+
+    .serviceArea.CorporateThree .singleService{
+        padding-left: 75px
+    }
+	.teamArea .container{
+		width: 350px
+	}
+	footer.One .footerTxt br,footer.Seven .footerTxt{
+		display: none;
+	}
+	footer.Two .footerTxt{
+		text-align: center
+	}
+
+	.single-team.One .teamNav.next.slick-arrow{
+		top: 270px;
+	}
+	.single-team.One .teamNav.prev.slick-arrow{
+		top: 270px;
+	}
+
+	.single-team.One .teamSliderElaven .singleTeamSLide{
+		width: 59px
+	}
+
+
+.single-team.Four .singleTeamDotImg {
+    height: 65.5px;
+    width: 65.5px;
+}
+
+	.single-portfolio.Five .singleDotSlide {
+	  height: 64px;
+	  margin-right: 7px;
+	  width: 64px;
+	}
+	.single-portfolio.Five .portfolioDotSlide15 .slick-arrow{
+		left: -25px
+	}
+	.single-portfolio.Five .portfolioDotSlide15 .slick-arrow.arrow-next{
+		right: -25px
+	}
+
+
+	.errorPage .errorContent > p {
+		font-size: 17px
+	}
+
+	.single-contact.Two #googleMap{
+		height: 180px
+	}
+
+}

@@ -1524,7 +1524,7 @@
     });
 
     $(document).ready(function(){
-        // Add smooth scrolling to all links
+        // Add smooth scrolling to all links.2
         $("a").on('click', function(event) {
     
            // Make sure this.hash has a value before overriding default behavior

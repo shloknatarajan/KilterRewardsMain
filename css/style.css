@@ -13,6 +13,7 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -23,7 +24,6 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #0a98c0;
   outline: none;
   text-decoration: none;
 }
@@ -223,14 +223,40 @@ h6 {
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 #intro .intro-info h2 span {
   color: #4fd2c2;
 }
 
-#intro .intro-info .btn-get-started,
-#intro .intro-info .btn-services {
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+/*--------------------------------------------------------------
+# Generic Buttons
+--------------------------------------------------------------*/
+.btn-get-started,
+.btn-services {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -243,11 +269,20 @@ h6 {
   color: #fff;
   background: #4fd2c2;
   color: #fff;
+  border: 2px solid #4fd2c2;
+
 }
 
-#intro .intro-info .btn-get-started:hover,
-#intro .intro-info .btn-services:hover {
-  background: #0a98c0;
+.btn-get-started:hover,
+.btn-services:hover {
+  background: transparent;
+  border: 2px solid #4fd2c2;
+  color: #4fd2c2;
+  font-weight: 800;
+}
+
+.causeintrobutton {
+  margin-left: 2%;
 }
 
 /*--------------------------------------------------------------
@@ -256,27 +291,49 @@ h6 {
 
 #causeintro {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   position: relative;
-  background-image: url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-image: url(https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-size: cover;
-  z-index: -2;
+}
+
+.allcauseintro {
+  background-image: url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) !important;
+}
+
+#causeintro .intro-info {
+  overflow-x: visible;
+  word-break: break-word;
+}
+
+.intro-info p {
+  color: #282457;
 }
 
 @media screen and (max-width: 912px) {
   #causeintro {
-    height: 100vh;
+    height: 80vh;
   }
 }
 
-.overlay {
+.lightoverlay {
   z-index: -1;
   height: 100%;
   width: 100%;
   overflow: auto;
   top: 0px;
   left: 0px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.80);
+}
+
+.lightoverlay2 {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.89);
 }
 
 #causeintro .intro-info h2 {
@@ -291,7 +348,8 @@ h6 {
 }
 
 #causeintro p {
-  color: white;
+  color:rgb(50, 48, 78);
+  font-size: 1.2em;
 }
 
 .causeheader h2 {
@@ -300,7 +358,12 @@ h6 {
 
 .causecontainer {
   margin-top: 30vh;
-  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 912px) {
+  .causecontainer {
+    margin-top: 25vh;
+  }
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -641,7 +704,7 @@ h6 {
   overflow: hidden;
   border-radius: 10px;
   margin: 0 10px 40px 10px;
-  background-image: url('/img/kilter/airpotatodark.png');
+  background-image: url('/img/kilter/charitydark.jpg');
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   text-align: center;
@@ -732,8 +795,6 @@ hr.challengebreak {
   text-align: center;
 }
 
-.categorytag {
-}
 .categorytag p {
   position: absolute;
   bottom: 0;
@@ -746,7 +807,27 @@ hr.challengebreak {
   background-color: #4fd2c2 !important;
   border-radius: 10px;
   border-top-right-radius: 0px;
+}
 
+.datetag p {
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  /* border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid white; */
+}
+
+.allchallengeheaders {
+  margin-bottom: 3%;
 }
 
 
@@ -1320,9 +1401,7 @@ hr.challengebreak {
   color: #fff;
 }
 
-#pricing .card .btn:hover {
-  background: #0a98c0;
-}
+
 
 /* Frequently Asked Questions Section
 --------------------------------*/
@@ -1430,7 +1509,6 @@ hr.challengebreak {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0a98c0;
   color: #fff;
 }
 
@@ -1499,9 +1577,7 @@ hr.challengebreak {
   cursor: pointer;
 }
 
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #0a98c0;
-}
+
 
 #footer .footer-top .form .form-group {
   margin-bottom: 15px;
@@ -1584,7 +1660,6 @@ hr.challengebreak {
 }
 
 #footer .footer-top .form button[type="submit"]:hover {
-  background: #0a98c0;
   cursor: pointer;
 }
 
@@ -1607,7 +1682,6 @@ hr.challengebreak {
 }
 
 #footer .credits a:hover {
-  color: #0a98c0;
 }
 
 #footerbtn .btn-get-started {
@@ -1779,7 +1853,7 @@ hr.challengebreak {
 }
 
 /*--------------------------------------------------------------
-# Redesigned page
+# Blocks
 --------------------------------------------------------------*/
 #allinformation {
   padding: 50px;
@@ -1793,14 +1867,14 @@ hr.challengebreak {
 .purpleinfoblock {
   background-color: #413e66;
   color: white;
-  padding: 10px;
+  padding: 3%;
   min-height: 100px;
 }
 
 .whiteinfoblock {
   background-color: white;
   color: #413e66;
-  padding: 10px;
+  padding: 3%;
   min-height: 100px;
 }
 
@@ -1808,23 +1882,99 @@ hr.challengebreak {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
-.firstbox {
-  margin-left: 5%;
+@media screen and (min-width: 912px) {
+  .secondbox {
+    margin-left: 8%;
+  }
+
+  .top-buffer {
+    margin-top: 5%;
+  }
+  
+  .boxtitle {
+    text-decoration: underline;
+  }
 }
 
-.secondbox {
-  margin-left: 8%;
-}
 
-.top-buffer {
-  margin-top: 5%;
-}
-
-.boxtitle {
-  text-decoration: underline;
-}
 
 .geninfo p {
   margin-top: 1.5%;
   font-weight: 600;
 }
+
+.darkpiccard {
+  background: center url('/img/kilter/charitydark.jpg');
+  color: white;
+}
+
+.shadowbox h4 {
+  font-weight: 700;
+}
+
+.whatdo {
+  font-size: 1.3em;
+}
+
+.whohelptext {
+  margin-bottom: 1em !important;
+}
+
+#prizetickerarea h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(255, 153, 0);
+}
+
+@media screen and (min-width: 912px) {
+  #prizetickerarea h3 {
+    margin-top: 19%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Carousel edits
+--------------------------------------------------------------*/
+
+
+.carouselbox:hover, 
+.carouselbox:hover h5,
+.carouselbox:hover p {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: visible;
+}
+
+.carouselbox h5, 
+.carouselbox p {
+  visibility: hidden;
+}
+
+
+
+.carousel-item {
+  position: relative;
+}
+
+.darkoverlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.carouselbox:hover .darkoverlay {
+  opacity: 1;
+}
+
+
+

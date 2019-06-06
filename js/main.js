@@ -130,3 +130,26 @@
 
 })(jQuery);
 
+$(function() {
+  $(".typed").typed({
+      strings: [
+          "Companies",
+          "Teams",
+          "Groups",
+          "Clubs",
+          "Everyone"
+      ],
+      typeSpeed: 100,
+      backSpeed: 110,
+      backDelay: 1000,
+      removalDelay: 9000,
+      loop: true
+  })
+})
+
+$('.counter').counterUp({
+  delay: 10,
+  time: 1000
+});
+$('.counter').addClass('animated fadeInDownBig');
+$('h3').addClass('animated fadeIn');

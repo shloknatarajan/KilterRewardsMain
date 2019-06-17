@@ -1002,6 +1002,14 @@ hr.challengebreak {
   box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
 }
 
+.imagecap {
+  max-height: 400px !important;
+}
+
+.vertalign {
+  margin-top: 5%;
+}
+
 /* Portfolio Section
 --------------------------------*/
 
@@ -2065,7 +2073,8 @@ Payout Table
 Kilter Challenges
 -------------*/
 #challengetypes {
-  background-color: rgb(245, 248, 253);
+  /* background-color: rgb(245, 248, 253); */
+  background-color: white;
   padding: 3%;
 }
 

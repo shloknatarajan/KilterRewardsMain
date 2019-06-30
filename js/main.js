@@ -124,7 +124,7 @@
     autoplay: true,
     dots: true,
     loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
+    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 5 }
     }
   });
 
@@ -153,5 +153,4 @@ $('.counter').counterUp({
 });
 $('.counter').addClass('animated fadeInDownBig');
 $('h3').addClass('animated fadeIn');
-
 

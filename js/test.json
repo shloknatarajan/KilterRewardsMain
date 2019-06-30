@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Spring Challenge (Madison)",
+        "description": "<div>\nThis charity fitness challenge is open to teams from companies \nthat are based in the Madison, WI and surrounding area.<br>\n<br>\nParticipating Teams: 20<br>\nEntry Fee: $200<br> \nGrand Prize: $1000 Donation<br>  \n</div>",
+        "start": "2019-04-15T00:00:00Z",
+        "end": "2019-05-27T05:00:00Z"
+    },
+    {
+        "id": 3,
+        "name": "Kilter Rewards Summer Cause Challenge",
+        "description": "<div>\nJoin us for the Kilter Rewards Summer Cause Challenge!</br>\n<br>\n<b>Start Date:</b> June 15, 2019<br>\n<b>End Date:</b> July 31, 2019<br>\n<b>Team Sizes:</b> 15-50<br>\n<b>Entry Fee:</b> $400<br><i>($200 goes to donation prize pool)</i><br>\n<br>\n$2800 Donation Prize Pool<br>\n<b>GRAND PRIZE:</b> $1400<br> \n2nd Place: $700<br>\n3rd Place: $350<br>\n4th Place: $210<br>\n5th Place: $140<br>  \n<br>\n<b>14/20</b> Teams Registered\n</div>",
+        "start": "2019-06-15T05:00:00Z",
+        "end": "2019-07-31T23:59:59Z"
+    },
+    {
+        "id": 4,
+        "name": "Kilter Rewards Fall Cause Challenge",
+        "description": "<div>\nEnter a team of 20 employees in the Kilter Rewards Fall Cause Challenge to win one of five donation prizes for the charity of their choice! How do they win? The team must finish with one of the five top wellness scores!<br>\n <br>\n<b>Start Date:</b> September 16, 2019<br>\n<b>End Date:</b> October 15, 2019<br> \n<b>Team Size Limit:</b> 20 Participants<br>\n<b>Team Entry Fee:</b> $500 ($250 goes to donation prize pool!)<br>\n<br>\n<b>GRAND PRIZE:</b> 50% of Donation Prize Pool<br> \n2nd Place: 25% of Donation Prize Pool<br>\n3rd Place: 12.5% of Donation Prize Pool<br>\n4th Place: 7.5% of Donation Prize Pool<br>\n5th Place: 5% of Donation Prize Pool<br>\n<br>\n<b>1/50</b> Teams Registered\n</div>\n\n",
+        "start": "2019-09-16T00:31:35Z",
+        "end": "2019-10-15T23:59:59Z"
+    }
+]

@@ -1,6 +1,14 @@
 var fs = require('fs')
 const kilterget = require('./kilterget')
 let dataarray = kilterget.dataarray
+let registerorleaderboard = new Array()
+for (let i = 0; i < dataarray.length; i++) {
+  if (dataarray[i].challenge_status === "Upcoming") {
+    registerorleaderboard[i] = "Register"
+  } else {
+    registerorleaderboard[i] = "View Leaderboard"
+  }
+}
 
 // Page Creation
 let datapopulate = new Array(dataarray.length) 
@@ -45,7 +53,6 @@ for (let i = 0; i < dataarray.length; i++) {
           <div id="topbar">
             <div class="container">
               <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -65,6 +72,7 @@ for (let i = 0; i < dataarray.length; i++) {
               <ul>
                 <li class="active cause-nav"><a href="index.html">Home</a></li>
                 <li><a href="allchallenges.html">All Challenges</a></li>
+                <li><a href="https://kilterstories.home.blog/">Stories</a></li>
               </ul>
             </nav><!-- .main-nav -->
             
@@ -86,7 +94,7 @@ for (let i = 0; i < dataarray.length; i++) {
                   <div class="row justify-content-center align-self-center text-center">
                       <div class="col-md-11">
                           <p class="d-inline-block">${dataarray[i].start_date} - ${dataarray[i].end_date}</p>
-                          <a href="#about" class="mt-5 causeintrobutton btn-get-started scrollto">Register</a>
+                          <a href="#about" class="mt-5 causeintrobutton btn-get-started scrollto">${registerorleaderboard[i]}</a>
                       </div>
                   </div>
               </div>
@@ -126,7 +134,7 @@ for (let i = 0; i < dataarray.length; i++) {
                 <p class="cta-text">$${dataarray[i].entry_fee} Entry Fee (%50 Goes to Charity Guaranteed!)</p>
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle" href="#">Register</a>
+                <a class="cta-btn align-middle" href="#">${registerorleaderboard[i]}</a>
               </div>
             </div>
           </div>
@@ -182,29 +190,22 @@ for (let i = 0; i < dataarray.length; i++) {
                           <div class="footer-links">
                           <h4>Useful Links</h4>
                           <ul>
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Services</a></li>
-                              <li><a href="termsandservices.html">Terms of service</a></li>
-                              <li><a href="#">Privacy policy</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="termsandservices.html">Terms of service</a></li>
+                            <li><a href="/img/PDFs/privacy-policy.pdf">Privacy policy</a></li>
+                            <li><a href="/img/PDFs/KilterEmployeeOptions.pdf">Employers</a></li>
                           </ul>
                           </div>
                           <div class="footer-links">
                           <h4>Contact Us</h4>
                           <p>
-                              Techwood Drive <br>
-                              Atlanta, GA<br>
-                              United States <br>
-                              <strong>Phone:</strong> +1 5589 55488 55<br>
-                              <strong>Email:</strong> seth@kilterrewards.com<br>
+                              <strong>Email:</strong> friends@kilterrewards.com<br>
                           </p>
                           </div>
-  
                           <div class="social-links">
-                          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/kilterrewards/" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/kilter_rewards/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/kilter-llc/" class="linkedin"><i class="fa fa-linkedin"></i></a>
                           </div>
   
                       </div>
@@ -216,32 +217,29 @@ for (let i = 0; i < dataarray.length; i++) {
                   <div class="col-lg-6">
   
                   <div class="form">
-                      
-                      <h4>Send us a message</h4>
-                      <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
-                      <form action="" method="post" role="form" class="contactForm">
+                    <h4>Send us a message</h4>
+                    <p>Interested in working with us? Send a message below or directly to friends@kilterrewards.com</p>
+                    <form action="https://formspree.io/friends@kilterrewards.com" method="POST" role="form" class="contactForm">
                       <div class="form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                          <div class="validation"></div>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
                       </div>
                       <div class="form-group">
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                          <div class="validation"></div>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
                       </div>
                       <div class="form-group">
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                          <div class="validation"></div>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
                       </div>
                       <div class="form-group">
-                          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                          <div class="validation"></div>
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
                       </div>
-  
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
-  
                       <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-                      </form>
+                    </form>
                   </div>
                   </div>
               </div>

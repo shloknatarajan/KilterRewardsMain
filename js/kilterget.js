@@ -1,9 +1,9 @@
 const request = require('request');
-
 var dataarray = [
     {
         "page_url_name":"kilterspring2019",
         "challenge_status": "Upcoming",
+        "registration_link":"google.com",
         "can_register":true,
         "large_bg":"https://images.unsplash.com/photo-1462717585237-7fafe19c5448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
         "smaller_photo":"img/kilter/kilterrunning.jpg",
@@ -46,7 +46,7 @@ var dataarray = [
     },
     {
       "page_url_name":"kiltersummer2019",
-      "challenge_status": "Live",
+      "challenge_status": "Past",
       "can_register":true,
       "large_bg":"https://images.unsplash.com/photo-1462717585237-7fafe19c5448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
       "smaller_photo":"img/kilter/kilterrunning.jpg",
@@ -58,7 +58,7 @@ var dataarray = [
       "id": 3,
       "name": "Kilter Rewards Summer Cause Challenge",
       "box_description":"Join us for the kilter rewards summer challenge",
-      "description": "<div>\nJoin us for the Kilter Rewards Summer Cause Challenge!</br>\n<br>\n<b>Start Date:</b> June 15, 2019<br>\n<b>End Date:</b> July 31, 2019<br>\n<b>Team Sizes:</b> 15-50<br>\n<b>Entry Fee:</b> $400<br><i>($200 goes to donation prize pool)</i><br>\n<br>\n$2800 Donation Prize Pool<br>\n<b>GRAND PRIZE:</b> $1400<br> \n2nd Place: $700<br>\n3rd Place: $350<br>\n4th Place: $210<br>\n5th Place: $140<br>  \n<br>\n<b>14/20</b> Teams Registered\n</div>",
+      "description": "Enter a team of 15-20 employees from your company to earn a piece of a $10,000 donation prize pool for your favorite cause! Teams can be anywhere from 15 to 50 people",
       "start": "2019-06-15T05:00:00Z",
       "end": "2019-07-31T23:59:59Z",
       "prize_pool":10000,
@@ -89,7 +89,7 @@ var dataarray = [
     },
     {
       "page_url_name":"kilterfall2019",
-      "challenge_status": "Past",
+      "challenge_status": "Live",
       "can_register":true,
       "large_bg":"https://images.unsplash.com/photo-1462717585237-7fafe19c5448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
       "smaller_photo":"img/kilter/kilterrunning.jpg",
@@ -101,7 +101,7 @@ var dataarray = [
       "id": 3,
       "name": "Kilter Rewards Summer Cause Challenge",
       "box_description":"Join us for the kilter rewards summer challenge",
-      "description": "<div>\nJoin us for the Kilter Rewards Summer Cause Challenge!</br>\n<br>\n<b>Start Date:</b> June 15, 2019<br>\n<b>End Date:</b> July 31, 2019<br>\n<b>Team Sizes:</b> 15-50<br>\n<b>Entry Fee:</b> $400<br><i>($200 goes to donation prize pool)</i><br>\n<br>\n$2800 Donation Prize Pool<br>\n<b>GRAND PRIZE:</b> $1400<br> \n2nd Place: $700<br>\n3rd Place: $350<br>\n4th Place: $210<br>\n5th Place: $140<br>  \n<br>\n<b>14/20</b> Teams Registered\n</div>",
+      "description": "Enter a team of 15-20 employees from your company to earn a piece of a $10,000 donation prize pool for your favorite cause! Teams can be anywhere from 15 to 50 people",
       "start": "2019-06-15T05:00:00Z",
       "end": "2019-07-31T23:59:59Z",
       "prize_pool":10000,

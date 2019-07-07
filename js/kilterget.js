@@ -7,7 +7,6 @@ var dataarray = [
         "can_register":true,
         "large_bg":"https://images.unsplash.com/photo-1462717585237-7fafe19c5448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
         "smaller_photo":"img/kilter/kilterrunning.jpg",
-        "name": "Kilter Rewards Springer Challenge 2",
         "thumbnail_url": "https://images.unsplash.com/photo-1462717585237-7fafe19c5448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
         "category_tag": "Corporate",
         "start_date": "June 15, 2019",
@@ -35,14 +34,12 @@ var dataarray = [
         `,
         "has_sponsor":true,
         "sponsor_description":"sponsor information here",
-        "sponsor_logo":"",
-        "sponsor_link":"",
+        "sponsor_logo":"https://techspective.net/wp-content/uploads/2018/03/google_logo.gif.CROP_.original-original.gif",
+        "sponsor_link":"google.com",
         "number_teams":5,
         "flyer_link":"/img/PDFs/Kilter Rewards Fall Cause Challenge.pdf",
         "entry_fee":400,
-        "firstpercent":50,
-        "secondpercent":20,
-        "thirdpercent":10
+        "how_to_win":"how to win information"
     },
     {
       "page_url_name":"kiltersummer2019",
@@ -76,16 +73,15 @@ var dataarray = [
         <p><b>Yourselves:</b> Build healthier habits for yourself and your teammates</p>
         <p><b>Your Company:</b> If you participate as part of a company, you'll be building stronger peer-to-peer relationships and increase employee satisfaction. See our impact report <a href="#">here</a></p>
       `,
-      "has_sponsor":true,
+      "has_sponsor":false,
       "sponsor_description":"sponsor information here",
       "sponsor_logo":"",
       "sponsor_link":"",
       "number_teams":5,
       "flyer_link":"/img/PDFs/Kilter Rewards Fall Cause Challenge.pdf",
       "entry_fee":400,
-      "firstpercent":50,
-      "secondpercent":20,
-      "thirdpercent":10
+      "how_to_win":"how to win information"
+
     },
     {
       "page_url_name":"kilterfall2019",
@@ -119,21 +115,22 @@ var dataarray = [
         <p><b>Yourselves:</b> Build healthier habits for yourself and your teammates</p>
         <p><b>Your Company:</b> If you participate as part of a company, you'll be building stronger peer-to-peer relationships and increase employee satisfaction. See our impact report <a href="#">here</a></p>
       `,
-      "has_sponsor":true,
+      "has_sponsor":false,
       "sponsor_description":"sponsor information here",
       "sponsor_logo":"",
       "sponsor_link":"",
       "number_teams":5,
       "flyer_link":"/img/PDFs/Kilter Rewards Fall Cause Challenge.pdf",
       "entry_fee":400,
-      "firstpercent":50,
-      "secondpercent":20,
-      "thirdpercent":10
+      "how_to_win":"how to win information"
+
     }
 ]
 
 request('https://apienterprise.kilterrewards.com/challenges/get/teamChallenges', function(err, res, body) {  
     module.exports.apidata = body;
+    // let temp = JSON.parse(body)
+    // console.log(temp[1].name)
 });
 
 module.exports.dataarray = dataarray;

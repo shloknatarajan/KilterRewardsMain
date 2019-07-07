@@ -1,6 +1,8 @@
 var fs = require('fs')
 const kilterget = require('./kilterget')
 let dataarray = kilterget.dataarray
+
+// Register or leader board buttons
 let registerorleaderboard = new Array()
 for (let i = 0; i < dataarray.length; i++) {
   if (dataarray[i].challenge_status === "Upcoming") {
@@ -9,10 +11,29 @@ for (let i = 0; i < dataarray.length; i++) {
     registerorleaderboard[i] = "View Leaderboard"
   }
 }
+// Sponsor Section
+
+
 
 // Page Creation
 let datapopulate = new Array(dataarray.length) 
 for (let i = 0; i < dataarray.length; i++) {
+  let sponsorInsertion = "<!-- No Sponsor Detected -->";
+  if (dataarray[i].has_sponsor) {
+    sponsorInsertion = `
+    <!--Sponsors Section -->
+          <section id="causeinfo" class="clearfix text-center">
+              <div class="container-fluid infocontainer">
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-6 text-center whatteamsdo">
+                      <h4>Sponsors</h4>
+                      <a href="${dataarray[i].sponsor_link}" class="scrollto"><img src="${dataarray[i].sponsor_link}" alt="Sponsor Logo" class="img-fluid"></a>
+                      <p>${dataarray[i].sponsor_description}<p>
+                    </div>
+                </div>
+              </div>
+          </section>`
+  }
   datapopulate[i] = `
   <!DOCTYPE html>
   <html lang="en">
@@ -24,8 +45,7 @@ for (let i = 0; i < dataarray.length; i++) {
     <meta content="" name="description">
   
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="img/kilter/kiltericon_vXC_icon.ico" />
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="icon" type="image/png" href="img/kilter/favicon.png" />
   
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
@@ -73,6 +93,12 @@ for (let i = 0; i < dataarray.length; i++) {
                 <li class="active cause-nav"><a href="index.html">Home</a></li>
                 <li><a href="allchallenges.html">All Challenges</a></li>
                 <li><a href="https://kilterstories.home.blog/">Stories</a></li>
+                <li class="drop-down"><a href="">Login</a>
+                  <ul>
+                    <li><a href="kilterrewards.com/user/login.php">Users</a></li>
+                    <li><a href="admin.kilterrewards.com">Administrators</a>
+                  </ul>
+                </li>
               </ul>
             </nav><!-- .main-nav -->
             
@@ -108,7 +134,7 @@ for (let i = 0; i < dataarray.length; i++) {
         <div class="container-fluid infocontainer mt-5">
           <div class="row">
             <div class="col-md-6 text-lg-left whatteamsdo">
-                <h4>What ${dataarray[i].name} Is</h4>
+                <h4>What the ${dataarray[i].name} Is</h4>
                 <p>${dataarray[i].description}</p>
                 <p>Start: ${dataarray[i].start_date} End: ${dataarray[i].end_date}</p>
                 <div id="prizetickerarea">
@@ -131,7 +157,7 @@ for (let i = 0; i < dataarray.length; i++) {
             <div class="row">
               <div class="col-lg-9 text-center text-lg-left">
                 <h3 class="cta-title">Want to be a challenge team?</h3>
-                <p class="cta-text">$${dataarray[i].entry_fee} Entry Fee (%50 Goes to Charity Guaranteed!)</p>
+                <p class="cta-text">Don't wait. Helping others by helping yourself has never been a better reason to do something. Register now!</p>
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
                 <a class="cta-btn align-middle" href="#">${registerorleaderboard[i]}</a>
@@ -144,108 +170,121 @@ for (let i = 0; i < dataarray.length; i++) {
           <div class="container-fluid infocontainer">
             <div class="row">
               <div class="col-md-6 text-lg-left mt-5 whatteamsdo">
-                ${dataarray[i].what_teams_do}
+                <h4>What Teams Do</h4>
+                <p>Step 1: Register your team here</p>
+                <p>Step 2: Choose a Cause to Compete For</p>
+                <p>Step 3: Members join their teams on the Kilter Rewards App and track their daily fitness activities for points</p>
+                <p>Step 4: At the end of the challenge, the teams with the most points get the prize pool donated to their charity/organization</p>            
+                <a href="/img/PDFs/Scoring System - Kilter Rewards Cause Challenges.pdf" class="mb-5 causeintrobutton btn-get-started scrollto">See the Scoring System</a>
               </div>
               <div class="col-md-5 whiteinfoblock shadowbox payouts secondbox">
-                  <h3>Donation Payouts</h4>
-                  <h4>1st Place: ${dataarray[i].firstpercent}% of the Prize pool <br>(Current: $<span class="counter">${dataarray[i].firstpercent * dataarray[i].prize_pool / 100}</span>)</h4>
-                  <h4>1st Place: ${dataarray[i].secondpercent}% of the Prize pool <br>(Current: $<span class="counter">${dataarray[i].secondpercent * dataarray[i].prize_pool / 100}</span>)</h4>
-                  <h4>1st Place: ${dataarray[i].thirdpercent}% of the Prize pool <br>(Current: $<span class="counter">${dataarray[i].thirdpercent * dataarray[i].prize_pool / 100}</span>)</h4>
-                  <br>
-                  <p>Earn points for your team by completing daily fitness goals. If you're team finishes top 3, we donate a portion of the prize pool to your team's cause!</p>
+                  <h3>How to Win</h4>
+                  ${dataarray[i].how_to_win}
               </div>
             </div>
             <div class="row text-center justify-content-center mt-5">
                 <div class="col-md-6 text-center whatteamsdo">
-                  ${dataarray[i].who_helping}
+                  <h4>Who You're Helping</h4>
+                  <p><b>Your Charity:</b> Choose any cause your team wants to compete for (recommendation: get feedback from your team on a cause you can all get behind!)</p>
+                  <p><b>Yourselves:</b> Build healthier habits for yourself and your teammates</p>
+                  <p><b>Your Company:</b> If you participate as part of a company, you'll be building stronger peer-to-peer relationships and increase employee satisfaction. See our impact report <a href="#">here</a></p>
+                  <img src="${dataarray[i].whopicture}" class="img-fluid">
                 </div>
             </div>
           </div>
-  
       </section>
+      <!-- Sponsor Section Goes Here -->
+      ${sponsorInsertion}
   
       <!--==========================
           Footer
       ============================-->
       <footer id="footer" class="section-bg">
-          <div class="footer-top">
-              <div class="container">
+      <div class="footer-top">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-6">
+
               <div class="row">
-                  <div class="col-lg-6">
-                  <div class="row">
-                      <div class="col-sm-6">
-                          <div class="footer-info">
-                          <h3>Kilter</h3>
-                          <p><i>noun</i> /kil-ter/ Proper or usual state or condition</p>
-                          </div>
-                          <div class="footer-newsletter">
-                          <h4>Stay Updated</h4>
-                          <p>Subscribe to Stay Updated on all things Kilter Rewards!</p>
-                          <form action="" method="post">
-                              <input type="email" name="email"><input type="submit"  value="Subscribe">
-                          </form>
-                          </div>
-                      </div>
-                      <div class="col-sm-6">
-                          <div class="footer-links">
-                          <h4>Useful Links</h4>
-                          <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="termsandservices.html">Terms of service</a></li>
-                            <li><a href="/img/PDFs/privacy-policy.pdf">Privacy policy</a></li>
-                            <li><a href="/img/PDFs/KilterEmployeeOptions.pdf">Employers</a></li>
-                          </ul>
-                          </div>
-                          <div class="footer-links">
-                          <h4>Contact Us</h4>
-                          <p>
-                              <strong>Email:</strong> friends@kilterrewards.com<br>
-                          </p>
-                          </div>
-                          <div class="social-links">
-                            <a href="https://www.facebook.com/kilterrewards/" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/kilter_rewards/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/kilter-llc/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                          </div>
-  
-                      </div>
-  
+
+                  <div class="col-sm-6">
+
+                    <div class="footer-info">
+                      <h3>Kilter</h3>
+                      <p><i>noun</i> /kil-ter/ Proper or usual state or condition; order</p>
+                    </div>
+
+                    <div class="footer-newsletter">
+                      <h4>Stay Updated</h4>
+                      <p>Subscribe to Stay Updated on all things Kilter Rewards!</p>
+                      <a href="https://kilterrewards.us14.list-manage.com/subscribe/post?u=46da8260014731cf9e4fa097e&amp;id=1bf5209ef9" class="btn-get-started scrollto">Subscribe</a>
+                    </div>
+
                   </div>
-  
+
+                  <div class="col-sm-6">
+                    <div class="footer-links">
+                      <h4>Useful Links</h4>
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="termsandservices.html">Terms of service</a></li>
+                        <li><a href="/img/PDFs/privacy-policy.pdf">Privacy policy</a></li>
+                        <li><a href="/img/PDFs/KilterEmployeeOptions.pdf">Employers</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="footer-links">
+                      <h4>Contact Us</h4>
+                      <p>
+                        <strong>Email:</strong> friends@kilterrewards.com<br>
+                      </p>
+                    </div>
+
+                    <div class="social-links">
+                      <a href="https://www.facebook.com/kilterrewards/" class="facebook"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/kilter_rewards/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/company/kilter-llc/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
                   </div>
-  
-                  <div class="col-lg-6">
-  
-                  <div class="form">
-                    <h4>Send us a message</h4>
-                    <p>Interested in working with us? Send a message below or directly to friends@kilterrewards.com</p>
-                    <form action="https://formspree.io/friends@kilterrewards.com" method="POST" role="form" class="contactForm">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validation"></div>
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validation"></div>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                        <div class="validation"></div>
-                      </div>
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                        <div class="validation"></div>
-                      </div>
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-                    </form>
-                  </div>
-                  </div>
+
               </div>
+
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form"> 
+                <h4>Send us a message</h4>
+                <p>Interested in working with us? Send a message below or directly to friends@kilterrewards.com</p>
+                <form action="https://formspree.io/friends@kilterrewards.com" method="POST" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div id="sendmessage">Your message has been sent. Thank you!</div>
+                  <div id="errormessage"></div>
+                  <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                </form>
               </div>
+            </div>
           </div>
-      </footer><!-- #footer -->
+        </div>
+      </div>
+    </footer><!-- #footer -->
   
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
       <!-- Uncomment below i you want to use a preloader -->

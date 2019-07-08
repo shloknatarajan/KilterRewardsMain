@@ -170,12 +170,8 @@ for (let i = 0; i < dataarray.length; i++) {
           <div class="container-fluid infocontainer">
             <div class="row">
               <div class="col-md-6 text-lg-left mt-5 whatteamsdo">
-                <h4>What Teams Do</h4>
-                <p>Step 1: Register your team here</p>
-                <p>Step 2: Choose a Cause to Compete For</p>
-                <p>Step 3: Members join their teams on the Kilter Rewards App and track their daily fitness activities for points</p>
-                <p>Step 4: At the end of the challenge, the teams with the most points get the prize pool donated to their charity/organization</p>            
-                <a href="/img/PDFs/Scoring System - Kilter Rewards Cause Challenges.pdf" class="mb-5 causeintrobutton btn-get-started scrollto">See the Scoring System</a>
+                ${dataarray[i].what_teams_do}
+                
               </div>
               <div class="col-md-5 whiteinfoblock shadowbox payouts secondbox">
                   <h3>How to Win</h4>
@@ -184,11 +180,8 @@ for (let i = 0; i < dataarray.length; i++) {
             </div>
             <div class="row text-center justify-content-center mt-5">
                 <div class="col-md-6 text-center whatteamsdo">
-                  <h4>Who You're Helping</h4>
-                  <p><b>Your Charity:</b> Choose any cause your team wants to compete for (recommendation: get feedback from your team on a cause you can all get behind!)</p>
-                  <p><b>Yourselves:</b> Build healthier habits for yourself and your teammates</p>
-                  <p><b>Your Company:</b> If you participate as part of a company, you'll be building stronger peer-to-peer relationships and increase employee satisfaction. See our impact report <a href="#">here</a></p>
-                  <img src="${dataarray[i].whopicture}" class="img-fluid">
+                  ${dataarray[i].who_helping}
+                  <img src="${dataarray[i].who_helping_photo}" class="img-fluid">
                 </div>
             </div>
           </div>

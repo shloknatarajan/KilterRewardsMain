@@ -1,7 +1,9 @@
+const fs = require('fs')
 const kilterget = require('./kilterget')
-let dataarray = kilterget.dataarray
-
-
+async function getDataArray() {
+  return await kilterget.dataarray();
+}
+getDataArray().then(dataarray =>  {
 // Templates Begin
 var boxtemplate = `
 <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
@@ -59,3 +61,4 @@ if (dataarray.length > 3) {
     endpoint = 3;
 }
 
+})

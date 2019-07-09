@@ -1,43 +1,4 @@
-const fs = require('fs')
-const kilterget = require('./kilterget')
-async function getDataArray() {
-  return await kilterget.dataarray();
-}
-getDataArray().then(dataarray =>  {
-  // Register or leader board buttons
-console.log("Got data " + dataarray)
-let registerorleaderboard = new Array()
-for (let i = 0; i < dataarray.length; i++) {
-  if (dataarray[i].challenge_status === "Upcoming") {
-    registerorleaderboard[i] = "Register"
-  } else {
-    registerorleaderboard[i] = "View Leaderboard"
-  }
-}
-// Sponsor Section
 
-
-
-// Page Creation
-let datapopulate = new Array(dataarray.length) 
-for (let i = 0; i < dataarray.length; i++) {
-  let sponsorInsertion = "<!-- No Sponsor Detected -->";
-  if (dataarray[i].has_sponsor) {
-    sponsorInsertion = `
-    <!--Sponsors Section -->
-          <section id="causeinfo" class="clearfix text-center">
-              <div class="container-fluid infocontainer">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-6 text-center whatteamsdo">
-                      <h4>Sponsors</h4>
-                      <a href="${dataarray[i].sponsor_link}" class="scrollto"><img src="${dataarray[i].sponsor_link}" alt="Sponsor Logo" class="img-fluid"></a>
-                      <p>${dataarray[i].sponsor_description}<p>
-                    </div>
-                </div>
-              </div>
-          </section>`
-  }
-  datapopulate[i] = `
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -111,19 +72,19 @@ for (let i = 0; i < dataarray.length; i++) {
       <!-- ==========================
       Cause Intro
     ============================-->
-      <section id="causeintro" style="background-image:url(${dataarray[i].large_bg})" class="clearfix">
+      <section id="causeintro" style="background-image:url(https://s3.us-east-2.amazonaws.com/kilter-media-test/challenges/dancingninja.gif)" class="clearfix">
           <div class="lightoverlay causeheader text-center">
               <div class="causecontainer container-fluid">
                   <div class="row justify-content-center align-self-center text-center">
                       <div class="col-md-10 intro-info text-center">
-                          <h2>${dataarray[i].name}</span></h2>
+                          <h2>Kilter Rewards Test Challenge</span></h2>
                           <hr class="challengebreak">
                         </div>
                   </div>
                   <div class="row justify-content-center align-self-center text-center">
                       <div class="col-md-11">
-                          <p class="d-inline-block">${dataarray[i].start_date} - ${dataarray[i].end_date}</p>
-                          <a href="#about" class="mt-5 causeintrobutton btn-get-started scrollto">${registerorleaderboard[i]}</a>
+                          <p class="d-inline-block">July 15, 2019 - September 30, 2019</p>
+                          <a href="#about" class="mt-5 causeintrobutton btn-get-started scrollto">View Leaderboard</a>
                       </div>
                   </div>
               </div>
@@ -137,17 +98,32 @@ for (let i = 0; i < dataarray.length; i++) {
         <div class="container-fluid infocontainer mt-5">
           <div class="row">
             <div class="col-md-6 text-lg-left whatteamsdo">
-                <h4>What the ${dataarray[i].name} Is</h4>
-                <p>${dataarray[i].description}</p>
-                <p>Start: ${dataarray[i].start_date} End: ${dataarray[i].end_date}</p>
+                <h4>What the Kilter Rewards Test Challenge Is</h4>
+                <p><div>
+Enter a team of 20 employees in the Kilter Rewards Test Challenge to win AbSoLuTeLy NoThInG :DDD! How do they win? The team must finish with one of the five top wellness scores!<br>
+<br>
+Team Size Limit: 20 Participants<br>
+Team Entry Fee: $400 ($250 goes to donation prize pool!)<br>
+<br>
+GRAND PRIZE: 50% of Donation Prize Pool<br> 
+2nd Place: 25% of Donation Prize Pool<br>
+3rd Place: 12.5% of Donation Prize Pool<br>
+4th Place: 7.5% of Donation Prize Pool<br>
+5th Place: 5% of Donation Prize Pool<br>
+<br>
+<b>4/20</b> Teams Registered
+</div>
+
+</p>
+                <p>Start: July 15, 2019 End: September 30, 2019</p>
                 <div id="prizetickerarea">
-                    <h3>Current Prize Pool: $<span class="poolnum counter">${dataarray[i].prize_pool}</span></h3>
-                    <p>(<span class="counter teamnum">${dataarray[i].number_teams}</span> teams registered)</p>
+                    <h3>Current Prize Pool: $<span class="poolnum counter">10000</span></h3>
+                    <p>(<span class="counter teamnum">0</span> teams registered)</p>
                 </div>
-                <a href="${dataarray[i].flyer_link}" class="btn-get-started scrollto">See The Flyer</a>
+                <a href="" class="btn-get-started scrollto">See The Flyer</a>
               </div>
               <div class="col-md-5">
-                  <img src="${dataarray[i].smaller_photo}" alt="" class="img-fluid">
+                  <img src="https://s3.us-east-2.amazonaws.com/kilter-media-test/challenges/dancingninja.gif" alt="" class="img-fluid">
               </div>
           </div>
         </div>
@@ -163,7 +139,7 @@ for (let i = 0; i < dataarray.length; i++) {
                 <p class="cta-text">Don't wait. Helping others by helping yourself has never been a better reason to do something. Register now!</p>
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle" href="#">${registerorleaderboard[i]}</a>
+                <a class="cta-btn align-middle" href="#">View Leaderboard</a>
               </div>
             </div>
           </div>
@@ -173,24 +149,36 @@ for (let i = 0; i < dataarray.length; i++) {
           <div class="container-fluid infocontainer">
             <div class="row">
               <div class="col-md-6 text-lg-left mt-5 whatteamsdo">
-                ${dataarray[i].what_teams_do}
+                
                 
               </div>
               <div class="col-md-5 whiteinfoblock shadowbox payouts secondbox">
                   <h3>How to Win</h4>
-                  ${dataarray[i].how_to_win}
+                  undefined
               </div>
             </div>
             <div class="row text-center justify-content-center mt-5">
                 <div class="col-md-6 text-center whatteamsdo">
-                  ${dataarray[i].who_helping}
-                  <img src="${dataarray[i].who_helping_photo}" class="img-fluid">
+                  
+                  <img src="https://s3.us-east-2.amazonaws.com/kilter-media-test/challenges/dancingninja.gif" class="img-fluid">
                 </div>
             </div>
           </div>
       </section>
       <!-- Sponsor Section Goes Here -->
-      ${sponsorInsertion}
+      
+    <!--Sponsors Section -->
+          <section id="causeinfo" class="clearfix text-center">
+              <div class="container-fluid infocontainer">
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-6 text-center whatteamsdo">
+                      <h4>Sponsors</h4>
+                      <a href="" class="scrollto"><img src="" alt="Sponsor Logo" class="img-fluid"></a>
+                      <p><p>
+                    </div>
+                </div>
+              </div>
+          </section>
   
       <!--==========================
           Footer
@@ -306,18 +294,4 @@ for (let i = 0; i < dataarray.length; i++) {
   
   </body>
   </html>
-    `
-}
-
-let fileNames = new Array(dataarray.length)
-for (var i = 0; i < dataarray.length; i++) {
-    fileNames[i] = dataarray[i].page_url_name + ".html";
-}
-
-for (var i = 0; i < dataarray.length; i++) {
-    fs.writeFile('../' + fileNames[i], datapopulate[i], (err) => {
-        if (err) throw err;
-        console.log('Page Created');
-      });
-}
-}) //kilterget.dataarray()
+    

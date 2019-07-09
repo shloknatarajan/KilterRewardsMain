@@ -1,14 +1,13 @@
 const fs = require('fs')
-const kilterget = require('./kilterget')
-async function getDataArray() {
-  return await kilterget.dataarray();
-}
-getDataArray().then(dataarray =>  {
-  // Register or leader board buttons
-console.log("Got data " + dataarray)
+const request = require('request');
+
+request('http://api-dev.enterprise.kilterrewards.com/challenges/info', function(err, res, body) {  
+    let dataarray = JSON.parse(body);
+    
+// Register or leader board button calculation
 let registerorleaderboard = new Array()
 for (let i = 0; i < dataarray.length; i++) {
-  if (dataarray[i].challenge_status === "Upcoming") {
+  if (dataarray[i].challenge_status === "UPCOMING") {
     registerorleaderboard[i] = "Register"
   } else {
     registerorleaderboard[i] = "View Leaderboard"
@@ -30,7 +29,8 @@ for (let i = 0; i < dataarray.length; i++) {
                 <div class="row text-center justify-content-center">
                     <div class="col-md-6 text-center whatteamsdo">
                       <h4>Sponsors</h4>
-                      <a href="${dataarray[i].sponsor_link}" class="scrollto"><img src="${dataarray[i].sponsor_link}" alt="Sponsor Logo" class="img-fluid"></a>
+                      <a href="${dataarray[i].sponsor_link}" class="scrollto"><img src="${dataarray[i].sponsor_logo}" alt="Sponsor Logo" class="img-fluid"></a>
+                      <p>${dataarray[i].sponsor_name}
                       <p>${dataarray[i].sponsor_description}<p>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ for (let i = 0; i < dataarray.length; i++) {
                 <a href="${dataarray[i].flyer_link}" class="btn-get-started scrollto">See The Flyer</a>
               </div>
               <div class="col-md-5">
-                  <img src="${dataarray[i].smaller_photo}" alt="" class="img-fluid">
+                  <img src="${dataarray[i].smaller_photo}" alt="smaller photo" class="img-fluid">
               </div>
           </div>
         </div>
@@ -174,7 +174,6 @@ for (let i = 0; i < dataarray.length; i++) {
             <div class="row">
               <div class="col-md-6 text-lg-left mt-5 whatteamsdo">
                 ${dataarray[i].what_teams_do}
-                
               </div>
               <div class="col-md-5 whiteinfoblock shadowbox payouts secondbox">
                   <h3>How to Win</h4>
@@ -313,11 +312,103 @@ let fileNames = new Array(dataarray.length)
 for (var i = 0; i < dataarray.length; i++) {
     fileNames[i] = dataarray[i].page_url_name + ".html";
 }
-
+// console.log("Checkpoint")
+// console.log(dataarray.length)
 for (var i = 0; i < dataarray.length; i++) {
+    // console.log("i = " + i)
     fs.writeFile('../' + fileNames[i], datapopulate[i], (err) => {
         if (err) throw err;
-        console.log('Page Created');
+        // console.log('Page Created');
       });
 }
-}) //kilterget.dataarray()
+
+// Create Javascript Files
+var homeboxtemplate = `
+let dataarray = ${body}
+// Templates Begin
+var boxtemplate = \`
+<div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+    <div class="box charitybg" style="background-image: url({{thumbnail_url}})">
+    <h4 class="title"><a href="{{page_url_name}}.html">{{name}}</a></h4>
+    <p class="description">{{box_description}}</p>
+    <div class="categorytag">
+        <p>{{category_tag}}</p>
+    </div>
+    <div class="datetag">
+        <p>{{start_date}} - {{end_date}}</p>
+        </div>
+    </div>
+</div>\`
+
+
+var recentboxes = document.getElementById("recentchallenges");
+
+for (var i = 0; i < dataarray.length; i++) {
+    recentboxes.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, dataarray[i]))
+}`
+
+fs.writeFile("homebox.js", homeboxtemplate, (err) => {
+  if (err) throw err;
+  console.log("Updated homebox file");
+})
+
+var challengeboxtemplate = `
+let dataarray = ${body}
+
+// Templates Begin
+var boxtemplate = \`
+<div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+    <div class="box charitybg" style="background-image: url({{thumbnail_url}})">
+    <h4 class="title"><a href="{{page_url_name}}.html">{{name}}</a></h4>
+    <p class="description">{{box_description}}</p>
+    <div class="categorytag">
+        <p>{{category_tag}}</p>
+    </div>
+    <div class="datetag">
+        <p>{{start_date}} - {{end_date}}</p>
+        </div>
+    </div>
+</div>\`
+
+
+// Template Ends
+
+// Functionality Begins
+var live_array = new Array();
+var upcoming_array = new Array();
+var past_array = new Array();
+
+
+for (var i = 0; i < dataarray.length; i++) {
+    if (dataarray[i].challenge_status === "UPCOMING") {
+        upcoming_array.push(dataarray[i]);
+    }
+    if (dataarray[i].challenge_status === "LIVE") {
+        live_array.push(dataarray[i]);
+    }
+    if (dataarray[i].challenge_status === "PAST") {
+        past_array.push(dataarray[i]);
+    }
+}
+
+var allupcoming = document.getElementById("allupcoming");
+var alllive = document.getElementById("alllive");
+var allpast = document.getElementById("allpast");
+
+for (var i = 0; i < upcoming_array.length; i++) {
+    allupcoming.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, upcoming_array[i]))
+}
+for (var i = 0; i < live_array.length; i++) {
+    alllive.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, live_array[i]))
+}
+for (var i = 0; i < past_array.length; i++) {
+    allpast.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, past_array[i]))
+}
+`
+fs.writeFile("challengebox.js", challengeboxtemplate, (err) => {
+  if (err) throw err;
+  console.log("updated challengebox file");
+})
+
+
+}) // End

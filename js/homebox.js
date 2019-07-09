@@ -32,7 +32,6 @@ let dataarray = [
    "who_helping_photo": "https://s3.us-east-2.amazonaws.com/kilter-media-test/challenges/dancingninja.gif"
   }
  ]
-
 // Templates Begin
 var boxtemplate = `
 <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
@@ -49,36 +48,8 @@ var boxtemplate = `
 </div>`
 
 
-// Template Ends
-
-// Functionality Begins
-var live_array = new Array();
-var upcoming_array = new Array();
-var past_array = new Array();
-
+var recentboxes = document.getElementById("recentchallenges");
 
 for (var i = 0; i < dataarray.length; i++) {
-    if (dataarray[i].challenge_status === "UPCOMING") {
-        upcoming_array.push(dataarray[i]);
-    }
-    if (dataarray[i].challenge_status === "LIVE") {
-        live_array.push(dataarray[i]);
-    }
-    if (dataarray[i].challenge_status === "PAST") {
-        past_array.push(dataarray[i]);
-    }
-}
-
-var allupcoming = document.getElementById("allupcoming");
-var alllive = document.getElementById("alllive");
-var allpast = document.getElementById("allpast");
-
-for (var i = 0; i < upcoming_array.length; i++) {
-    allupcoming.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, upcoming_array[i]))
-}
-for (var i = 0; i < live_array.length; i++) {
-    alllive.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, live_array[i]))
-}
-for (var i = 0; i < past_array.length; i++) {
-    allpast.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, past_array[i]))
+    recentboxes.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, dataarray[i]))
 }

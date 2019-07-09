@@ -1,5 +1,6 @@
 const request = require('request');
 const fetch = require('node-fetch');
+const fs = require('fs')
 var dataarray = [
     {
         "page_url_name":"kilterspring2019",
@@ -128,10 +129,16 @@ var dataarray = [
     }
 ]
 
-async function retrieveData() {
-  let res = await fetch("http://api-dev.enterprise.kilterrewards.com/challenges/info")
-  return res.json();
-}
+// async function retrieveData() {
+//   let res = await fetch("http://api-dev.enterprise.kilterrewards.com/challenges/info")
+//   return res.json();
+// }
 
-module.exports.dataarray = retrieveData;
+// module.exports.dataarray = retrieveData;
 
+request('http://api-dev.enterprise.kilterrewards.com/challenges/info', function(err, res, body) {  
+    let dataarray = body
+    
+});
+
+module.exports.dataarray = dataarray;

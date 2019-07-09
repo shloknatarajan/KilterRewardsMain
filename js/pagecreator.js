@@ -95,8 +95,8 @@ for (let i = 0; i < dataarray.length; i++) {
                 <li><a href="https://kilterstories.home.blog/">Stories</a></li>
                 <li class="drop-down"><a href="">Login</a>
                   <ul>
-                    <li><a href="kilterrewards.com/user/login.php">Users</a></li>
-                    <li><a href="admin.kilterrewards.com">Administrators</a>
+                    <li><a href="https://www.kilterrewards.com/user/login.php">Users</a></li>
+                    <li><a href="https://admin.kilterrewards.com/login">Administrators</a>
                   </ul>
                 </li>
               </ul>

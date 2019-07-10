@@ -1,43 +1,4 @@
-const fs = require('fs')
-const request = require('request');
 
-request('http://apienterprise.kilterrewards.com/challenges/info', function(err, res, body) {  
-    let dataarray = JSON.parse(body);
-    
-// Register or leader board button calculation
-let registerorleaderboard = new Array()
-for (let i = 0; i < dataarray.length; i++) {
-  if (dataarray[i].challenge_status === "UPCOMING") {
-    registerorleaderboard[i] = ["Register", "#footer"]
-  } else {
-    registerorleaderboard[i] = ["View Leaderboard", dataarray[i].leaderboard_link]
-  }
-}
-// Sponsor Section
-
-
-
-// Page Creation
-let datapopulate = new Array(dataarray.length) 
-for (let i = 0; i < dataarray.length; i++) {
-  let sponsorInsertion = "<!-- No Sponsor Detected -->";
-  if (dataarray[i].has_sponsor) {
-    sponsorInsertion = `
-    <!--Sponsors Section -->
-          <section id="causeinfo" class="clearfix text-center">
-              <div class="container-fluid infocontainer">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-6 text-center whatteamsdo">
-                      <h4>Sponsors</h4>
-                      <a href="${dataarray[i].sponsor_link}" class="scrollto"><img src="${dataarray[i].sponsor_logo}" alt="Sponsor Logo" class="img-fluid"></a>
-                      <p>${dataarray[i].sponsor_name}
-                      <p>${dataarray[i].sponsor_description}<p>
-                    </div>
-                </div>
-              </div>
-          </section>`
-  }
-  datapopulate[i] = `
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -111,19 +72,19 @@ for (let i = 0; i < dataarray.length; i++) {
       <!-- ==========================
       Cause Intro
     ============================-->
-      <section id="causeintro" style="background-image:url(${dataarray[i].large_bg})" class="clearfix">
+      <section id="causeintro" style="background-image:url(https://s3.us-east-2.amazonaws.com/kilter-media/challenges/Summer19HeaderImage.jpg)" class="clearfix">
           <div class="lightoverlay causeheader text-center">
               <div class="causecontainer container-fluid">
                   <div class="row justify-content-center align-self-center text-center">
                       <div class="col-md-10 intro-info text-center">
-                          <h2>${dataarray[i].name}</span></h2>
+                          <h2>Kilter Rewards Summer Cause Challenge</span></h2>
                           <hr class="challengebreak">
                         </div>
                   </div>
                   <div class="row justify-content-center align-self-center text-center">
                       <div class="col-md-11">
-                          <p class="d-inline-block">${dataarray[i].start_date} - ${dataarray[i].end_date}</p>
-                          <a href="${registerorleaderboard[i][1]}" class="mt-5 causeintrobutton btn-get-started scrollto">${registerorleaderboard[i][0]}</a>
+                          <p class="d-inline-block">June 15, 2019 - July 31, 2019</p>
+                          <a href="challenges.kilterrewards.com/challenges/3" class="mt-5 causeintrobutton btn-get-started scrollto">View Leaderboard</a>
                       </div>
                   </div>
               </div>
@@ -137,17 +98,33 @@ for (let i = 0; i < dataarray.length; i++) {
         <div class="container-fluid infocontainer mt-5">
           <div class="row">
             <div class="col-md-6 text-lg-left whatteamsdo">
-                <h4>What the ${dataarray[i].name} Is</h4>
-                <p>${dataarray[i].description}</p>
-                <p>Start: ${dataarray[i].start_date} End: ${dataarray[i].end_date}</p>
+                <h4>What the Kilter Rewards Summer Cause Challenge Is</h4>
+                <p><div>
+Join us for the Kilter Rewards Summer Cause Challenge!</br>
+<br>
+<b>Start Date:</b> June 15, 2019<br>
+<b>End Date:</b> July 31, 2019<br>
+<b>Team Sizes:</b> 15-50<br>
+<b>Entry Fee:</b> $400<br><i>($200 goes to donation prize pool)</i><br>
+<br>
+$2800 Donation Prize Pool<br>
+<b>GRAND PRIZE:</b> $1400<br> 
+2nd Place: $700<br>
+3rd Place: $350<br>
+4th Place: $210<br>
+5th Place: $140<br>  
+<br>
+<b>14/20</b> Teams Registered
+</div></p>
+                <p>Start: June 15, 2019 End: July 31, 2019</p>
                 <div id="prizetickerarea">
-                    <h3>Current Prize Pool: $<span class="poolnum counter">${dataarray[i].prize_pool}</span></h3>
-                    <p>(<span class="counter teamnum">${dataarray[i].number_teams}</span> teams registered)</p>
+                    <h3>Current Prize Pool: $<span class="poolnum counter">2800</span></h3>
+                    <p>(<span class="counter teamnum">14</span> teams registered)</p>
                 </div>
-                <a href="${dataarray[i].flyer_link}" class="btn-get-started scrollto">See The Flyer</a>
+                <a href="https://docs.google.com/document/d/1Vn5ISp0_Y975N6jG7ZX0PNIqXhnUA-hHLxreq-Tp1aU/edit" class="btn-get-started scrollto">See The Flyer</a>
               </div>
               <div class="col-md-5">
-                  <img src="${dataarray[i].smaller_photo}" alt="smaller photo" class="img-fluid">
+                  <img src="https://s3.us-east-2.amazonaws.com/kilter-media/challenges/Summer19MainImage.jpg" alt="smaller photo" class="img-fluid">
               </div>
           </div>
         </div>
@@ -163,7 +140,7 @@ for (let i = 0; i < dataarray.length; i++) {
                 <p class="cta-text">Don't wait. Helping others by helping yourself has never been a better reason to do something. Register now!</p>
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle" href="${registerorleaderboard[i][1]}">${registerorleaderboard[i][0]}</a>
+                <a class="cta-btn align-middle" href="challenges.kilterrewards.com/challenges/3">View Leaderboard</a>
               </div>
             </div>
           </div>
@@ -173,24 +150,33 @@ for (let i = 0; i < dataarray.length; i++) {
           <div class="container-fluid infocontainer">
             <div class="row">
               <div class="col-md-6 text-lg-left mt-5 whatteamsdo">
-                ${dataarray[i].what_teams_do}
+                <p>Step 1: Register your team</p>
+        <p>Step 2: Choose a Cause to Compete For</p>
+        <p>Step 3: Invite your employees to join your team and download the Kilter Rewards app</p>
+        <p>Step 4:  During the challenge, your team will use the Kilter Rewards app to track daily fitness activities and earn up to 100 points per day for reaching their goals! At the end of the challenge, the teams with the highest average scores will earn donation prizes for their chosen causes!</p>            
+        <a href="/img/PDFs/Scoring System - Kilter Rewards Cause Challenges.pdf" class="mb-5 causeintrobutton btn-get-started scrollto">See the Scoring System</a>
+
               </div>
               <div class="col-md-5 whiteinfoblock shadowbox payouts secondbox">
                   <h3>How to Win</h4>
-                  ${dataarray[i].how_to_win}
+                  undefined
               </div>
             </div>
             <div class="row text-center justify-content-center mt-5">
                 <div class="col-md-6 text-center whatteamsdo">
                   <h4>Who You're Helping</h4>
-                  ${dataarray[i].who_helping}
-                  <img src="${dataarray[i].who_helping_photo}" class="img-fluid">
+                  <p><b>Your Cause:</b> Fundraising is really hard for non-profits today. By participating in Kilter Cause Challenges  you get another way to help fund the causes you care most about! The more you help yourself and build healthier habits, the more likely you’ll be to win a donation for your cause. </p>
+        <p><b>Yourselves:</b> Building healthier habits has never been more fun and rewarding. We’ll help make it easy to keep your motivation to move and be active every day.</p>
+        <p><b>Your Company:</b> Working together with your colleagues for a common goal will strengthen relationships at work and help improve your productivity. That’s a win for you, your colleagues, and your company!)
+</p>
+
+                  <img src="" class="img-fluid">
                 </div>
             </div>
           </div>
       </section>
       <!-- Sponsor Section Goes Here -->
-      ${sponsorInsertion}
+      <!-- No Sponsor Detected -->
   
       <!--==========================
           Footer
@@ -306,110 +292,4 @@ for (let i = 0; i < dataarray.length; i++) {
   
   </body>
   </html>
-    `
-}
-
-let fileNames = new Array(dataarray.length)
-for (var i = 0; i < dataarray.length; i++) {
-    fileNames[i] = dataarray[i].page_url_name + ".html";
-}
-// console.log("Checkpoint")
-// console.log(dataarray.length)
-for (var i = 0; i < dataarray.length; i++) {
-    // console.log("i = " + i)
-    fs.writeFile('../' + fileNames[i], datapopulate[i], (err) => {
-        if (err) throw err;
-        // console.log('Page Created');
-      });
-}
-
-// Create Javascript Files
-var homeboxtemplate = `
-let dataarray = ${body}
-// Templates Begin
-var boxtemplate = \`
-<div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
-    <div class="box charitybg" style="background-image: url({{thumbnail_url}})">
-    <h4 class="title"><a href="{{page_url_name}}.html">{{name}}</a></h4>
-    <p class="description">{{box_description}}</p>
-    <div class="categorytag">
-        <p>{{category_tag}}</p>
-    </div>
-    <div class="datetag">
-        <p>{{start_date}} - {{end_date}}</p>
-        </div>
-    </div>
-</div>\`
-
-
-var recentboxes = document.getElementById("recentchallenges");
-
-for (var i = 0; i < dataarray.length; i++) {
-    recentboxes.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, dataarray[i]))
-}`
-
-fs.writeFile("homebox.js", homeboxtemplate, (err) => {
-  if (err) throw err;
-  console.log("Updated homebox file");
-})
-
-var challengeboxtemplate = `
-let dataarray = ${body}
-
-// Templates Begin
-var boxtemplate = \`
-<div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
-    <div class="box charitybg" style="background-image: url({{thumbnail_url}})">
-    <h4 class="title"><a href="{{page_url_name}}.html">{{name}}</a></h4>
-    <p class="description">{{box_description}}</p>
-    <div class="categorytag">
-        <p>{{category_tag}}</p>
-    </div>
-    <div class="datetag">
-        <p>{{start_date}} - {{end_date}}</p>
-        </div>
-    </div>
-</div>\`
-
-
-// Template Ends
-
-// Functionality Begins
-var live_array = new Array();
-var upcoming_array = new Array();
-var past_array = new Array();
-
-
-for (var i = 0; i < dataarray.length; i++) {
-    if (dataarray[i].challenge_status === "UPCOMING") {
-        upcoming_array.push(dataarray[i]);
-    }
-    if (dataarray[i].challenge_status === "LIVE") {
-        live_array.push(dataarray[i]);
-    }
-    if (dataarray[i].challenge_status === "PAST") {
-        past_array.push(dataarray[i]);
-    }
-}
-
-var allupcoming = document.getElementById("allupcoming");
-var alllive = document.getElementById("alllive");
-var allpast = document.getElementById("allpast");
-
-for (var i = 0; i < upcoming_array.length; i++) {
-    allupcoming.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, upcoming_array[i]))
-}
-for (var i = 0; i < live_array.length; i++) {
-    alllive.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, live_array[i]))
-}
-for (var i = 0; i < past_array.length; i++) {
-    allpast.insertAdjacentHTML('afterbegin', Mustache.render(boxtemplate, past_array[i]))
-}
-`
-fs.writeFile("challengebox.js", challengeboxtemplate, (err) => {
-  if (err) throw err;
-  console.log("updated challengebox file");
-})
-
-
-}) // End
+    
